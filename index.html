@@ -36,10 +36,9 @@
       </ul>
     </div>
     <div class="navbar-end flex-none gap-2">
-      <!-- todo input 點擊顏色要換 -->
       <div class="form-control text-white">
         <input type="text" placeholder="搜尋"
-          class="badge badge-outline border-primary text-brown input-sm w-full max-w-xs focus:ring-0 focus:outline-0" />
+          class="badge badge-outline border-primary text-brown input-sm w-full max-w-xs focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent" />
       </div>
       <div class="dropdown dropdown-end ">
         <label tabindex="0" class="btn btn-ghost btn-circle avatar">
@@ -156,18 +155,19 @@
   </section>
 
   <!-- 書籍介紹 -->
-  <section class="container py-5 ">
-    <div class="content-center">
+  <section class=" py-5 overflow-x-hidden">
+    <div class="content-center container">
       <!-- 現代文學 -->
       <ul role="list">
-        <li class="group/item ">
-          <span class="text-xl" data-aos="fade-up" data-aos-duration="3000">現代文學</span>
-          <a class="group/edit invisible group-hover/item:visible" href="">
-            <span class=" group-hover/edit:text-secondary text-xs">探索全部 > </span>
+        <li class="group/item flex content-center">
+          <span class="text-xl pr-2" data-aos="fade-up" data-aos-duration="3000">現代文學</span>
+          <a class="group/edit invisible hover:bg-sky-50 hover:rounded group-hover/item:visible  " href="">
+            <span class=" group-hover/edit:text-brown text-xs">探索全部</span>
+            <span class="material-icons text-sm">arrow_right</span>
           </a>
         </li>
       </ul>
-      <ul class="py-3 overflow-x-hidden">
+      <ul class="py-3 ">
         <li>
           <div class="swiper jsMySwiper w-100 h-100 overflow-visible ">
             <div class="swiper-wrapper">
@@ -226,12 +226,12 @@
       <ul role="list">
         <li class="group/item ">
           <span class="text-xl" data-aos="fade-up" data-aos-duration="3000">心理勵志</span>
-          <a class="group/edit invisible group-hover/item:visible" href="">
-            <span class=" group-hover/edit:text-secondary text-xs ">探索全部 > </span>
+          <a class="group/edit invisible  hover:bg-sky-50 hover:rounded group-hover/item:visible" href="">
+            <span class=" group-hover/edit:text-brown text-xs material-icons">探索全部 arrow_right</span>
           </a>
         </li>
       </ul>
-      <ul class="py-3 overflow-x-hidden">
+      <ul class="py-3 ">
         <li>
           <div class="swiper jsMySwiper w-100 h-100 overflow-visible ">
             <div class="swiper-wrapper">
@@ -289,13 +289,13 @@
       <!-- 電腦資訊 -->
       <ul role="list">
         <li class="group/item ">
-          <span class="text-xl" data-aos="fade-up" data-aos-duration="3000">電腦資訊</span>
-          <a class="group/edit invisible group-hover/item:visible" href="">
-            <span class=" group-hover/edit:text-secondary text-xs ">探索全部 > </span>
+          <span class="text-xl pr-2" data-aos="fade-up" data-aos-duration="3000">電腦資訊</span>
+          <a class="group/edit invisible hover:bg-sky-50 hover:rounded group-hover/item:visible" href="">
+            <span class=" group-hover/edit:text-brown text-xs material-icons">探索全部 arrow_right</span>
           </a>
         </li>
       </ul>
-      <ul class="py-3 overflow-x-hidden">
+      <ul class="py-3 ">
         <li>
           <div class="swiper jsMySwiper w-100 h-100 overflow-visible ">
             <div class="swiper-wrapper">
@@ -380,17 +380,6 @@
   </section>
 
 
-  <h1 class="text-xl">/ 測試版 /</h1>
-  <div class="card  bg-white ">
-    <figure class="your-element" data-tilt data-tilt-glare data-tilt-max-glare="0.8"><img class="w-[246px] h-[359px]"
-        src="https://kbimages1-a.akamaihd.net/7523f0c6-eafe-40ac-815a-9a922dbdb56e/353/569/90/False/4HfLmC0kZj2YgmeOtbKfdQ.jpg"
-        alt="Shoes" /></figure>
-    <div class="card-body border-t-2">
-      <h2 class="card-title ">
-        Glare effect
-      </h2>
-    </div>
-  </div>
 
   <!-- 最新出版書籍 -->
   <section class="bg-creamWhite2 py-5 section5">
@@ -419,13 +408,17 @@
       <li class="mx-6 mt-5">
         <div class="max-w-md mx-auto overflow-hidden">
           <div class="card md:flex  ">
-            <div
-              class="h-[360] w-[248px] md:flex-shrink-0 shadow-xl flex justify-center mx-auto border-b-2 border-stone-300">
-              <img class=""
+            <!-- <figure class="your-element" data-tilt data-tilt-glare data-tilt-max-glare="0.8"><img
+                class="w-[246px] h-[359px]"
+                src="https://kbimages1-a.akamaihd.net/7523f0c6-eafe-40ac-815a-9a922dbdb56e/353/569/90/False/4HfLmC0kZj2YgmeOtbKfdQ.jpg"
+                alt="Shoes" /></figure> -->
+            <div data-tilt data-tilt-glare data-tilt-max-glare="0.8"
+              class=" your-element md:flex-shrink-0 shadow-xl flex justify-center mx-auto ">
+              <img class="h-[360] w-[248px] object-cover"
                 src="https://kbimages1-a.akamaihd.net/dbf574c6-a41b-4f74-a8af-666d123c4b7c/180/1000/False/ip-7.jpg"
                 alt="Man looking at item at a store">
             </div>
-            <div class="card-body">
+            <div class="card-body border-t-2 border-stone-300">
               <h2 class="card-title">進擊的台劇</h2>
               <p>故事 X 技術 X IP 放大<br>從《紅衣小女孩》到《茶金》，<br>他們打造的台劇，很酷！</p>
               <div class="card-actions justify-center pt-3">
@@ -442,13 +435,13 @@
       <li class="mx-6 mt-5">
         <div class="max-w-md mx-auto overflow-hidden">
           <div class="card md:flex">
-            <div
-              class="h-[360] w-[248px] md:flex-shrink-0 shadow-xl flex justify-center mx-auto border-b-2 border-stone-300">
-              <img class="object-cover "
+            <div data-tilt data-tilt-glare data-tilt-max-glare="0.8"
+              class=" your-element md:flex-shrink-0 shadow-xl flex justify-center mx-auto ">
+              <img class="h-[360] w-[248px] object-cover"
                 src="https://kbimages1-a.akamaihd.net/55289222-67ac-41c7-b47d-ddaa214696e5/180/1000/False/NMNWDgJPpDKwOAnPB9_Syw.jpg"
                 alt="Man looking at item at a store">
             </div>
-            <div class="card-body">
+            <div class="card-body border-t-2 border-stone-300">
               <h2 class="card-title">未來還沒背書寫</h2>
               <p>關鍵只有在於要怎麼寫。<br>他們開始時的噪音<br>將成為明日的派對。</p>
               <div class="card-actions justify-center pt-3">
@@ -465,13 +458,13 @@
       <li class="mx-6 mt-5">
         <div class="max-w-md mx-auto overflow-hidden">
           <div class="card md:flex">
-            <div
-              class="h-[360] w-[248px] md:flex-shrink-0 shadow-xl flex justify-center mx-auto border-b-2 border-stone-300">
-              <img class=" object-cover"
+            <div data-tilt data-tilt-glare data-tilt-max-glare="0.8"
+              class=" your-element md:flex-shrink-0 shadow-xl flex justify-center mx-auto ">
+              <img class="h-[360] w-[248px] object-cover"
                 src="https://kbimages1-a.akamaihd.net/d11d625d-771d-4a57-91b5-02a81287776a/180/1000/False/ai-93.jpg"
                 alt="Man looking at item at a store">
             </div>
-            <div class="card-body">
+            <div class="card-body border-t-2 border-stone-300">
               <h2 class="card-title">人工智慧 最後的秘密</h2>
               <p>權力、政治、人類的代價<br>科技產業和國家機器<br>如何聯手打造 AI神話？</p>
               <div class="card-actions justify-center pt-3">
@@ -546,7 +539,7 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
   <!-- vanilla-tilt -->
-  <script type="text/javascript" src="./vanilla-tilt.js"></script>
+  <script type="text/javascript" src="./vanilla.js"></script>
   <!-- <script src="./vanilla.js"></script> -->
 
   <!-- aos.js -->

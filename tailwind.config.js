@@ -21,6 +21,12 @@ module.exports = {
       center: true,
       padding: "12px",
     },
+    // 啟用 motion-safe 
+    variants: {
+      extend: {
+        animation: ['motion-safe'],
+      }
+    },
   },
   plugins: [
     require("daisyUi")
