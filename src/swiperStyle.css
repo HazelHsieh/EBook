@@ -38,7 +38,11 @@ body {
 .swiper-slide img:active {
   cursor: grabbing;
 }
-
+/* .swiper-button-next{
+  background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L5%2C44l-4.2-4.2L18.6%2C22L0.8%2C4.2L5%2C0z'%20fill%3D'%23ffff00'%2F%3E%3C%2Fsvg%3E");
+  width: 9%;
+  height: 6%;
+} */
 /* .swiper-slide:hover {
   transform: scale(1.5);
   transition: all 300ms ease-in-out;

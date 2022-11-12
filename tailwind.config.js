@@ -15,6 +15,11 @@ module.exports = {
         info: '#387B27',
         link: '#589EF0',
         brown: '#474B42',
+      },
+      // 啟用背景圖片
+      backgroundImage: {
+        'hero-pattern': "url('/img/hero-pattern.svg')",
+        'footer-texture': "url('/img/footer-texture.png')",
       }
     },
     container: {
@@ -25,6 +30,7 @@ module.exports = {
     variants: {
       extend: {
         animation: ['motion-safe'],
+        display: ["group-hover"],
       }
     },
   },
