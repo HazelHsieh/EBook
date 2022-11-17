@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="./imgs/headIcon/headIcon1.png" type="image/x-icon" />
+  <link rel="shortcut icon" href="../imgs/headIcon/headIcon1.png" type="image/x-icon" />
 
   <!-- swiper CDN Css  -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
@@ -17,9 +17,9 @@
   <!-- aos Core CSS CDN -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-  <link href="./dist/output.css" rel="stylesheet">
+  <link href="../dist/output.css" rel="stylesheet">
   <!-- swiper Css -->
-  <link rel="stylesheet" href="./src/swiperStyle.css">
+  <link rel="stylesheet" href="../src/swiperStyle.css">
   <title>E Book</title>
 </head>
 
@@ -28,14 +28,13 @@
   <nav class="container navbar">
     <div class="navbar-start">
       <a href="/index.html">
-        <img class="w-12 " src="./imgs/logo.png" alt="...">
+        <img class="w-12 " src="../imgs/logo.png" alt="...">
       </a>
     </div>
     <div class="navbar-center hidden lg:flex">
       <ul class="menu menu-horizontal p-0">
-        <li><a href="./frontendView/news.html"><span class="material-icons">local_fire_department</span>最新熱門</a>
-        </li>
-        <li><a href="./frontendView/myBooks.html"><span class="material-icons">add_circle_outline</span>我的書單</a></li>
+        <li><a href=""><span class="material-icons">local_fire_department</span>最新熱門</a></li>
+        <li><a><span class="material-icons">add_circle_outline</span>我的書單</a></li>
       </ul>
     </div>
     <div class="navbar-end flex-none gap-2">
@@ -58,26 +57,79 @@
     </div>
   </nav>
 
-  <!-- banner -->
-  <!-- todo 高度沒修好 -->
-  <section class="hero min-h-screen h-[456px] xl:w-5/6 xl:h-[679px]"
-    style="background-image: url(./imgs/temp/banner.jpg);">
-    <div class="hero-overlay bg-opacity-60"></div>
-  </section>
-  <div class="container  py-8">
-    <div class="max-w-md">
-      <h1 class="text-3xl font-bold">生活是無以名狀的碎片</h1>
-      <p class="py-3">無論昨天是精采還是暗淡，無論明天是閃亮還是慌亂，我擁有的就是現在。
-        此時此刻，我就在這裡。沒有更好也沒有更壞，沒有偶然也沒有幸然。</p>
-      <div class="btns">
-        <button class="btn bg-primary border-none rounded-sm text-white hover:bg-secondary"><span
-            class="material-icons mr-2">auto_stories</span>翻來看看</button>
-        <button
-          class="btn btn-outline border-primary text-primary rounded-sm hover:bg-secondary hover:border-none hover:text-white"><span
-            class="material-icons mr-2">read_more</span>了解更多</button>
+
+  <section class="bg-creamWhite py-8">
+    <div class="container">
+      <div class="flex flex-wrap items-end">
+        <p class="text-4xl font-bold pr-20 ">今天我想看一本...</p>
+        <div class="form-control text-white mt-8">
+          <input type="text" placeholder="搜尋"
+            class="badge badge-outline border-primary text-brown input-sm w-full max-w-xs focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent" />
+        </div>
       </div>
+      <br>
+      <ul class="flex gap-2 justify-end">
+        <li class=" lg:w-1/6">
+          <select
+            class="select select-secondary w-full max-w-xs  bg-creamWhite focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent ">
+            <option disabled selected class="">最新排行</option>
+            <option>Java</option>
+            <option>Go</option>
+            <option>C</option>
+            <option>C#</option>
+            <option>C++</option>
+            <option>Rust</option>
+            <option>JavaScript</option>
+            <option>Python</option>
+          </select>
+        </li>
+        <li class="lg:w-1/6">
+          <select
+            class="select select-secondary w-full max-w-xs bg-creamWhite focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent ">
+            <option disabled selected class="">類型</option>
+            <option>Java</option>
+            <option>Go</option>
+            <option>C</option>
+            <option>C#</option>
+            <option>C++</option>
+            <option>Rust</option>
+            <option>JavaScript</option>
+            <option>Python</option>
+          </select>
+        </li>
+        <li class="lg:w-1/6">
+          <select
+            class="select select-secondary w-full max-w-xs bg-creamWhite focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent ">
+            <option disabled selected class="">語言</option>
+            <option>Java</option>
+            <option>Go</option>
+            <option>C</option>
+            <option>C#</option>
+            <option>C++</option>
+            <option>Rust</option>
+            <option>JavaScript</option>
+            <option>Python</option>
+          </select>
+        </li>
+        <li class="lg:w-1/6">
+          <select
+            class="select  select-secondary w-full max-w-xs bg-creamWhite focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent">
+            <option disabled selected class="">出版社</option>
+            <option>Java</option>
+            <option>Go</option>
+            <option>C</option>
+            <option>C#</option>
+            <option>C++</option>
+            <option>Rust</option>
+            <option>JavaScript</option>
+            <option>Python</option>
+          </select>
+        </li>
+      </ul>
     </div>
-  </div>
+  </section>
+
+
   <!-- todo 要修一下 -->
   <!-- 本週排行榜 -->
   <section class="bg-creamWhite py-12 overflow-x-hidden">
@@ -92,7 +144,7 @@
                   <p class="text-9xl "><i class="fa-solid fa-1"></i></p>
                 </div>
                 <div class="card w-[220px] h-[220px] rounded-sm  hover:scale-125  transition-all">
-                  <img class="" src="./imgs/temp/book1.webp" alt="book1" />
+                  <img class="" src="../imgs/temp/book1.webp" alt="book1" />
                 </div>
               </div>
               <div class="swiper-slide">
@@ -100,7 +152,7 @@
                   <p class="text-9xl"><i class="fa-solid fa-2"></i></p>
                 </div>
                 <div class="card w-[220px] h-[220px] rounded-sm hover:scale-125  transition-all">
-                  <img class="" src="./imgs/temp/book2.webp" alt="book2" />
+                  <img class="" src="../imgs/temp/book2.webp" alt="book2" />
                 </div>
               </div>
               <div class="swiper-slide">
@@ -108,7 +160,7 @@
                   <p class="text-9xl"><i class="fa-solid fa-3"></i></p>
                 </div>
                 <div class="card w-[220px] h-[220px] rounded-sm  hover:scale-125  transition-all">
-                  <img src="./imgs/temp/book3.webp" alt="book3" />
+                  <img src="../imgs/temp/book3.webp" alt="book3" />
                 </div>
               </div>
               <div class="swiper-slide">
@@ -116,7 +168,7 @@
                   <p class="text-9xl"><i class="fa-solid fa-4"></i></p>
                 </div>
                 <div class="card w-[220px] h-[220px] rounded-sm  hover:scale-125 transition-all">
-                  <img src="./imgs/temp/book4.webp" alt="book4" />
+                  <img src="../imgs/temp/book4.webp" alt="book4" />
                 </div>
               </div>
               <div class="swiper-slide">
@@ -124,7 +176,7 @@
                   <p class="text-9xl"><i class="fa-solid fa-5"></i></p>
                 </div>
                 <div class="card w-[280px] h-[220px] rounded-sm  hover:scale-125 transition-all">
-                  <img src="./imgs/temp/book5.webp" alt="book5" />
+                  <img src="../imgs/temp/book5.webp" alt="book5" />
                 </div>
               </div>
               <div class="swiper-slide">
@@ -132,7 +184,7 @@
                   <p class="text-9xl "><i class="fa-solid fa-6"></i></p>
                 </div>
                 <div class="card w-[220px] h-[220px] rounded-sm  hover:scale-125  transition-all">
-                  <img class="" src="./imgs/temp/book1.webp" alt="book1" />
+                  <img class="" src="../imgs/temp/book1.webp" alt="book1" />
                 </div>
               </div>
               <div class="swiper-slide">
@@ -140,7 +192,7 @@
                   <p class="text-9xl"><i class="fa-solid fa-7"></i></p>
                 </div>
                 <div class="card w-[220px] h-[220px] rounded-sm hover:scale-125  transition-all">
-                  <img class="" src="./imgs/temp/book2.webp" alt="book2" />
+                  <img class="" src="../imgs/temp/book2.webp" alt="book2" />
                 </div>
               </div>
               <div class="swiper-slide">
@@ -148,7 +200,7 @@
                   <p class="text-9xl"><i class="fa-solid fa-8"></i></p>
                 </div>
                 <div class="card w-[220px] h-[220px] rounded-sm  hover:scale-125  transition-all">
-                  <img src="./imgs/temp/book3.webp" alt="book3" />
+                  <img src="../imgs/temp/book3.webp" alt="book3" />
                 </div>
               </div>
               <div class="swiper-slide">
@@ -156,7 +208,7 @@
                   <p class="text-9xl"><i class="fa-solid fa-9"></i></p>
                 </div>
                 <div class="card w-[220px] h-[220px] rounded-sm  hover:scale-125 transition-all">
-                  <img src="./imgs/temp/book4.webp" alt="book4" />
+                  <img src="../imgs/temp/book4.webp" alt="book4" />
                 </div>
               </div>
             </div>
@@ -178,7 +230,7 @@
                   <p class="text-9xl "><i class="fa-solid fa-1"></i></p>
                 </div>
                 <div class="card w-[220px] h-[220px] rounded-sm  hover:scale-125  transition-all">
-                  <img class="" src="./imgs/temp/book1.webp" alt="book1" />
+                  <img class="" src="../imgs/temp/book1.webp" alt="book1" />
                 </div>
               </div>
               <div class="swiper-slide">
@@ -186,7 +238,7 @@
                   <p class="text-9xl"><i class="fa-solid fa-2"></i></p>
                 </div>
                 <div class="card w-[220px] h-[220px] rounded-sm hover:scale-125  transition-all">
-                  <img class="" src="./imgs/temp/book2.webp" alt="book2" />
+                  <img class="" src="../imgs/temp/book2.webp" alt="book2" />
                 </div>
               </div>
               <div class="swiper-slide">
@@ -194,7 +246,7 @@
                   <p class="text-9xl"><i class="fa-solid fa-3"></i></p>
                 </div>
                 <div class="card w-[220px] h-[220px] rounded-sm  hover:scale-125  transition-all">
-                  <img src="./imgs/temp/book3.webp" alt="book3" />
+                  <img src="../imgs/temp/book3.webp" alt="book3" />
                 </div>
               </div>
               <div class="swiper-slide">
@@ -202,7 +254,7 @@
                   <p class="text-9xl"><i class="fa-solid fa-4"></i></p>
                 </div>
                 <div class="card w-[220px] h-[220px] rounded-sm  hover:scale-125 transition-all">
-                  <img src="./imgs/temp/book4.webp" alt="book4" />
+                  <img src="../imgs/temp/book4.webp" alt="book4" />
                 </div>
               </div>
               <div class="swiper-slide">
@@ -210,7 +262,7 @@
                   <p class="text-9xl"><i class="fa-solid fa-5"></i></p>
                 </div>
                 <div class="card w-[280px] h-[220px] rounded-sm  hover:scale-125 transition-all">
-                  <img src="./imgs/temp/book5.webp" alt="book5" />
+                  <img src="../imgs/temp/book5.webp" alt="book5" />
                 </div>
               </div>
               <div class="swiper-slide">
@@ -218,7 +270,7 @@
                   <p class="text-9xl "><i class="fa-solid fa-6"></i></p>
                 </div>
                 <div class="card w-[220px] h-[220px] rounded-sm  hover:scale-125  transition-all">
-                  <img class="" src="./imgs/temp/book1.webp" alt="book1" />
+                  <img class="" src="../imgs/temp/book1.webp" alt="book1" />
                 </div>
               </div>
               <div class="swiper-slide">
@@ -226,7 +278,7 @@
                   <p class="text-9xl"><i class="fa-solid fa-7"></i></p>
                 </div>
                 <div class="card w-[220px] h-[220px] rounded-sm hover:scale-1250  transition-all">
-                  <img class="" src="./imgs/temp/book2.webp" alt="book2" />
+                  <img class="" src="../imgs/temp/book2.webp" alt="book2" />
                 </div>
               </div>
               <div class="swiper-slide">
@@ -234,7 +286,7 @@
                   <p class="text-9xl"><i class="fa-solid fa-8"></i></p>
                 </div>
                 <div class="card w-[220px] h-[220px] rounded-sm  hover:scale-125  transition-all">
-                  <img src="./imgs/temp/book3.webp" alt="book3" />
+                  <img src="../imgs/temp/book3.webp" alt="book3" />
                 </div>
               </div>
               <div class="swiper-slide">
@@ -254,252 +306,6 @@
       </ul>
     </div>
   </section>
-
-
-
-  <!-- 書籍介紹 -->
-  <section class=" py-12 overflow-x-hidden">
-    <div class="content-center container">
-      <!-- 舊版官網教學 group -->
-      <!-- <ul role="list">
-        <li class="group/item ">
-          <span class="text-xl" data-aos="fade-up" data-aos-duration="3000">心理勵志</span>
-          <a class="group/edit invisible  hover:bg-sky-50 hover:rounded group-hover/item:visible" href="">
-            <span class=" group-hover/edit:text-brown text-xs material-icons">探索全部 arrow_right</span>
-          </a>
-        </li>
-      </ul> -->
-      <!-- 現代文學 -->
-      <ul role="list">
-        <li class="flex items-center pb-2">
-          <p class="text-xl pr-2 " data-aos="fade-up" data-aos-duration="1000"> 現代文學</p>
-          <div class="group flex">
-            <span
-              class="hidden group-hover:block group-hover:bg-sky-50 group-hover:rounded group-hover:delay-150">探索全部</span>
-            <span class="material-icons  text-sm group-hover:bg-sky-50 group-hover:rounded">chevron_right</span>
-          </div>
-        </li>
-      </ul>
-      <ul class="pb-10 ">
-        <li>
-          <div class="swiper jsMySwiper w-full h-full overflow-visible ">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide text-center">
-                <div class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
-                  <img class="" src="./imgs/temp/book1.webp" alt="book1" />
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="card  w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
-                  <img class="" src="./imgs/temp/book2.webp" alt="book2" />
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
-                  <img src="./imgs/temp/book3.webp" alt="book3" />
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
-                  <img src="./imgs/temp/book4.webp" alt="book4" />
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
-                  <img src="./imgs/temp/book5.webp" alt="book5" />
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="card  w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
-                  <img class="" src="./imgs/temp/book2.webp" alt="book2" />
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
-                  <img src="./imgs/temp/book3.webp" alt="book3" />
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
-                  <img src="./imgs/temp/book4.webp" alt="book4" />
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
-                  <img src="./imgs/temp/book5.webp" alt="book5" />
-                </div>
-              </div>
-            </div>
-            <div class="swiper-button-next w-10  text-white hover:bg-secondary1"></div>
-            <div class="swiper-button-prev w-10  text-white hover:bg-secondary1"></div>
-            <div class="swiper-pagination"></div>
-          </div>
-        </li>
-      </ul>
-      <!-- 心理勵志 -->
-      <ul role="list">
-        <li class="flex items-center pb-2">
-          <p class="text-xl pr-2 " data-aos="fade-up" data-aos-duration="1000">心理勵志</p>
-          <div class="group flex">
-            <span
-              class="hidden group-hover:block group-hover:bg-sky-50 group-hover:rounded group-hover:delay-150">探索全部</span>
-            <span class="material-icons  text-sm group-hover:bg-sky-50 group-hover:rounded">chevron_right</span>
-          </div>
-        </li>
-      </ul>
-      <ul class="pb-10">
-        <li>
-          <div class="swiper jsMySwiper w-100 h-100 overflow-visible ">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide text-center">
-                <div class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
-                  <img class="" src="./imgs/temp/book1.webp" alt="book1" />
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="card  w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
-                  <img class="" src="./imgs/temp/book2.webp" alt="book2" />
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="swiper-slide text-center">
-                  <div class="card shadow-xl  w-[280px] h-[280px] hover:scale-125 transition-all relative">
-                    <img class="" src="./imgs/temp/book2.webp" alt="book1" />
-                    <div class="absolute text-sm  w-[35px] h-[40px] bg-primary2  ml-2 mt-0">
-                      <p class="text-center">TOP</p>
-                      <p class="text-center"><i class="fa-solid fa-2"></i></p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
-                  <img src="./imgs/temp/book4.webp" alt="book4" />
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="swiper-slide text-center">
-                  <div class="card shadow-xl  w-[280px] h-[280px] hover:scale-125 transition-all relative">
-                    <img class="" src="./imgs/temp/book5.webp" alt="book5" />
-                    <div class="absolute text-sm  w-[35px] h-[40px] bg-primary2  ml-2 mt-0">
-                      <p class="text-center">TOP</p>
-                      <p class="text-center"><i class="fa-solid fa-3"></i></p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="card  w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
-                  <img class="" src="./imgs/temp/book2.webp" alt="book2" />
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
-                  <img src="./imgs/temp/book3.webp" alt="book3" />
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
-                  <img src="./imgs/temp/book4.webp" alt="book4" />
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
-                  <img src="./imgs/temp/book5.webp" alt="book5" />
-                </div>
-              </div>
-            </div>
-            <div class="swiper-button-next w-10  text-white hover:bg-secondary1"></div>
-            <div class="swiper-button-prev w-10  text-white hover:bg-secondary1"></div>
-            <div class="swiper-pagination"></div>
-          </div>
-        </li>
-      </ul>
-      <!-- 電腦資訊 -->
-      <ul role="list">
-        <li class="flex items-center  pb-2">
-          <p class="text-xl pr-2 " data-aos="fade-up" data-aos-duration="1000">電腦資訊</p>
-          <div class="group flex">
-            <span
-              class="hidden group-hover:block group-hover:bg-sky-50 group-hover:rounded group-hover:delay-150">探索全部</span>
-            <span class="material-icons  text-sm group-hover:bg-sky-50 group-hover:rounded">chevron_right</span>
-          </div>
-        </li>
-      </ul>
-      <ul class="pb-10">
-        <li>
-          <div class="swiper jsMySwiper w-100 h-100 overflow-visible ">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide text-center">
-                <div class="swiper-slide text-center">
-                  <div class="card shadow-xl  w-[280px] h-[280px] hover:scale-125 transition-all relative">
-                    <img class="" src="./imgs/temp/book1.webp" alt="book1" />
-                    <div class="absolute text-sm  w-[35px] h-[40px] bg-primary2  ml-2 mt-0">
-                      <p class="text-center">TOP</p>
-                      <p class="text-center"><i class="fa-solid fa-1"></i></p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="card  w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
-                  <img class="" src="./imgs/temp/book2.webp" alt="book2" />
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
-                  <img src="./imgs/temp/book3.webp" alt="book3" />
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
-                  <img src="./imgs/temp/book4.webp" alt="book4" />
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
-                  <img src="./imgs/temp/book5.webp" alt="book5" />
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="card  w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
-                  <img class="" src="./imgs/temp/book2.webp" alt="book2" />
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
-                  <img src="./imgs/temp/book3.webp" alt="book3" />
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
-                  <img src="./imgs/temp/book4.webp" alt="book4" />
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
-                  <img src="./imgs/temp/book5.webp" alt="book5" />
-                </div>
-              </div>
-            </div>
-            <div class="swiper-button-next w-10  text-white hover:bg-secondary1"></div>
-            <div class="swiper-button-prev w-10  text-white hover:bg-secondary1"></div>
-            <div class="swiper-pagination"></div>
-          </div>
-
-        </li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- 會員專屬 -->
-  <section class="bg-creamWhite  py-12">
-    <div class="container py-2 ">
-      <p class="text-xl">Hazel<span class="text-sm">，請繼續閱讀 </span></p>
-      <p class="text-xl">Hazel<span class="text-sm">，請繼續閱讀 </span></p>
-    </div>
-  </section>
-
 
 
   <!-- 最新出版書籍 -->
@@ -552,12 +358,10 @@
               <p>故事 X 技術 X IP 放大<br>從《紅衣小女孩》到《茶金》，<br>他們打造的台劇，很酷！</p>
               <div class="card-actions justify-center pt-3">
                 <button class="btn bg-primary border-none rounded-sm text-white hover:bg-secondary"><span
-                    class="material-icons mr-2">auto_stories</span>翻來看看
-                </button>
-                <a href="./frontendView/products.html"
-                  class="btn btn-outline border-primary text-primary rounded-sm hover:bg-secondary hover:border-none hover:text-white">
-                  <span class="material-icons mr-2">read_more</span>了解更多
-                </a>
+                    class="material-icons mr-2">auto_stories</span>翻來看看</button>
+                <button
+                  class="btn btn-outline border-primary text-primary rounded-sm hover:bg-secondary hover:border-none hover:text-white"><span
+                    class="material-icons mr-2">read_more</span>了解更多</button>
               </div>
             </div>
           </div>
@@ -612,29 +416,73 @@
     </ul>
   </section>
 
+  <section class="bg-creamWhite py-8">
+    <div class="container">
+      <div class="flex flex-wrap items-end">
+        <p class="text-4xl font-bold pr-20 ">今天我想看一本...</p>
 
-  <!-- 書籍介紹 2-->
-  <section class="container py-12 ">
-    <div class="content-center">
-      <p class="text-xl">世界旅遊 <a href="" class="text-xs text-center">探索全部 > </a>
-      </p>
-      <p class="text-xl">居家料理 <a href="" class="text-xs text-center">探索全部 > </a>
-      </p>
-      <p class="text-xl">外文出版 <a href="" class="text-xs text-center">探索全部 > </a>
-      </p>
-    </div>
-    <div class="py-2 text-center">
-      <button class="btn bg-primary border-none rounded-sm text-white hover:bg-secondary px-8 ">探索更多
-      </button>
+      </div>
+      <br>
+      <ul class="flex gap-2 justify-end">
+        <li class=" lg:w-2/6">
+          <div class="form-control text-white mr-7">
+            <input type="text" placeholder="搜尋"
+              class="badge badge-outline border-primary text-brown input-md w-full max-w-xs focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent" />
+          </div>
+        </li>
+        <li class="lg:w-1/6">
+          <select
+            class="select select-secondary w-full max-w-xs bg-creamWhite focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent ">
+            <option disabled selected class="">作者</option>
+            <option>Java</option>
+            <option>Go</option>
+            <option>C</option>
+            <option>C#</option>
+            <option>C++</option>
+            <option>Rust</option>
+            <option>JavaScript</option>
+            <option>Python</option>
+          </select>
+        </li>
+        <li class="lg:w-1/6">
+          <select
+            class="select select-secondary w-full max-w-xs bg-creamWhite focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent ">
+            <option disabled selected class="">類型</option>
+            <option>Java</option>
+            <option>Go</option>
+            <option>C</option>
+            <option>C#</option>
+            <option>C++</option>
+            <option>Rust</option>
+            <option>JavaScript</option>
+            <option>Python</option>
+          </select>
+        </li>
+        <li class="lg:w-1/6">
+          <select
+            class="select  select-secondary w-full max-w-xs bg-creamWhite focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent">
+            <option disabled selected class="">出版社</option>
+            <option>Java</option>
+            <option>Go</option>
+            <option>C</option>
+            <option>C#</option>
+            <option>C++</option>
+            <option>Rust</option>
+            <option>JavaScript</option>
+            <option>Python</option>
+          </select>
+        </li>
+      </ul>
     </div>
   </section>
+
 
 
   <!-- footer -->
   <footer class="footer footer-center p-5  text-primary">
     <!-- todo -->
     <div>
-      <figure><img class="w-12" src="./imgs/logo2.png" alt="Shoes" /></figure>
+      <figure><img class="w-12" src="../imgs/logo2.png" alt="Shoes" /></figure>
       <p class="font-bold tracking-widest">
         知識就像內褲 <br />看不見但很重要
       </p>
@@ -670,14 +518,14 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
   <!-- vanilla-tilt -->
-  <script type="text/javascript" src="./vanilla.js"></script>
+  <script type="text/javascript" src="../vanilla.js"></script>
   <!-- <script src="./vanilla.js"></script> -->
 
   <!-- aos.js -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>AOS.init();</script>
 
-  <script src="./all.js"></script>
+  <script src="../all.js"></script>
 </body>
 
 </html>
