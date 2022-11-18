@@ -31,3 +31,22 @@ const swiper = new Swiper(".jsMySwiper", {
 
   },
 });
+// 文字編輯器
+function CustomizationPlugin(editor) {
+
+}
+
+ClassicEditor
+  .create(document.querySelector('#editor'), {
+    extraPlugins: [CustomizationPlugin]
+  })
+  .then(newEditor => {
+    window.editor = newEditor;
+    // The following line adds CKEditor 5 inspector.
+    CKEditorInspector.attach(newEditor, {
+      isCollapsed: true
+    });
+  })
+  .catch(error => {
+    console.error(error);
+  });

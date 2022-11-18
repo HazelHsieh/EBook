@@ -47,22 +47,23 @@
           </div>
         </label>
         <ul tabindex="0" class="mt-3 p-2 shadow menu menu-compact dropdown-content bg-cream rounded-box w-52">
-          <li><a>最新熱門</a></li>
-          <li><a>我的書單</a></li>
-          <li><a>我的帳號</a></li>
+          <li><a href="./frontendView/news.html">最新熱門</a></li>
+          <li><a href="./frontendView/myBooks.html">我的書單</a></li>
+          <li><a href="./backendView/dashboard.html">我的帳號</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <div class="grid justify-items-center shadow-md flex-shrink md:flex-shrink-0">
+  <div class="mt-8 grid justify-items-center shadow-md flex-shrink md:flex-shrink-0">
     <div class="w-3/5 bg-white">
       <div class="p-8">
         <!--alert message-->
         <div class="shadow-lg mt-3 pt-3 pb-3 w-full text-white text-center
             hover:bg-indigo-400 rounded-full cursor-pointer hidden">
         </div>
-
+        <a href="./dashboard.html" class="py-3 link link-hover">返回</a>
+        <br>
         <form>
           <!-- name -->
           <div>
@@ -131,6 +132,16 @@
               class="bg-transparent border-b m-auto block border-gray-500
             w-full mb-6 text-grey-700 pb-1 focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent" type="number" placeholder="" />
           </div>
+          <!-- dddddd -->
+          <div id="editor">
+            <p>內容簡介</p>
+          </div>
+
+          <button onclick="document.querySelector( '#output' ).innerText = window.editor.getData();">Click to refresh
+            the output below</button>
+
+          <pre id="output"></pre>
+          <!--  dddddd  -->
           <input class="shadow-lg mt-3 pt-3 pb-3 w-full text-white bg-primary
             hover:bg-secondary rounded-full cursor-pointer " type="submit" value="submit" />
         </form>
@@ -183,6 +194,10 @@
 
   <!-- swiper js -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+  <!-- CKEditor js -->
+  <script src="https://cdn.ckeditor.com/ckeditor5/35.3.0/classic/ckeditor.js"></script>
+  <script src="https://unpkg.com/@ckeditor/ckeditor5-inspector@4.1.0/build/inspector.js"></script>
 
   <!-- vanilla-tilt -->
   <script type="text/javascript" src="../vanilla.js"></script>
