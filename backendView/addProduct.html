@@ -21,18 +21,25 @@
   <!-- swiper Css -->
   <link rel="stylesheet" href="../src/swiperStyle.css">
   <title>E Book</title>
+  <style>
+    .ck-editor__editable {
+      min-height: 370px;
+    }
+  </style>
 </head>
 
 <body class="bg-cream text-brown">
   <!-- navbar -->
   <nav class="container navbar">
     <div class="navbar-start">
-      <img class="w-12 " src="../imgs/logo.png" alt="...">
+      <a href="../index.html">
+        <img class="w-12 " src="../imgs/logo.png" alt="...">
+      </a>
     </div>
     <div class="navbar-center hidden lg:flex">
       <ul class="menu menu-horizontal p-0">
-        <li><a href=""><span class="material-icons">local_fire_department</span>最新熱門</a></li>
-        <li><a><span class="material-icons">add_circle_outline</span>我的書單</a></li>
+        <li><a href="../frontendView/news.html">最新熱門</a></li>
+        <li><a href="../frontendView/myBooks.html">我的書單</a></li>
       </ul>
     </div>
     <div class="navbar-end flex-none gap-2">
@@ -47,108 +54,152 @@
           </div>
         </label>
         <ul tabindex="0" class="mt-3 p-2 shadow menu menu-compact dropdown-content bg-cream rounded-box w-52">
-          <li><a href="./frontendView/news.html">最新熱門</a></li>
-          <li><a href="./frontendView/myBooks.html">我的書單</a></li>
-          <li><a href="./backendView/dashboard.html">我的帳號</a></li>
+          <li><a href="../frontendView/news.html">最新熱門</a></li>
+          <li><a href="../frontendView/myBooks.html">我的書單</a></li>
+          <li><a href="../backendView/dashboard.html">我的帳號</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <div class="mt-8 grid justify-items-center shadow-md flex-shrink md:flex-shrink-0">
-    <div class="w-3/5 bg-white">
-      <div class="p-8">
-        <!--alert message-->
-        <div class="shadow-lg mt-3 pt-3 pb-3 w-full text-white text-center
-            hover:bg-indigo-400 rounded-full cursor-pointer hidden">
+  <div id="app" class="md:flex antialiased">
+    <aside class="w-full md:h-screen md:w-64 bg-creamWhite md:flex md:flex-col">
+      <header class="border-b border-solid border-gray-800 flex-grow flex items-center">
+        <span class="material-icons ml-2">
+          sort
+        </span>
+        <p class="py-5 px-4 text-base font-medium -ml-3">管理列表</p>
+      </header>
+      <nav class="overflow-y-auto h-full flex-grow">
+        <header>
+          <span class="text-xs text-gray-500 block py-6 px-6">MENU</span>
+        </header>
+        <ul class=" px-4 text-center menu  text-base-content">
+          <li>
+            <a href="./dashboard.html"
+              class="btn btn-outline border-none  text-primary rounded-sm hover:bg-primary1 hover:border-primary hover:text-white">
+              評價
+            </a>
+          </li>
+          <li>
+            <a href="./addProduct.html"
+              class="btn btn-outline border-none  text-primary rounded-sm hover:bg-primary1 hover:border-primary hover:text-white">
+              新增書本
+            </a>
+          </li>
+
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="bg-creamWhite2 h-screen w-full overflow-y-auto">
+      <header class="border-b border-solid border-gray-300 bg-white">
+        <p class="p-5">新增書本</p>
+      </header>
+      <section class="m-4 bg-white border border-gray-300 border-solid rounded shadow">
+        <header class="border-b border-solid border-gray-300 p-4 text-lg font-medium">
+          書本資訊
+        </header>
+        <div class="mt-8 grid justify-items-center shadow-md flex-shrink md:flex-shrink-0">
+          <div class="w-full bg-white">
+            <div class="p-8">
+              <!--alert message-->
+              <div class="shadow-lg mt-3 pt-3 pb-3 w-full text-white text-center
+                  hover:bg-indigo-400 rounded-full cursor-pointer hidden">
+              </div>
+              <form>
+                <!-- name -->
+                <div>
+                  <label for="name" class="text-xs text-gray-500">name</label>
+                  <input id="name"
+                    class="bg-transparent border-b m-auto block border-gray-500 w-full mb-6 text-gray-700 pb-1 focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent"
+                    type="text" placeholder="" />
+                </div>
+                <!-- author -->
+                <div>
+                  <label for="author" class="text-xs text-gray-500">author</label>
+                  <input id="author"
+                    class="bg-transparent border-b m-auto block border-gray-500
+                  w-full mb-6 text-grey-700 pb-1 focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent"
+                    type="text" placeholder="" />
+                </div>
+                <!-- publish -->
+                <div>
+                  <label for="publish" class="text-xs text-gray-500">publish</label>
+                  <input id="publish" name="publish"
+                    class="bg-transparent border-b m-auto block border-gray-500
+                  w-full mb-6 text-grey-700 pb-1 focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent" type="text"
+                    placeholder="" />
+                </div>
+                <!-- publishDate -->
+                <div>
+                  <label for="publishDate" class="text-xs text-gray-500">publishDate</label>
+                  <input id="publishDate" name="publishDate"
+                    class="bg-transparent border-b m-auto block border-gray-500
+                  w-full mb-6 text-grey-700 pb-1 focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent" type="text" placeholder="" />
+                </div>
+                <!-- rate -->
+                <div>
+                  <label for="rate" class="text-xs text-gray-500">rate</label>
+                  <input id="rate" name="rate"
+                    class="bg-transparent border-b m-auto block border-gray-500
+                  w-full mb-6 text-grey-700 pb-1 focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent" type="number"
+                    placeholder="" />
+                </div>
+                <!-- imgUrl -->
+                <div>
+                  <label for="imgUrl" class="text-xs text-gray-500">imgUrl</label>
+                  <input id="imgUrl" name="imgUrl"
+                    class="bg-transparent border-b m-auto block border-gray-500
+                  w-full mb-6 text-grey-700 pb-1 focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent" type="text"
+                    placeholder="" />
+                </div>
+                <!-- tag -->
+                <div>
+                  <label for="tag" class="text-xs text-gray-500">tag</label>
+                  <input id="tag" class="bg-transparent border-b m-auto block border-gray-500 w-full mb-6
+                 text-gray-700 pb-1 focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent"
+                    type="text" placeholder="" />
+                </div>
+                <!-- ISBN -->
+                <div>
+                  <label for="ISBN" class="text-xs text-gray-500">ISBN</label>
+                  <input id="ISBN"
+                    class="bg-transparent border-b m-auto block border-gray-500
+                  w-full mb-6 text-grey-700 pb-1 focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent"
+                    type="ISBN" placeholder="" />
+                </div>
+                <!-- language -->
+                <div>
+                  <label for="language" class="text-xs text-gray-500">language</label>
+                  <input id="language" name="language"
+                    class="bg-transparent border-b m-auto block border-gray-500
+                  w-full mb-6 text-grey-700 pb-1 focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent" type="number"
+                    placeholder="" />
+                </div>
+                <!-- dddddd -->
+                <div id="editor">
+                  <p>內容簡介</p>
+                </div>
+
+                <button onclick="document.querySelector( '#output' ).innerText = window.editor.getData();">Click to
+                  refresh
+                  the output below</button>
+
+                <pre id="output"></pre>
+                <!--  dddddd  -->
+                <input class="shadow-lg mt-3 pt-3 pb-3 w-full text-white bg-primary
+                  hover:bg-secondary rounded-full cursor-pointer " type="submit" value="submit" />
+              </form>
+            </div>
+          </div>
         </div>
-        <a href="./dashboard.html" class="py-3 link link-hover">返回</a>
-        <br>
-        <form>
-          <!-- name -->
-          <div>
-            <label for="name" class="text-xs text-gray-500">name</label>
-            <input id="name"
-              class="bg-transparent border-b m-auto block border-gray-500 w-full mb-6 text-gray-700 pb-1 focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent"
-              type="text" placeholder="" />
-          </div>
-          <!-- author -->
-          <div>
-            <label for="author" class="text-xs text-gray-500">author</label>
-            <input id="author"
-              class="bg-transparent border-b m-auto block border-gray-500
-            w-full mb-6 text-grey-700 pb-1 focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent" type="text"
-              placeholder="" />
-          </div>
-          <!-- publish -->
-          <div>
-            <label for="publish" class="text-xs text-gray-500">publish</label>
-            <input id="publish" name="publish"
-              class="bg-transparent border-b m-auto block border-gray-500
-            w-full mb-6 text-grey-700 pb-1 focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent" type="text" placeholder="" />
-          </div>
-          <!-- publishDate -->
-          <div>
-            <label for="publishDate" class="text-xs text-gray-500">publishDate</label>
-            <input id="publishDate" name="publishDate"
-              class="bg-transparent border-b m-auto block border-gray-500
-            w-full mb-6 text-grey-700 pb-1 focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent" type="text" placeholder="" />
-          </div>
-          <!-- rate -->
-          <div>
-            <label for="rate" class="text-xs text-gray-500">rate</label>
-            <input id="rate" name="rate"
-              class="bg-transparent border-b m-auto block border-gray-500
-            w-full mb-6 text-grey-700 pb-1 focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent" type="number"
-              placeholder="" />
-          </div>
-          <!-- imgUrl -->
-          <div>
-            <label for="imgUrl" class="text-xs text-gray-500">imgUrl</label>
-            <input id="imgUrl" name="imgUrl"
-              class="bg-transparent border-b m-auto block border-gray-500
-            w-full mb-6 text-grey-700 pb-1 focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent" type="text"
-              placeholder="" />
-          </div>
-          <!-- tag -->
-          <div>
-            <label for="tag" class="text-xs text-gray-500">tag</label>
-            <input id="tag" class="bg-transparent border-b m-auto block border-gray-500 w-full mb-6
-           text-gray-700 pb-1 focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent"
-              type="text" placeholder="" />
-          </div>
-          <!-- ISBN -->
-          <div>
-            <label for="ISBN" class="text-xs text-gray-500">ISBN</label>
-            <input id="ISBN"
-              class="bg-transparent border-b m-auto block border-gray-500
-            w-full mb-6 text-grey-700 pb-1 focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent" type="ISBN"
-              placeholder="" />
-          </div>
-          <!-- language -->
-          <div>
-            <label for="language" class="text-xs text-gray-500">language</label>
-            <input id="language" name="language"
-              class="bg-transparent border-b m-auto block border-gray-500
-            w-full mb-6 text-grey-700 pb-1 focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent" type="number" placeholder="" />
-          </div>
-          <!-- dddddd -->
-          <div id="editor">
-            <p>內容簡介</p>
-          </div>
+      </section>
+    </main>
 
-          <button onclick="document.querySelector( '#output' ).innerText = window.editor.getData();">Click to refresh
-            the output below</button>
-
-          <pre id="output"></pre>
-          <!--  dddddd  -->
-          <input class="shadow-lg mt-3 pt-3 pb-3 w-full text-white bg-primary
-            hover:bg-secondary rounded-full cursor-pointer " type="submit" value="submit" />
-        </form>
-
-      </div>
-    </div>
   </div>
+
+
   <!-- 
   <form class="form">
     <div>

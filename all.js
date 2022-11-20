@@ -1,3 +1,9 @@
+let data = [];
+//初始
+function init() {
+
+}
+
 const swiper = new Swiper(".jsMySwiper", {
   freeMode: true,
   slidesPerView: 1,
