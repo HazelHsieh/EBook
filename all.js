@@ -18,21 +18,21 @@ const swiper = new Swiper(".jsMySwiper", {
     prevEl: ".swiper-button-prev",
   },
   breakpoints: {
-    640: {
+    576: {
       slidesPerView: 2,
-      spaceBetween: 20,
+      spaceBetween: 25,
     },
     768: {
       slidesPerView: 3,
-      spaceBetween: 40,
+      spaceBetween: 30,
     },
     1024: {
       slidesPerView: 4,
-      spaceBetween: 50,
+      spaceBetween: 35,
     },
     1400: {
       slidesPerView: 5,
-      spaceBetween: 50,
+      spaceBetween: 35,
     },
 
   },
