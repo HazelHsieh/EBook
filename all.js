@@ -36,25 +36,39 @@ function init() {
       eBook.travel.push(...data.filter(item => item.tag.indexOf('世界旅遊') !== -1));
       eBook.cooking.push(...data.filter(item => item.tag.indexOf('居家料理') !== -1));
       eBook.design.push(...data.filter(item => item.tag.indexOf('藝術設計') !== -1));
-      // console.log(eBook.nesPublishDate);
-      // console.log(eBook.literature);
-      // console.log(eBook.inspiration);
-      // console.log(eBook.IT);
-      // console.log(eBook.travel);
-      // console.log(eBook.cooking);
-      // console.log(eBook.design);
 
+      //console.log(eBook.literature['imgUrl']);
+      console.log(eBook.literature[0]['imgUrl']);
+
+
+      // swiper class 綁定
+      const js_Literature = document.querySelector('.js-literature');
+      //console.log(swiper_Wrapper);
+
+      const stringData = (data) => {
+        let str = ""
+        data.forEach(function (item, i) {
+          str += `<div class="swiper-slide text-center">
+          <a href="./frontendView/products.html"
+          class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
+          <img class="" src=${item.imgUrl} alt="book1" />
+          </a>
+          </div>`
+        })
+        // console.log(str);
+        return str;
+      }
+      stringData(eBook.literature);
+      js_Literature.innerHTML = stringData(eBook.literature);
 
     })
+
 }
 init();
 
-eBook.literature.forEach(item => {
-  console.log(item)
-})
-
-console.log(typeof (eBook.literature));
-console.log(typeof (eBook.literature[0]));
+// eBook.literature.forEach(item => {
+//   console.log(item)
+// })
 
 // const stringData = (data) => {
 //   let str = ""
@@ -70,12 +84,7 @@ console.log(typeof (eBook.literature[0]));
 //   return str;
 // }
 
-{/* <div class="swiper-slide text-center">
-            <a href="./frontendView/products.html"
-              class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
-              <img class="" src="./imgs/temp/book1.webp" alt="book1" />
-            </a>
-          </div> */}
+
 
 
 
