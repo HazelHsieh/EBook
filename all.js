@@ -1,8 +1,83 @@
-let data = [];
 //初始
-function init() {
-
+let data;
+const eBook = {
+  //最新熱門
+  nesPublishDate: [],
+  //中文文學
+  literature: [],
+  //心理勵志
+  inspiration: [],
+  //電腦資訊
+  IT: [],
+  //世界旅遊
+  travel: [],
+  //居家料理
+  cooking: [],
+  //藝術設計
+  design: []
 }
+
+
+function init() {
+  axios
+    .get("http://localhost:3000/books/")
+    .then(function (res) {
+      // data = res.data;
+      // data.forEach(function (res, i) {
+      //   console.log(i, res)
+      // })
+      data = res.data;
+      //eBook.nesPublishDate.push(data.filter(item => item.publishDate.indexOf('最新熱門') !== -1));
+
+      //                    ...解構賦值，如果不加會多一層 arr   為什麼要加!== -1，因為 indexOf 拿到反向的值
+      eBook.literature.push(...data.filter(item => item.tag.indexOf('中文文學') !== -1));
+      eBook.inspiration.push(...data.filter(item => item.tag.indexOf('心理勵志') !== -1));
+      eBook.IT.push(...data.filter(item => item.tag.indexOf('電腦資訊') !== -1));
+      eBook.travel.push(...data.filter(item => item.tag.indexOf('世界旅遊') !== -1));
+      eBook.cooking.push(...data.filter(item => item.tag.indexOf('居家料理') !== -1));
+      eBook.design.push(...data.filter(item => item.tag.indexOf('藝術設計') !== -1));
+      // console.log(eBook.nesPublishDate);
+      // console.log(eBook.literature);
+      // console.log(eBook.inspiration);
+      // console.log(eBook.IT);
+      // console.log(eBook.travel);
+      // console.log(eBook.cooking);
+      // console.log(eBook.design);
+
+
+    })
+}
+init();
+
+eBook.literature.forEach(item => {
+  console.log(item)
+})
+
+console.log(typeof (eBook.literature));
+console.log(typeof (eBook.literature[0]));
+
+// const stringData = (data) => {
+//   let str = ""
+//   data.forEach(item => {
+//     str += `
+//           <div class="swiper-slide text-center">
+//             <a href="./frontendView/products.html"
+//               class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
+//               <img class="" src="./imgs/temp/book1.webp" alt="book1" />
+//             </a>
+//           </div>`
+//   })
+//   return str;
+// }
+
+{/* <div class="swiper-slide text-center">
+            <a href="./frontendView/products.html"
+              class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
+              <img class="" src="./imgs/temp/book1.webp" alt="book1" />
+            </a>
+          </div> */}
+
+
 
 const swiper = new Swiper(".jsMySwiper", {
   freeMode: true,
@@ -37,6 +112,8 @@ const swiper = new Swiper(".jsMySwiper", {
 
   },
 });
+
+
 // 文字編輯器
 function CustomizationPlugin(editor) {
 

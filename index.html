@@ -25,7 +25,7 @@
 
 <body class="bg-cream text-brown">
   <!-- navbar -->
-  <nav class="container navbar">
+  <header class="container navbar">
     <div class="navbar-start">
       <a href="/index.html">
         <img class="w-12 " src="./imgs/logo.png" alt="...">
@@ -56,223 +56,222 @@
         </ul>
       </div>
     </div>
-  </nav>
+  </header>
 
   <!-- banner -->
-  <!-- todo 高度沒修好 -->
   <section class="hero min-h-screen h-[456px] xl:w-5/6 xl:h-[679px]"
     style="background-image: url(./imgs/temp/banner.jpg);">
     <div class="hero-overlay bg-opacity-60"></div>
   </section>
-  <div class="container  py-8">
+  <section class="container  py-8">
     <div class="max-w-md">
       <h1 class="text-3xl font-bold">生活是無以名狀的碎片</h1>
       <p class="py-3">無論昨天是精采還是暗淡，無論明天是閃亮還是慌亂，我擁有的就是現在。
         此時此刻，我就在這裡。沒有更好也沒有更壞，沒有偶然也沒有幸然。</p>
-      <div class="btns">
+      <!-- <div class="btns">
         <button class="btn bg-primary border-none rounded-sm text-white hover:bg-secondary"><span
-            class="material-icons mr-2">auto_stories</span>翻來看看</button>
-        <button
-          class="btn btn-outline border-primary text-primary rounded-sm hover:bg-secondary hover:border-none hover:text-white"><span
-            class="material-icons mr-2">read_more</span>了解更多</button>
+            class="material-icons mr-2">auto_stories</span>翻來看看
+        </button>
+        <a href="./frontendView/products.html"
+          class="btn btn-outline border-primary text-primary rounded-sm hover:bg-secondary hover:border-none hover:text-white">
+          <span class="material-icons mr-2">read_more</span>了解更多
+        </a>
+      </div> -->
+      <div class="btns card-actions pt-3">
+        <button class="btn bg-primary border-none rounded-sm text-white hover:bg-secondary"><span
+            class="material-icons mr-2">auto_stories</span>翻來看看
+        </button>
+        <a href="./frontendView/products.html"
+          class="btn btn-outline border-primary text-primary rounded-sm hover:bg-secondary hover:border-none hover:text-white">
+          <span class="material-icons mr-2">read_more</span>了解更多
+        </a>
       </div>
-    </div>
-  </div>
-  <!-- todo 要修一下 -->
-  <!-- 本週排行榜 -->
-  <section class="bg-creamWhite py-12 overflow-x-hidden">
-    <div class="container ">
-      <ul class="pb-10">
-        <h1 class="text-xl">/ 本週 TOP 排行榜 /</h1>
-        <li>
-          <div class="swiper jsMySwiper w-full h-full overflow-visible ">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="w-[80px] h-[220px] overflow-hidden flex items-end">
-                  <p class="text-9xl "><i class="fa-solid fa-1"></i></p>
-                </div>
-                <a href="./frontendView/products.html"
-                  class="card w-[220px] h-[220px] rounded-sm  hover:scale-125  transition-all">
-                  <img class="" src="./imgs/temp/book1.webp" alt="book1" />
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <div class="w-[100px] h-[220px] overflow-hidden flex items-end">
-                  <p class="text-9xl"><i class="fa-solid fa-2"></i></p>
-                </div>
-                <a href="./frontendView/products.html"
-                  class="card w-[220px] h-[220px] rounded-sm hover:scale-125  transition-all">
-                  <img class="" src="./imgs/temp/book2.webp" alt="book2" />
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <div class="w-[100px] h-[220px] overflow-hidden flex items-end">
-                  <p class="text-9xl"><i class="fa-solid fa-3"></i></p>
-                </div>
-                <a href="./frontendView/products.html"
-                  class="card w-[220px] h-[220px] rounded-sm  hover:scale-125  transition-all">
-                  <img src="./imgs/temp/book3.webp" alt="book3" />
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <div class="w-[100px] h-[220px] overflow-hidden flex items-end">
-                  <p class="text-9xl"><i class="fa-solid fa-4"></i></p>
-                </div>
-                <a href="./frontendView/products.html"
-                  class="card w-[220px] h-[220px] rounded-sm  hover:scale-125 transition-all">
-                  <img src="./imgs/temp/book4.webp" alt="book4" />
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <div class="w-[100px] h-[220px] overflow-hidden flex items-end">
-                  <p class="text-9xl"><i class="fa-solid fa-5"></i></p>
-                </div>
-                <a href="./frontendView/products.html"
-                  class="card w-[280px] h-[220px] rounded-sm  hover:scale-125 transition-all">
-                  <img src="./imgs/temp/book5.webp" alt="book5" />
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <div class="w-[80px] h-[220px] overflow-hidden flex items-end">
-                  <p class="text-9xl "><i class="fa-solid fa-6"></i></p>
-                </div>
-                <a href="./frontendView/products.html"
-                  class="card w-[220px] h-[220px] rounded-sm  hover:scale-125  transition-all">
-                  <img class="" src="./imgs/temp/book1.webp" alt="book1" />
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <div class="w-[100px] h-[220px] overflow-hidden flex items-end">
-                  <p class="text-9xl"><i class="fa-solid fa-7"></i></p>
-                </div>
-                <a href="./frontendView/products.html"
-                  class="card w-[220px] h-[220px] rounded-sm hover:scale-125  transition-all">
-                  <img class="" src="./imgs/temp/book2.webp" alt="book2" />
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <div class="w-[100px] h-[220px] overflow-hidden flex items-end">
-                  <p class="text-9xl"><i class="fa-solid fa-8"></i></p>
-                </div>
-                <a href="./frontendView/products.html"
-                  class="card w-[220px] h-[220px] rounded-sm  hover:scale-125  transition-all">
-                  <img src="./imgs/temp/book3.webp" alt="book3" />
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <div class="w-[100px] h-[220px] overflow-hidden flex items-end">
-                  <p class="text-9xl"><i class="fa-solid fa-9"></i></p>
-                </div>
-                <a href="./frontendView/products.html"
-                  class="card w-[220px] h-[220px] rounded-sm  hover:scale-125 transition-all">
-                  <img src="./imgs/temp/book4.webp" alt="book4" />
-                </a>
-              </div>
-            </div>
-            <div class="swiper-button-next w-10  text-white hover:bg-secondary1"></div>
-            <div class="swiper-button-prev w-10  text-white hover:bg-secondary1"></div>
-            <div class="swiper-pagination"></div>
-          </div>
-        </li>
-      </ul>
-      <ul class="pb-10">
-        <h1 class="text-xl">/ 本月 TOP 排行榜 /</h1>
-        <li>
-          <div class="swiper jsMySwiper w-full h-full overflow-visible ">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="w-[80px] h-[220px] overflow-hidden flex items-end">
-                  <p class="text-9xl "><i class="fa-solid fa-1"></i></p>
-                </div>
-                <a href="./frontendView/products.html"
-                  class="card w-[220px] h-[220px] rounded-sm  hover:scale-125  transition-all">
-                  <img class="" src="./imgs/temp/book1.webp" alt="book1" />
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <div class="w-[100px] h-[220px] overflow-hidden flex items-end">
-                  <p class="text-9xl"><i class="fa-solid fa-2"></i></p>
-                </div>
-                <a href="./frontendView/products.html"
-                  class="card w-[220px] h-[220px] rounded-sm hover:scale-125  transition-all">
-                  <img class="" src="./imgs/temp/book2.webp" alt="book2" />
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <div class="w-[100px] h-[220px] overflow-hidden flex items-end">
-                  <p class="text-9xl"><i class="fa-solid fa-3"></i></p>
-                </div>
-                <a href="./frontendView/products.html"
-                  class="card w-[220px] h-[220px] rounded-sm  hover:scale-125  transition-all">
-                  <img src="./imgs/temp/book3.webp" alt="book3" />
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <div class="w-[100px] h-[220px] overflow-hidden flex items-end">
-                  <p class="text-9xl"><i class="fa-solid fa-4"></i></p>
-                </div>
-                <a href="./frontendView/products.html"
-                  class="card w-[220px] h-[220px] rounded-sm  hover:scale-125 transition-all">
-                  <img src="./imgs/temp/book4.webp" alt="book4" />
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <div class="w-[100px] h-[220px] overflow-hidden flex items-end">
-                  <p class="text-9xl"><i class="fa-solid fa-5"></i></p>
-                </div>
-                <a href="./frontendView/products.html"
-                  class="card w-[280px] h-[220px] rounded-sm  hover:scale-125 transition-all">
-                  <img src="./imgs/temp/book5.webp" alt="book5" />
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <div class="w-[80px] h-[220px] overflow-hidden flex items-end">
-                  <p class="text-9xl "><i class="fa-solid fa-6"></i></p>
-                </div>
-                <a href="./frontendView/products.html"
-                  class="card w-[220px] h-[220px] rounded-sm  hover:scale-125  transition-all">
-                  <img class="" src="./imgs/temp/book1.webp" alt="book1" />
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <div class="w-[100px] h-[220px] overflow-hidden flex items-end">
-                  <p class="text-9xl"><i class="fa-solid fa-7"></i></p>
-                </div>
-                <a href="./frontendView/products.html"
-                  class="card w-[220px] h-[220px] rounded-sm hover:scale-125  transition-all">
-                  <img class="" src="./imgs/temp/book2.webp" alt="book2" />
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <div class="w-[100px] h-[220px] overflow-hidden flex items-end">
-                  <p class="text-9xl"><i class="fa-solid fa-8"></i></p>
-                </div>
-                <a href="./frontendView/products.html"
-                  class="card w-[220px] h-[220px] rounded-sm  hover:scale-125  transition-all">
-                  <img src="./imgs/temp/book3.webp" alt="book3" />
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <div class="w-[100px] h-[220px] overflow-hidden flex items-end">
-                  <p class="text-9xl"><i class="fa-solid fa-9"></i></p>
-                </div>
-                <a href="./frontendView/products.html"
-                  class="card w-[220px] h-[220px] rounded-sm  hover:scale-125 transition-all">
-                  <img src="./imgs/temp/book4.webp" alt="book4" />
-                </a>
-              </div>
-            </div>
-            <div class="swiper-button-next w-10  text-white hover:bg-secondary1"></div>
-            <div class="swiper-button-prev w-10  text-white hover:bg-secondary1"></div>
-            <div class="swiper-pagination"></div>
-          </div>
-
-        </li>
-      </ul>
     </div>
   </section>
 
-
+  <!-- 本週排行榜 -->
+  <section class="bg-creamWhite py-12 overflow-x-hidden">
+    <div class="container ">
+      <!-- <p class="text-xl pb-6">/ 本週 TOP 排行榜 /</p>
+      <div class="swiper jsMySwiper w-full h-full overflow-visible ">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="w-[80px] h-[220px] overflow-hidden flex items-end">
+              <p class="text-9xl "><i class="fa-solid fa-1"></i></p>
+            </div>
+            <a href="./frontendView/products.html"
+              class="card w-[220px] h-[220px] rounded-sm  hover:scale-125  transition-all">
+              <img class="" src="./imgs/temp/book1.webp" alt="book1" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <div class="w-[100px] h-[220px] overflow-hidden flex items-end">
+              <p class="text-9xl"><i class="fa-solid fa-2"></i></p>
+            </div>
+            <a href="./frontendView/products.html"
+              class="card w-[220px] h-[220px] rounded-sm hover:scale-125  transition-all">
+              <img class="" src="./imgs/temp/book2.webp" alt="book2" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <div class="w-[100px] h-[220px] overflow-hidden flex items-end">
+              <p class="text-9xl"><i class="fa-solid fa-3"></i></p>
+            </div>
+            <a href="./frontendView/products.html"
+              class="card w-[220px] h-[220px] rounded-sm  hover:scale-125  transition-all">
+              <img src="./imgs/temp/book3.webp" alt="book3" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <div class="w-[100px] h-[220px] overflow-hidden flex items-end">
+              <p class="text-9xl"><i class="fa-solid fa-4"></i></p>
+            </div>
+            <a href="./frontendView/products.html"
+              class="card w-[220px] h-[220px] rounded-sm  hover:scale-125 transition-all">
+              <img src="./imgs/temp/book4.webp" alt="book4" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <div class="w-[100px] h-[220px] overflow-hidden flex items-end">
+              <p class="text-9xl"><i class="fa-solid fa-5"></i></p>
+            </div>
+            <a href="./frontendView/products.html"
+              class="card w-[280px] h-[220px] rounded-sm  hover:scale-125 transition-all">
+              <img src="./imgs/temp/book5.webp" alt="book5" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <div class="w-[80px] h-[220px] overflow-hidden flex items-end">
+              <p class="text-9xl "><i class="fa-solid fa-6"></i></p>
+            </div>
+            <a href="./frontendView/products.html"
+              class="card w-[220px] h-[220px] rounded-sm  hover:scale-125  transition-all">
+              <img class="" src="./imgs/temp/book1.webp" alt="book1" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <div class="w-[100px] h-[220px] overflow-hidden flex items-end">
+              <p class="text-9xl"><i class="fa-solid fa-7"></i></p>
+            </div>
+            <a href="./frontendView/products.html"
+              class="card w-[220px] h-[220px] rounded-sm hover:scale-125  transition-all">
+              <img class="" src="./imgs/temp/book2.webp" alt="book2" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <div class="w-[100px] h-[220px] overflow-hidden flex items-end">
+              <p class="text-9xl"><i class="fa-solid fa-8"></i></p>
+            </div>
+            <a href="./frontendView/products.html"
+              class="card w-[220px] h-[220px] rounded-sm  hover:scale-125  transition-all">
+              <img src="./imgs/temp/book3.webp" alt="book3" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <div class="w-[100px] h-[220px] overflow-hidden flex items-end">
+              <p class="text-9xl"><i class="fa-solid fa-9"></i></p>
+            </div>
+            <a href="./frontendView/products.html"
+              class="card w-[220px] h-[220px] rounded-sm  hover:scale-125 transition-all">
+              <img src="./imgs/temp/book4.webp" alt="book4" />
+            </a>
+          </div>
+        </div>
+        <div class="swiper-button-next w-10  text-white hover:bg-secondary1"></div>
+        <div class="swiper-button-prev w-10  text-white hover:bg-secondary1"></div>
+        <div class="swiper-pagination"></div>
+      </div> -->
+      <p class="text-xl pb-6">/ 本月 TOP 排行榜 /</p>
+      <div class="swiper jsMySwiper w-full h-full overflow-visible ">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="w-[80px] h-[220px] overflow-hidden flex items-end">
+              <p class="text-9xl "><i class="fa-solid fa-1"></i></p>
+            </div>
+            <a href="./frontendView/products.html"
+              class="card w-[220px] h-[220px] rounded-sm  hover:scale-125  transition-all">
+              <img class="" src="./imgs/temp/book1.webp" alt="book1" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <div class="w-[100px] h-[220px] overflow-hidden flex items-end">
+              <p class="text-9xl"><i class="fa-solid fa-2"></i></p>
+            </div>
+            <a href="./frontendView/products.html"
+              class="card w-[220px] h-[220px] rounded-sm hover:scale-125  transition-all">
+              <img class="" src="./imgs/temp/book2.webp" alt="book2" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <div class="w-[100px] h-[220px] overflow-hidden flex items-end">
+              <p class="text-9xl"><i class="fa-solid fa-3"></i></p>
+            </div>
+            <a href="./frontendView/products.html"
+              class="card w-[220px] h-[220px] rounded-sm  hover:scale-125  transition-all">
+              <img src="./imgs/temp/book3.webp" alt="book3" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <div class="w-[100px] h-[220px] overflow-hidden flex items-end">
+              <p class="text-9xl"><i class="fa-solid fa-4"></i></p>
+            </div>
+            <a href="./frontendView/products.html"
+              class="card w-[220px] h-[220px] rounded-sm  hover:scale-125 transition-all">
+              <img src="./imgs/temp/book4.webp" alt="book4" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <div class="w-[100px] h-[220px] overflow-hidden flex items-end">
+              <p class="text-9xl"><i class="fa-solid fa-5"></i></p>
+            </div>
+            <a href="./frontendView/products.html"
+              class="card w-[280px] h-[220px] rounded-sm  hover:scale-125 transition-all">
+              <img src="./imgs/temp/book5.webp" alt="book5" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <div class="w-[80px] h-[220px] overflow-hidden flex items-end">
+              <p class="text-9xl "><i class="fa-solid fa-6"></i></p>
+            </div>
+            <a href="./frontendView/products.html"
+              class="card w-[220px] h-[220px] rounded-sm  hover:scale-125  transition-all">
+              <img class="" src="./imgs/temp/book1.webp" alt="book1" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <div class="w-[100px] h-[220px] overflow-hidden flex items-end">
+              <p class="text-9xl"><i class="fa-solid fa-7"></i></p>
+            </div>
+            <a href="./frontendView/products.html"
+              class="card w-[220px] h-[220px] rounded-sm hover:scale-125  transition-all">
+              <img class="" src="./imgs/temp/book2.webp" alt="book2" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <div class="w-[100px] h-[220px] overflow-hidden flex items-end">
+              <p class="text-9xl"><i class="fa-solid fa-8"></i></p>
+            </div>
+            <a href="./frontendView/products.html"
+              class="card w-[220px] h-[220px] rounded-sm  hover:scale-125  transition-all">
+              <img src="./imgs/temp/book3.webp" alt="book3" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <div class="w-[100px] h-[220px] overflow-hidden flex items-end">
+              <p class="text-9xl"><i class="fa-solid fa-9"></i></p>
+            </div>
+            <a href="./frontendView/products.html"
+              class="card w-[220px] h-[220px] rounded-sm  hover:scale-125 transition-all">
+              <img src="./imgs/temp/book4.webp" alt="book4" />
+            </a>
+          </div>
+        </div>
+        <div class="swiper-button-next w-10  text-white hover:bg-secondary1"></div>
+        <div class="swiper-button-prev w-10  text-white hover:bg-secondary1"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
 
   <!-- 書籍介紹 -->
   <section class=" py-12 overflow-x-hidden">
@@ -287,251 +286,233 @@
         </li>
       </ul> -->
       <!-- 現代文學 -->
-      <ul role="list">
-        <li class="flex items-center pb-2">
-          <p class="text-xl pr-2 " data-aos="fade-up" data-aos-duration="1000"> 現代文學</p>
-          <div class="group flex">
-            <span
-              class="hidden group-hover:block group-hover:bg-sky-50 group-hover:rounded group-hover:delay-150">探索全部</span>
-            <span class="material-icons  text-sm group-hover:bg-sky-50 group-hover:rounded">chevron_right</span>
+      <div class="flex items-center pb-2">
+        <p class="text-xl pr-2 " data-aos="fade-up" data-aos-duration="1000"> 現代文學</p>
+        <div class="group flex">
+          <span
+            class="hidden group-hover:block group-hover:bg-sky-50 group-hover:rounded group-hover:delay-150">探索全部</span>
+          <span class="material-icons  text-sm group-hover:bg-sky-50 group-hover:rounded">chevron_right</span>
+        </div>
+      </div>
+      <div class="swiper jsMySwiper w-full h-full overflow-visible pb-10">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide text-center">
+            <a href="./frontendView/products.html"
+              class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
+              <img class="" src="./imgs/temp/book1.webp" alt="book1" />
+            </a>
           </div>
-        </li>
-      </ul>
-      <ul class="pb-10 ">
-        <li>
-          <div class="swiper jsMySwiper w-full h-full overflow-visible ">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide text-center">
-                <a href="./frontendView/products.html"
-                  class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
-                  <img class="" src="./imgs/temp/book1.webp" alt="book1" />
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a href="./frontendView/products.html"
-                  class="card  w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
-                  <img class="" src="./imgs/temp/book2.webp" alt="book2" />
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a href="./frontendView/products.html"
-                  class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
-                  <img src="./imgs/temp/book3.webp" alt="book3" />
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a href="./frontendView/products.html"
-                  class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
-                  <img src="./imgs/temp/book4.webp" alt="book4" />
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a href="./frontendView/products.html"
-                  class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
-                  <img src="./imgs/temp/book5.webp" alt="book5" />
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a href="./frontendView/products.html"
-                  class="card  w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
-                  <img class="" src="./imgs/temp/book2.webp" alt="book2" />
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a href="./frontendView/products.html"
-                  class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
-                  <img src="./imgs/temp/book3.webp" alt="book3" />
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a href="./frontendView/products.html"
-                  class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
-                  <img src="./imgs/temp/book4.webp" alt="book4" />
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a href="./frontendView/products.html"
-                  class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
-                  <img src="./imgs/temp/book5.webp" alt="book5" />
-                </a>
-              </div>
-            </div>
-            <div class="swiper-button-next w-10  text-white hover:bg-secondary1"></div>
-            <div class="swiper-button-prev w-10  text-white hover:bg-secondary1"></div>
-            <div class="swiper-pagination"></div>
+          <div class="swiper-slide">
+            <a href="./frontendView/products.html"
+              class="card  w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
+              <img class="" src="./imgs/temp/book2.webp" alt="book2" />
+            </a>
           </div>
-        </li>
-      </ul>
+          <div class="swiper-slide">
+            <a href="./frontendView/products.html"
+              class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
+              <img src="./imgs/temp/book3.webp" alt="book3" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="./frontendView/products.html"
+              class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
+              <img src="./imgs/temp/book4.webp" alt="book4" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="./frontendView/products.html"
+              class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
+              <img src="./imgs/temp/book5.webp" alt="book5" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="./frontendView/products.html"
+              class="card  w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
+              <img class="" src="./imgs/temp/book2.webp" alt="book2" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="./frontendView/products.html"
+              class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
+              <img src="./imgs/temp/book3.webp" alt="book3" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="./frontendView/products.html"
+              class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
+              <img src="./imgs/temp/book4.webp" alt="book4" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="./frontendView/products.html"
+              class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
+              <img src="./imgs/temp/book5.webp" alt="book5" />
+            </a>
+          </div>
+        </div>
+        <div class="swiper-button-next w-10  text-white hover:bg-secondary1"></div>
+        <div class="swiper-button-prev w-10  text-white hover:bg-secondary1"></div>
+        <div class="swiper-pagination"></div>
+      </div>
       <!-- 心理勵志 -->
-      <ul role="list">
-        <li class="flex items-center pb-2">
-          <p class="text-xl pr-2 " data-aos="fade-up" data-aos-duration="1000">心理勵志</p>
-          <div class="group flex">
-            <span
-              class="hidden group-hover:block group-hover:bg-sky-50 group-hover:rounded group-hover:delay-150">探索全部</span>
-            <span class="material-icons  text-sm group-hover:bg-sky-50 group-hover:rounded">chevron_right</span>
+      <div class="flex items-center pb-2">
+        <p class="text-xl pr-2 " data-aos="fade-up" data-aos-duration="1000">心理勵志</p>
+        <div class="group flex">
+          <span
+            class="hidden group-hover:block group-hover:bg-sky-50 group-hover:rounded group-hover:delay-150">探索全部</span>
+          <span class="material-icons  text-sm group-hover:bg-sky-50 group-hover:rounded">chevron_right</span>
+        </div>
+      </div>
+      <div class="swiper jsMySwiper w-100 h-100 overflow-visible pb-10">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide text-center">
+            <a href="./frontendView/products.html"
+              class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
+              <img class="" src="./imgs/temp/book1.webp" alt="book1" />
+            </a>
           </div>
-        </li>
-      </ul>
-      <ul class="pb-10">
-        <li>
-          <div class="swiper jsMySwiper w-100 h-100 overflow-visible ">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide text-center">
-                <a href="./frontendView/products.html"
-                  class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
-                  <img class="" src="./imgs/temp/book1.webp" alt="book1" />
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a href="./frontendView/products.html"
-                  class="card  w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
-                  <img class="" src="./imgs/temp/book2.webp" alt="book2" />
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <div class="swiper-slide text-center">
-                  <a href="./frontendView/products.html"
-                    class="card shadow-xl  w-[280px] h-[280px] hover:scale-125 transition-all relative">
-                    <img class="" src="./imgs/temp/book2.webp" alt="book1" />
-                    <div class="absolute text-sm  w-[35px] h-[40px] bg-primary2  ml-2 mt-0">
-                      <p class="text-center">TOP</p>
-                      <p class="text-center"><i class="fa-solid fa-2"></i></p>
-                    </div>
-                  </a>
+          <div class="swiper-slide">
+            <a href="./frontendView/products.html"
+              class="card  w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
+              <img class="" src="./imgs/temp/book2.webp" alt="book2" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide text-center">
+              <a href="./frontendView/products.html"
+                class="card shadow-xl  w-[280px] h-[280px] hover:scale-125 transition-all relative">
+                <img class="" src="./imgs/temp/book2.webp" alt="book1" />
+                <div class="absolute text-sm  w-[35px] h-[40px] bg-primary2  ml-2 mt-0">
+                  <p class="text-center">TOP</p>
+                  <p class="text-center"><i class="fa-solid fa-2"></i></p>
                 </div>
-              </div>
-              <div class="swiper-slide">
-                <a href="./frontendView/products.html"
-                  class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
-                  <img src="./imgs/temp/book4.webp" alt="book4" />
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <div class="swiper-slide text-center">
-                  <a href="./frontendView/products.html"
-                    class="card shadow-xl  w-[280px] h-[280px] hover:scale-125 transition-all relative">
-                    <img class="" src="./imgs/temp/book5.webp" alt="book5" />
-                    <div class="absolute text-sm  w-[35px] h-[40px] bg-primary2  ml-2 mt-0">
-                      <p class="text-center">TOP</p>
-                      <p class="text-center"><i class="fa-solid fa-3"></i></p>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <a href="./frontendView/products.html"
-                  class="card  w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
-                  <img class="" src="./imgs/temp/book2.webp" alt="book2" />
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a href="./frontendView/products.html"
-                  class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
-                  <img src="./imgs/temp/book3.webp" alt="book3" />
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a href="./frontendView/products.html"
-                  class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
-                  <img src="./imgs/temp/book4.webp" alt="book4" />
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a href="./frontendView/products.html"
-                  class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
-                  <img src="./imgs/temp/book5.webp" alt="book5" />
-                </a>
-              </div>
+              </a>
             </div>
-            <div class="swiper-button-next w-10  text-white hover:bg-secondary1"></div>
-            <div class="swiper-button-prev w-10  text-white hover:bg-secondary1"></div>
-            <div class="swiper-pagination"></div>
           </div>
-        </li>
-      </ul>
+          <div class="swiper-slide">
+            <a href="./frontendView/products.html"
+              class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
+              <img src="./imgs/temp/book4.webp" alt="book4" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide text-center">
+              <a href="./frontendView/products.html"
+                class="card shadow-xl  w-[280px] h-[280px] hover:scale-125 transition-all relative">
+                <img class="" src="./imgs/temp/book5.webp" alt="book5" />
+                <div class="absolute text-sm  w-[35px] h-[40px] bg-primary2  ml-2 mt-0">
+                  <p class="text-center">TOP</p>
+                  <p class="text-center"><i class="fa-solid fa-3"></i></p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <a href="./frontendView/products.html"
+              class="card  w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
+              <img class="" src="./imgs/temp/book2.webp" alt="book2" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="./frontendView/products.html"
+              class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
+              <img src="./imgs/temp/book3.webp" alt="book3" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="./frontendView/products.html"
+              class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
+              <img src="./imgs/temp/book4.webp" alt="book4" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="./frontendView/products.html"
+              class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
+              <img src="./imgs/temp/book5.webp" alt="book5" />
+            </a>
+          </div>
+        </div>
+        <div class="swiper-button-next w-10  text-white hover:bg-secondary1"></div>
+        <div class="swiper-button-prev w-10  text-white hover:bg-secondary1"></div>
+        <div class="swiper-pagination"></div>
+      </div>
       <!-- 電腦資訊 -->
-      <ul role="list">
-        <li class="flex items-center  pb-2">
-          <p class="text-xl pr-2 " data-aos="fade-up" data-aos-duration="1000">電腦資訊</p>
-          <div class="group flex">
-            <span
-              class="hidden group-hover:block group-hover:bg-sky-50 group-hover:rounded group-hover:delay-150">探索全部</span>
-            <span class="material-icons  text-sm group-hover:bg-sky-50 group-hover:rounded">chevron_right</span>
-          </div>
-        </li>
-      </ul>
-      <ul class="pb-10">
-        <li>
-          <div class="swiper jsMySwiper w-100 h-100 overflow-visible ">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide text-center">
-                <div class="swiper-slide text-center">
-                  <a href="./frontendView/products.html"
-                    class="card shadow-xl  w-[280px] h-[280px] hover:scale-125 transition-all relative">
-                    <img class="" src="./imgs/temp/book1.webp" alt="book1" />
-                    <div class="absolute text-sm  w-[35px] h-[40px] bg-primary2  ml-2 mt-0">
-                      <p class="text-center">TOP</p>
-                      <p class="text-center"><i class="fa-solid fa-1"></i></p>
-                    </div>
-                  </a>
+      <div class="flex items-center  pb-2">
+        <p class="text-xl pr-2 " data-aos="fade-up" data-aos-duration="1000">電腦資訊</p>
+        <div class="group flex">
+          <span
+            class="hidden group-hover:block group-hover:bg-sky-50 group-hover:rounded group-hover:delay-150">探索全部</span>
+          <span class="material-icons  text-sm group-hover:bg-sky-50 group-hover:rounded">chevron_right</span>
+        </div>
+      </div>
+      <div class="swiper jsMySwiper w-100 h-100 overflow-visible pb-10">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide text-center">
+            <div class="swiper-slide text-center">
+              <a href="./frontendView/products.html"
+                class="card shadow-xl  w-[280px] h-[280px] hover:scale-125 transition-all relative">
+                <img class="" src="./imgs/temp/book1.webp" alt="book1" />
+                <div class="absolute text-sm  w-[35px] h-[40px] bg-primary2  ml-2 mt-0">
+                  <p class="text-center">TOP</p>
+                  <p class="text-center"><i class="fa-solid fa-1"></i></p>
                 </div>
-              </div>
-              <div class="swiper-slide">
-                <a href="./frontendView/products.html"
-                  class="card  w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
-                  <img class="" src="./imgs/temp/book2.webp" alt="book2" />
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a href="./frontendView/products.html"
-                  class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
-                  <img src="./imgs/temp/book3.webp" alt="book3" />
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a href="./frontendView/products.html"
-                  class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
-                  <img src="./imgs/temp/book4.webp" alt="book4" />
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a href="./frontendView/products.html"
-                  class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
-                  <img src="./imgs/temp/book5.webp" alt="book5" />
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a href="./frontendView/products.html"
-                  class="card  w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
-                  <img class="" src="./imgs/temp/book2.webp" alt="book2" />
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a href="./frontendView/products.html"
-                  class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
-                  <img src="./imgs/temp/book3.webp" alt="book3" />
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a href="./frontendView/products.html"
-                  class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
-                  <img src="./imgs/temp/book4.webp" alt="book4" />
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a href="./frontendView/products.html"
-                  class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
-                  <img src="./imgs/temp/book5.webp" alt="book5" />
-                </a>
-              </div>
+              </a>
             </div>
-            <div class="swiper-button-next w-10  text-white hover:bg-secondary1"></div>
-            <div class="swiper-button-prev w-10  text-white hover:bg-secondary1"></div>
-            <div class="swiper-pagination"></div>
           </div>
-        </li>
-      </ul>
+          <div class="swiper-slide">
+            <a href="./frontendView/products.html"
+              class="card  w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
+              <img class="" src="./imgs/temp/book2.webp" alt="book2" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="./frontendView/products.html"
+              class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
+              <img src="./imgs/temp/book3.webp" alt="book3" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="./frontendView/products.html"
+              class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
+              <img src="./imgs/temp/book4.webp" alt="book4" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="./frontendView/products.html"
+              class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
+              <img src="./imgs/temp/book5.webp" alt="book5" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="./frontendView/products.html"
+              class="card  w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
+              <img class="" src="./imgs/temp/book2.webp" alt="book2" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="./frontendView/products.html"
+              class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
+              <img src="./imgs/temp/book3.webp" alt="book3" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="./frontendView/products.html"
+              class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
+              <img src="./imgs/temp/book4.webp" alt="book4" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="./frontendView/products.html"
+              class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
+              <img src="./imgs/temp/book5.webp" alt="book5" />
+            </a>
+          </div>
+        </div>
+        <div class="swiper-button-next w-10  text-white hover:bg-secondary1"></div>
+        <div class="swiper-button-prev w-10  text-white hover:bg-secondary1"></div>
+        <div class="swiper-pagination"></div>
+      </div>
     </div>
   </section>
 
@@ -542,8 +523,6 @@
       <p class="text-xl">Hazel<span class="text-sm">，請繼續閱讀 </span></p>
     </div>
   </section>
-
-
 
   <!-- 最新出版書籍 -->
   <section class="bg-creamWhite2 py-12 section5">
@@ -659,7 +638,6 @@
     </ul>
   </section>
 
-
   <!-- 書籍介紹 2-->
   <section class=" py-12 overflow-x-hidden">
     <div class="content-center container">
@@ -673,251 +651,233 @@
         </li>
       </ul> -->
       <!-- 世界旅遊 -->
-      <ul role="list">
-        <li class="flex items-center pb-2">
-          <p class="text-xl pr-2 " data-aos="fade-up" data-aos-duration="1000">世界旅遊</p>
-          <div class="group flex">
-            <span
-              class="hidden group-hover:block group-hover:bg-sky-50 group-hover:rounded group-hover:delay-150">探索全部</span>
-            <span class="material-icons  text-sm group-hover:bg-sky-50 group-hover:rounded">chevron_right</span>
+      <div class="flex items-center pb-2">
+        <p class="text-xl pr-2 " data-aos="fade-up" data-aos-duration="1000">世界旅遊</p>
+        <div class="group flex">
+          <span
+            class="hidden group-hover:block group-hover:bg-sky-50 group-hover:rounded group-hover:delay-150">探索全部</span>
+          <span class="material-icons  text-sm group-hover:bg-sky-50 group-hover:rounded">chevron_right</span>
+        </div>
+      </div>
+      <div class="swiper jsMySwiper w-full h-full overflow-visible pb-10">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide text-center">
+            <a href="./frontendView/products.html"
+              class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
+              <img class="" src="./imgs/temp/book1.webp" alt="book1" />
+            </a>
           </div>
-        </li>
-      </ul>
-      <ul class="pb-10 ">
-        <li>
-          <div class="swiper jsMySwiper w-full h-full overflow-visible ">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide text-center">
-                <a href="./frontendView/products.html"
-                  class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
-                  <img class="" src="./imgs/temp/book1.webp" alt="book1" />
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a href="./frontendView/products.html"
-                  class="card  w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
-                  <img class="" src="./imgs/temp/book2.webp" alt="book2" />
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a href="./frontendView/products.html"
-                  class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
-                  <img src="./imgs/temp/book3.webp" alt="book3" />
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a href="./frontendView/products.html"
-                  class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
-                  <img src="./imgs/temp/book4.webp" alt="book4" />
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a href="./frontendView/products.html"
-                  class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
-                  <img src="./imgs/temp/book5.webp" alt="book5" />
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a href="./frontendView/products.html"
-                  class="card  w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
-                  <img class="" src="./imgs/temp/book2.webp" alt="book2" />
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a href="./frontendView/products.html"
-                  class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
-                  <img src="./imgs/temp/book3.webp" alt="book3" />
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a href="./frontendView/products.html"
-                  class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
-                  <img src="./imgs/temp/book4.webp" alt="book4" />
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a href="./frontendView/products.html"
-                  class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
-                  <img src="./imgs/temp/book5.webp" alt="book5" />
-                </a>
-              </div>
-            </div>
-            <div class="swiper-button-next w-10  text-white hover:bg-secondary1"></div>
-            <div class="swiper-button-prev w-10  text-white hover:bg-secondary1"></div>
-            <div class="swiper-pagination"></div>
+          <div class="swiper-slide">
+            <a href="./frontendView/products.html"
+              class="card  w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
+              <img class="" src="./imgs/temp/book2.webp" alt="book2" />
+            </a>
           </div>
-        </li>
-      </ul>
+          <div class="swiper-slide">
+            <a href="./frontendView/products.html"
+              class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
+              <img src="./imgs/temp/book3.webp" alt="book3" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="./frontendView/products.html"
+              class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
+              <img src="./imgs/temp/book4.webp" alt="book4" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="./frontendView/products.html"
+              class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
+              <img src="./imgs/temp/book5.webp" alt="book5" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="./frontendView/products.html"
+              class="card  w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
+              <img class="" src="./imgs/temp/book2.webp" alt="book2" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="./frontendView/products.html"
+              class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
+              <img src="./imgs/temp/book3.webp" alt="book3" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="./frontendView/products.html"
+              class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
+              <img src="./imgs/temp/book4.webp" alt="book4" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="./frontendView/products.html"
+              class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
+              <img src="./imgs/temp/book5.webp" alt="book5" />
+            </a>
+          </div>
+        </div>
+        <div class="swiper-button-next w-10  text-white hover:bg-secondary1"></div>
+        <div class="swiper-button-prev w-10  text-white hover:bg-secondary1"></div>
+        <div class="swiper-pagination"></div>
+      </div>
       <!-- 居家料理 -->
-      <ul role="list">
-        <li class="flex items-center pb-2">
-          <p class="text-xl pr-2 " data-aos="fade-up" data-aos-duration="1000">居家料理</p>
-          <div class="group flex">
-            <span
-              class="hidden group-hover:block group-hover:bg-sky-50 group-hover:rounded group-hover:delay-150">探索全部</span>
-            <span class="material-icons  text-sm group-hover:bg-sky-50 group-hover:rounded">chevron_right</span>
+      <div class="flex items-center pb-2">
+        <p class="text-xl pr-2 " data-aos="fade-up" data-aos-duration="1000">居家料理</p>
+        <div class="group flex">
+          <span
+            class="hidden group-hover:block group-hover:bg-sky-50 group-hover:rounded group-hover:delay-150">探索全部</span>
+          <span class="material-icons  text-sm group-hover:bg-sky-50 group-hover:rounded">chevron_right</span>
+        </div>
+      </div>
+      <div class="swiper jsMySwiper w-100 h-100 overflow-visible pb-10">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide text-center">
+            <a href="./frontendView/products.html"
+              class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
+              <img class="" src="./imgs/temp/book1.webp" alt="book1" />
+            </a>
           </div>
-        </li>
-      </ul>
-      <ul class="pb-10">
-        <li>
-          <div class="swiper jsMySwiper w-100 h-100 overflow-visible ">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide text-center">
-                <a href="./frontendView/products.html"
-                  class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
-                  <img class="" src="./imgs/temp/book1.webp" alt="book1" />
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a href="./frontendView/products.html"
-                  class="card  w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
-                  <img class="" src="./imgs/temp/book2.webp" alt="book2" />
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <div class="swiper-slide text-center">
-                  <a href="./frontendView/products.html"
-                    class="card shadow-xl  w-[280px] h-[280px] hover:scale-125 transition-all relative">
-                    <img class="" src="./imgs/temp/book2.webp" alt="book1" />
-                    <div class="absolute text-sm  w-[35px] h-[40px] bg-primary2  ml-2 mt-0">
-                      <p class="text-center">TOP</p>
-                      <p class="text-center"><i class="fa-solid fa-2"></i></p>
-                    </div>
-                  </a>
+          <div class="swiper-slide">
+            <a href="./frontendView/products.html"
+              class="card  w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
+              <img class="" src="./imgs/temp/book2.webp" alt="book2" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide text-center">
+              <a href="./frontendView/products.html"
+                class="card shadow-xl  w-[280px] h-[280px] hover:scale-125 transition-all relative">
+                <img class="" src="./imgs/temp/book2.webp" alt="book1" />
+                <div class="absolute text-sm  w-[35px] h-[40px] bg-primary2  ml-2 mt-0">
+                  <p class="text-center">TOP</p>
+                  <p class="text-center"><i class="fa-solid fa-2"></i></p>
                 </div>
-              </div>
-              <div class="swiper-slide">
-                <a href="./frontendView/products.html"
-                  class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
-                  <img src="./imgs/temp/book4.webp" alt="book4" />
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <div class="swiper-slide text-center">
-                  <a href="./frontendView/products.html"
-                    class="card shadow-xl  w-[280px] h-[280px] hover:scale-125 transition-all relative">
-                    <img class="" src="./imgs/temp/book5.webp" alt="book5" />
-                    <div class="absolute text-sm  w-[35px] h-[40px] bg-primary2  ml-2 mt-0">
-                      <p class="text-center">TOP</p>
-                      <p class="text-center"><i class="fa-solid fa-3"></i></p>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <a href="./frontendView/products.html"
-                  class="card  w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
-                  <img class="" src="./imgs/temp/book2.webp" alt="book2" />
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a href="./frontendView/products.html"
-                  class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
-                  <img src="./imgs/temp/book3.webp" alt="book3" />
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a href="./frontendView/products.html"
-                  class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
-                  <img src="./imgs/temp/book4.webp" alt="book4" />
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a href="./frontendView/products.html"
-                  class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
-                  <img src="./imgs/temp/book5.webp" alt="book5" />
-                </a>
-              </div>
+              </a>
             </div>
-            <div class="swiper-button-next w-10  text-white hover:bg-secondary1"></div>
-            <div class="swiper-button-prev w-10  text-white hover:bg-secondary1"></div>
-            <div class="swiper-pagination"></div>
           </div>
-        </li>
-      </ul>
+          <div class="swiper-slide">
+            <a href="./frontendView/products.html"
+              class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
+              <img src="./imgs/temp/book4.webp" alt="book4" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide text-center">
+              <a href="./frontendView/products.html"
+                class="card shadow-xl  w-[280px] h-[280px] hover:scale-125 transition-all relative">
+                <img class="" src="./imgs/temp/book5.webp" alt="book5" />
+                <div class="absolute text-sm  w-[35px] h-[40px] bg-primary2  ml-2 mt-0">
+                  <p class="text-center">TOP</p>
+                  <p class="text-center"><i class="fa-solid fa-3"></i></p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <a href="./frontendView/products.html"
+              class="card  w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
+              <img class="" src="./imgs/temp/book2.webp" alt="book2" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="./frontendView/products.html"
+              class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
+              <img src="./imgs/temp/book3.webp" alt="book3" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="./frontendView/products.html"
+              class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
+              <img src="./imgs/temp/book4.webp" alt="book4" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="./frontendView/products.html"
+              class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
+              <img src="./imgs/temp/book5.webp" alt="book5" />
+            </a>
+          </div>
+        </div>
+        <div class="swiper-button-next w-10  text-white hover:bg-secondary1"></div>
+        <div class="swiper-button-prev w-10  text-white hover:bg-secondary1"></div>
+        <div class="swiper-pagination"></div>
+      </div>
       <!-- 藝術設計 -->
-      <ul role="list">
-        <li class="flex items-center  pb-2">
-          <p class="text-xl pr-2 " data-aos="fade-up" data-aos-duration="1000">藝術設計</p>
-          <div class="group flex">
-            <span
-              class="hidden group-hover:block group-hover:bg-sky-50 group-hover:rounded group-hover:delay-150">探索全部</span>
-            <span class="material-icons  text-sm group-hover:bg-sky-50 group-hover:rounded">chevron_right</span>
-          </div>
-        </li>
-      </ul>
-      <ul class="pb-10">
-        <li>
-          <div class="swiper jsMySwiper w-100 h-100 overflow-visible ">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide text-center">
-                <div class="swiper-slide text-center">
-                  <a href="./frontendView/products.html"
-                    class="card shadow-xl  w-[280px] h-[280px] hover:scale-125 transition-all relative">
-                    <img class="" src="./imgs/temp/book1.webp" alt="book1" />
-                    <div class="absolute text-sm  w-[35px] h-[40px] bg-primary2  ml-2 mt-0">
-                      <p class="text-center">TOP</p>
-                      <p class="text-center"><i class="fa-solid fa-1"></i></p>
-                    </div>
-                  </a>
+      <div class="flex items-center  pb-2">
+        <p class="text-xl pr-2 " data-aos="fade-up" data-aos-duration="1000">藝術設計</p>
+        <div class="group flex">
+          <span
+            class="hidden group-hover:block group-hover:bg-sky-50 group-hover:rounded group-hover:delay-150">探索全部</span>
+          <span class="material-icons  text-sm group-hover:bg-sky-50 group-hover:rounded">chevron_right</span>
+        </div>
+      </div>
+      <div class="swiper jsMySwiper w-100 h-100 overflow-visible pb-10">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide text-center">
+            <div class="swiper-slide text-center">
+              <a href="./frontendView/products.html"
+                class="card shadow-xl  w-[280px] h-[280px] hover:scale-125 transition-all relative">
+                <img class="" src="./imgs/temp/book1.webp" alt="book1" />
+                <div class="absolute text-sm  w-[35px] h-[40px] bg-primary2  ml-2 mt-0">
+                  <p class="text-center">TOP</p>
+                  <p class="text-center"><i class="fa-solid fa-1"></i></p>
                 </div>
-              </div>
-              <div class="swiper-slide">
-                <a href="./frontendView/products.html"
-                  class="card  w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
-                  <img class="" src="./imgs/temp/book2.webp" alt="book2" />
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a href="./frontendView/products.html"
-                  class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
-                  <img src="./imgs/temp/book3.webp" alt="book3" />
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a href="./frontendView/products.html"
-                  class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
-                  <img src="./imgs/temp/book4.webp" alt="book4" />
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a href="./frontendView/products.html"
-                  class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
-                  <img src="./imgs/temp/book5.webp" alt="book5" />
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a href="./frontendView/products.html"
-                  class="card  w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
-                  <img class="" src="./imgs/temp/book2.webp" alt="book2" />
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a href="./frontendView/products.html"
-                  class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
-                  <img src="./imgs/temp/book3.webp" alt="book3" />
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a href="./frontendView/products.html"
-                  class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
-                  <img src="./imgs/temp/book4.webp" alt="book4" />
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a href="./frontendView/products.html"
-                  class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
-                  <img src="./imgs/temp/book5.webp" alt="book5" />
-                </a>
-              </div>
+              </a>
             </div>
-            <div class="swiper-button-next w-10  text-white hover:bg-secondary1"></div>
-            <div class="swiper-button-prev w-10  text-white hover:bg-secondary1"></div>
-            <div class="swiper-pagination"></div>
           </div>
-        </li>
-      </ul>
+          <div class="swiper-slide">
+            <a href="./frontendView/products.html"
+              class="card  w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
+              <img class="" src="./imgs/temp/book2.webp" alt="book2" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="./frontendView/products.html"
+              class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
+              <img src="./imgs/temp/book3.webp" alt="book3" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="./frontendView/products.html"
+              class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
+              <img src="./imgs/temp/book4.webp" alt="book4" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="./frontendView/products.html"
+              class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
+              <img src="./imgs/temp/book5.webp" alt="book5" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="./frontendView/products.html"
+              class="card  w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
+              <img class="" src="./imgs/temp/book2.webp" alt="book2" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="./frontendView/products.html"
+              class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
+              <img src="./imgs/temp/book3.webp" alt="book3" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="./frontendView/products.html"
+              class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
+              <img src="./imgs/temp/book4.webp" alt="book4" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="./frontendView/products.html"
+              class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
+              <img src="./imgs/temp/book5.webp" alt="book5" />
+            </a>
+          </div>
+        </div>
+        <div class="swiper-button-next w-10  text-white hover:bg-secondary1"></div>
+        <div class="swiper-button-prev w-10  text-white hover:bg-secondary1"></div>
+        <div class="swiper-pagination"></div>
+      </div>
     </div>
     <div class="py-2 text-center">
       <button class="btn bg-primary border-none rounded-sm text-white hover:bg-secondary px-8 ">探索更多
@@ -974,34 +934,7 @@
 
   <!-- axios js -->
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-  <!-- <script>
-    let data;
-    function init() {
-      axios
-        .get("http://localhost:3000/books/")
-        .then(function (res) {
-          // data = res.data;
-          // data.forEach(function (res, i) {
-          //   console.log(i, res)
-          // })
-          data = res.data[20];
-          console.log(data);
-          renderBook();
-        })
-    }
-    init();
 
-
-
-    function renderBook() {
-      const img = document.querySelector('.img');
-      console.log(img);
-      let img = `<img src="${data.imgUrl}" alt="book5" />`;
-      img.innerHTML = introduction;
-
-
-    } -->
-  </script>
 
   <script src="./all.js"></script>
 </body>
