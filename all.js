@@ -43,12 +43,14 @@ function init() {
 
       // swiper class 綁定
       const js_Literature = document.querySelector('.js-literature');
+      const js_Inspiration = document.querySelector('.js-inspiration');
+      const js_IT = document.querySelector('.js-IT');
       //console.log(swiper_Wrapper);
 
       const stringData = (data) => {
         let str = ""
         data.forEach(function (item, i) {
-          str += `<div class="swiper-slide text-center">
+          str += `<div class="swiper-slide">
           <a href="./frontendView/products.html"
           class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
           <img class="" src=${item.imgUrl} alt="book1" />
@@ -59,7 +61,11 @@ function init() {
         return str;
       }
       stringData(eBook.literature);
+      stringData(eBook.inspiration);
+      stringData(eBook.IT);
       js_Literature.innerHTML = stringData(eBook.literature);
+      js_Inspiration.innerHTML = stringData(eBook.inspiration);
+      js_IT.innerHTML = stringData(eBook.IT);
 
     })
 
