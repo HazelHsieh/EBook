@@ -25,7 +25,7 @@
 
 <body class="bg-cream text-brown">
   <!-- navbar -->
-  <nav class="container navbar">
+  <nav class="container navbar text-sm">
     <div class="navbar-start">
       <a href="../index.html">
         <img class="w-12 " src="../imgs/logo.png" alt="...">
@@ -40,8 +40,8 @@
     </div>
     <div class="navbar-end flex-none gap-2">
       <div class="form-control text-white">
-        <!-- <input type="text" placeholder="搜尋"
-          class="badge badge-outline border-primary text-brown input-sm w-full max-w-xs focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent" /> -->
+        <input type="text" placeholder="搜尋"
+          class="badge badge-outline border-primary text-brown input-sm w-full max-w-xs focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent" />
       </div>
       <div class="dropdown dropdown-end ">
         <label tabindex="0" class="btn btn-ghost btn-circle avatar">
@@ -60,55 +60,67 @@
 
   <section class="bg-creamWhite py-8">
     <div class="container">
-      <div class="flex flex-wrap items-end">
-        <p class="text-4xl font-bold pr-20 ">今天我想看一本...</p>
-        <div class="form-control text-white mt-8">
-          <input type="text" placeholder="搜尋"
-            class="badge badge-outline border-primary text-brown input-sm w-full max-w-xs focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent" />
+      <div class="flex flex-wrap gap-x-3 md:gap-x-10 items-center">
+        <p class="text-2xl md:text-4xl font-bold ">今天我想看一本...</p>
+        <div class="form-control text-white w-2/6">
+          <input type="text" placeholder="最新排行"
+            class="badge badge-outline border-primary rounded-lg text-brown input-sm md:input-md w-full max-w-xs focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent" />
         </div>
       </div>
       <br>
-      <ul class="flex gap-2 justify-end">
-        <li class=" lg:w-1/6">
-          <select
-            class="select select-secondary w-full max-w-xs  bg-creamWhite focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent ">
-            <option disabled selected class="">最新排行</option>
-            <option>Java</option>
-            <option>Go</option>
-            <option>C</option>
-            <option>C#</option>
-            <option>C++</option>
-            <option>Rust</option>
-            <option>JavaScript</option>
-            <option>Python</option>
-          </select>
-        </li>
+      <ul class="flex gap-3 justify-end">
         <li class="lg:w-1/6">
           <select
-            class="select select-secondary w-full max-w-xs bg-creamWhite focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent ">
+            class="select select-secondary w-full select-sm md:select-md max-w-xs bg-creamWhite focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent ">
             <option disabled selected class="">類型</option>
-            <option>Java</option>
-            <option>Go</option>
-            <option>C</option>
-            <option>C#</option>
-            <option>C++</option>
-            <option>Rust</option>
-            <option>JavaScript</option>
-            <option>Python</option>
+            <option>中文文學</option>
+            <option>心理勵志</option>
+            <option>電腦資訊</option>
+            <option>旅遊</option>
+            <option>居家料理</option>
+            <option>藝術設計</option>
           </select>
         </li>
         <li class="lg:w-1/6">
           <select
-            class="select  select-secondary w-full max-w-xs bg-creamWhite focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent">
+            class="select  select-secondary w-full select-sm md:select-md max-w-xs bg-creamWhite focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent">
             <option disabled selected class="">出版社</option>
-            <option>Java</option>
-            <option>Go</option>
-            <option>C</option>
-            <option>C#</option>
-            <option>C++</option>
-            <option>Rust</option>
-            <option>JavaScript</option>
-            <option>Python</option>
+            <option>皇冠</option>
+            <option>三采</option>
+            <option>寂寞</option>
+            <option>尖端</option>
+            <option>游擊文化</option>
+            <option>啟動文化</option>
+            <option>九歌</option>
+            <option>天下文化</option>
+            <option>遠流</option>
+            <option>采實文化</option>
+            <option>方言文化</option>
+            <option>清文華泉</option>
+            <option>方智</option>
+            <option>崧燁文化</option>
+            <option>碁峰</option>
+            <option>時報出版</option>
+            <option>博碩</option>
+            <option>境好出版</option>
+            <option>太雅出版社</option>
+            <option>馬可孛羅</option>
+            <option>墨刻</option>
+            <option>閱樂國際文化</option>
+            <option>白象文化</option>
+            <option>出色文化</option>
+            <option>八旗文化</option>
+            <option>台灣廣廈</option>
+            <option>人類智庫</option>
+            <option>積木文化</option>
+            <option>PCuSER電腦人文化</option>
+            <option>悅知文化</option>
+            <option>大是文化</option>
+            <option>原點</option>
+            <option>東立</option>
+            <option>聯經出版公司</option>
+            <option>印刻</option>
+            <option>臉譜</option>
           </select>
         </li>
       </ul>
@@ -125,7 +137,7 @@
             <div class="card md:flex ">
               <div data-tilt data-tilt-glare data-tilt-max-glare="0.8"
                 class=" your-element md:flex-shrink-0 shadow-xl flex justify-center mx-auto ">
-                <a href="./frontendView/products.html">
+                <a href="../frontendView/products.html">
                   <img class="w-[200px] object-cover"
                     src="https://kbimages1-a.akamaihd.net/dbf574c6-a41b-4f74-a8af-666d123c4b7c/180/1000/False/ip-7.jpg"
                     alt="Man looking at item at a store">
@@ -140,7 +152,6 @@
 
         <li class=" w-full md:w-1/3  lg:w-1/5 xl:w-1/6">
 
-          <img class="mx-auto" src="./imgs/title_line.png" alt="">
           <div class="max-w-md mx-auto overflow-hidden">
             <div class="card md:flex  ">
               <div data-tilt data-tilt-glare data-tilt-max-glare="0.8"
@@ -158,7 +169,6 @@
 
         <li class="w-full md:w-1/3  lg:w-1/5 xl:w-1/6">
 
-          <img class="mx-auto" src="./imgs/title_line.png" alt="">
           <div class="max-w-md mx-auto overflow-hidden">
             <div class="card md:flex  ">
               <div data-tilt data-tilt-glare data-tilt-max-glare="0.8"
@@ -177,7 +187,6 @@
 
         <li class="w-full md:w-1/3   lg:w-1/5 xl:w-1/6">
 
-          <img class="mx-auto" src="./imgs/title_line.png" alt="">
           <div class="max-w-md mx-auto overflow-hidden">
             <div class="card md:flex  ">
               <div data-tilt data-tilt-glare data-tilt-max-glare="0.8"
@@ -196,7 +205,6 @@
 
         <li class="w-full md:w-1/3  lg:w-1/5 xl:w-1/6">
 
-          <img class="mx-auto" src="./imgs/title_line.png" alt="">
           <div class="max-w-md mx-auto overflow-hidden">
             <div class="card md:flex  ">
               <div data-tilt data-tilt-glare data-tilt-max-glare="0.8"
@@ -215,7 +223,6 @@
 
         <li class="w-full md:w-1/3  lg:w-1/5 xl:w-1/6">
 
-          <img class="mx-auto" src="./imgs/title_line.png" alt="">
           <div class="max-w-md mx-auto overflow-hidden">
             <div class="card md:flex  ">
               <div data-tilt data-tilt-glare data-tilt-max-glare="0.8"
@@ -238,7 +245,7 @@
   </section>
 
   <!-- footer -->
-  <footer class="footer footer-center p-5  text-primary">
+  <footer class="footer footer-center p-5 bg-cream  text-primary">
     <!-- todo -->
     <div>
       <figure><img class="w-12" src="../imgs/logo2.png" alt="Shoes" /></figure>

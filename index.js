@@ -91,7 +91,7 @@ function usersInit() {
         // console.log(item.ISBN);
         axios.get(`http://localhost:3000/books?ISBN=${item.ISBN}`).then(res => {
           userBooks.push(...res.data)
-          // swiper class 綁定
+          // class 綁定
           const js_UserBooks = document.querySelector('.js-userBooks');
           // console.log(js_UserBooks);
           stringData(userBooks)

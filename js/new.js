@@ -1,4 +1,3 @@
-import "../js/vanilla.js";
 //初始
 let data;
 const eBook = {
@@ -12,16 +11,17 @@ function init() {
     .then(function (res) {
       data = res.data;
 
+
       // 新書本的陣列，用時間排序
       let booksArray = data;
       booksArray.sort((a, b) => {
         return b.publishDate > a.publishDate ? 1 : -1
       })
-      console.log(booksArray);
+      // console.log(booksArray);
 
       // 最新熱門 全部的書本出版日期去排序，取從第三筆開始的九筆資料
       eBook.newPublish.push(...booksArray.slice(3, 22));
-      console.log(eBook.newPublish);
+      // console.log(eBook.newPublish);
 
       // class 綁定
       const js_NewPublish = document.querySelector('.js-newPublish');
