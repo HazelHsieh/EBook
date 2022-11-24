@@ -458,15 +458,19 @@
   <script>
     let data;
     function init() {
+      // postman get 的網址，對應 all.js 的組字串
+      const booksURL = 'http://localhost:3000/books';
+      let params = (new URL(document.location)).searchParams;
+      let id = parseInt(params.get('id')); // 取得 api id number
+      //這裡的 id 等於 postman get 的網址的 id
+      //console.log(id);
       axios
-        .get("http://localhost:3000/books/")
+        .get(`${booksURL}/${id}`)
         .then(function (res) {
-          // data = res.data;
-          // data.forEach(function (res, i) {
-          //   console.log(i, res)
-          // })
-          data = res.data[20];
-          console.log(data);
+
+          data = res.data;
+          //這裡的 data.id 等於資料的id
+          //console.log(data.id);
           renderBook();
         })
     }
@@ -532,9 +536,10 @@
       content = `<section>${data.introduction}</section>`;
       book_Content.innerHTML = content;
     }
+
   </script>
 
-  <script src="../all.js"></script>
+  <!-- <script src="../all.js"></script> -->
 </body>
 
 </html>

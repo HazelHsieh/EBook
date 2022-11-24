@@ -7054,6 +7054,26 @@ html {
   margin-bottom: 1.25rem;
 }
 
+.my-12 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.-mx-1 {
+  margin-left: -0.25rem;
+  margin-right: -0.25rem;
+}
+
+.my-1 {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.mx-1 {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
+
 .mt-3 {
   margin-top: 0.75rem;
 }
@@ -7246,6 +7266,22 @@ html {
   height: 16rem;
 }
 
+.h-auto {
+  height: auto;
+}
+
+.h-\[360px\] {
+  height: 360px;
+}
+
+.h-\[80px\] {
+  height: 80px;
+}
+
+.h-\[100px\] {
+  height: 100px;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
@@ -7308,6 +7344,30 @@ html {
 
 .w-1\/4 {
   width: 25%;
+}
+
+.w-1\/2 {
+  width: 50%;
+}
+
+.w-\[240px\] {
+  width: 240px;
+}
+
+.w-\[170px\] {
+  width: 170px;
+}
+
+.w-\[200px\] {
+  width: 200px;
+}
+
+.w-\[180px\] {
+  width: 180px;
+}
+
+.w-\[300px\] {
+  width: 300px;
 }
 
 .max-w-xs {
@@ -7834,6 +7894,10 @@ html {
   gap: 0px;
 }
 
+.gap-y-10 {
+  row-gap: 2.5rem;
+}
+
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(0.5rem * var(--tw-space-x-reverse));
@@ -8127,6 +8191,10 @@ html {
   border-radius: 0.25rem;
 }
 
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
 .rounded-t {
   border-top-left-radius: 0.25rem;
   border-top-right-radius: 0.25rem;
@@ -8195,6 +8263,14 @@ html {
 
 .border-l {
   border-left-width: 1px;
+}
+
+.border-b-2 {
+  border-bottom-width: 2px;
+}
+
+.border-t-0 {
+  border-top-width: 0px;
 }
 
 .border-solid {
@@ -8498,6 +8574,16 @@ html {
   padding-bottom: 1rem;
 }
 
+.px-1 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
 .pb-10 {
   padding-bottom: 2.5rem;
 }
@@ -8536,6 +8622,22 @@ html {
 
 .pb-6 {
   padding-bottom: 1.5rem;
+}
+
+.pt-4 {
+  padding-top: 1rem;
+}
+
+.pb-8 {
+  padding-bottom: 2rem;
+}
+
+.pt-6 {
+  padding-top: 1.5rem;
+}
+
+.pb-9 {
+  padding-bottom: 2.25rem;
 }
 
 .text-left {
@@ -8727,6 +8829,14 @@ html {
   line-height: 1.625;
 }
 
+.leading-tight {
+  line-height: 1.25;
+}
+
+.leading-none {
+  line-height: 1;
+}
+
 .tracking-wide {
   letter-spacing: 0.025em;
 }
@@ -8791,6 +8901,11 @@ html {
 .text-blue-500 {
   --tw-text-opacity: 1;
   color: rgb(59 130 246 / var(--tw-text-opacity));
+}
+
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -9199,6 +9314,10 @@ html {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.hover\:text-clip:hover {
+  text-overflow: clip;
+}
+
 .hover\:rounded:hover {
   border-radius: 0.25rem;
 }
@@ -9249,6 +9368,10 @@ html {
 .hover\:text-red-400:hover {
   --tw-text-opacity: 1;
   color: rgb(248 113 113 / var(--tw-text-opacity));
+}
+
+.hover\:underline:hover {
+  text-decoration-line: underline;
 }
 
 .table .hover\:hover:hovertr:hover th,
@@ -9410,6 +9533,14 @@ html {
     width: 16rem;
   }
 
+  .md\:w-1\/2 {
+    width: 50%;
+  }
+
+  .md\:w-1\/3 {
+    width: 33.333333%;
+  }
+
   .md\:flex-shrink-0 {
     flex-shrink: 0;
   }
@@ -9426,6 +9557,15 @@ html {
     padding: 0px;
   }
 
+  .md\:p-4 {
+    padding: 1rem;
+  }
+
+  .md\:px-12 {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
   .md\:text-left {
     text-align: left;
   }
@@ -9436,6 +9576,16 @@ html {
 }
 
 @media (min-width: 1024px) {
+  .lg\:-mx-4 {
+    margin-left: -1rem;
+    margin-right: -1rem;
+  }
+
+  .lg\:my-4 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
   .lg\:ml-12 {
     margin-left: 3rem;
   }
@@ -9484,6 +9634,14 @@ html {
     width: 66.666667%;
   }
 
+  .lg\:w-1\/5 {
+    width: 20%;
+  }
+
+  .lg\:w-1\/4 {
+    width: 25%;
+  }
+
   .lg\:flex-wrap {
     flex-wrap: wrap;
   }
@@ -9500,6 +9658,11 @@ html {
   .lg\:px-3 {
     padding-left: 0.75rem;
     padding-right: 0.75rem;
+  }
+
+  .lg\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
   .lg\:pt-6 {
@@ -9534,6 +9697,18 @@ html {
 
   .xl\:w-4\/5 {
     width: 80%;
+  }
+
+  .xl\:w-1\/6 {
+    width: 16.666667%;
+  }
+
+  .xl\:w-1\/12 {
+    width: 8.333333%;
+  }
+
+  .xl\:w-2\/12 {
+    width: 16.666667%;
   }
 
   .xl\:shadow-none {

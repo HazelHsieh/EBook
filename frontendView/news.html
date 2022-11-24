@@ -8,7 +8,7 @@
   <link rel="shortcut icon" href="../imgs/headIcon/headIcon1.png" type="image/x-icon" />
 
   <!-- swiper CDN Css  -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" /> -->
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!-- font awesome -->
@@ -19,7 +19,7 @@
 
   <link href="../dist/output.css" rel="stylesheet">
   <!-- swiper Css -->
-  <link rel="stylesheet" href="../src/swiperStyle.css">
+  <!-- <link rel="stylesheet" href="../src/swiperStyle.css"> -->
   <title>E Book</title>
 </head>
 
@@ -40,8 +40,8 @@
     </div>
     <div class="navbar-end flex-none gap-2">
       <div class="form-control text-white">
-        <input type="text" placeholder="搜尋"
-          class="badge badge-outline border-primary text-brown input-sm w-full max-w-xs focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent" />
+        <!-- <input type="text" placeholder="搜尋"
+          class="badge badge-outline border-primary text-brown input-sm w-full max-w-xs focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent" /> -->
       </div>
       <div class="dropdown dropdown-end ">
         <label tabindex="0" class="btn btn-ghost btn-circle avatar">
@@ -58,11 +58,10 @@
     </div>
   </nav>
 
-
   <section class="bg-creamWhite py-8">
     <div class="container">
       <div class="flex flex-wrap items-end">
-        <p class="text-4xl font-bold pr-20 ">我想許願一本...</p>
+        <p class="text-4xl font-bold pr-20 ">今天我想看一本...</p>
         <div class="form-control text-white mt-8">
           <input type="text" placeholder="搜尋"
             class="badge badge-outline border-primary text-brown input-sm w-full max-w-xs focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent" />
@@ -100,20 +99,6 @@
         </li>
         <li class="lg:w-1/6">
           <select
-            class="select select-secondary w-full max-w-xs bg-creamWhite focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent ">
-            <option disabled selected class="">語言</option>
-            <option>Java</option>
-            <option>Go</option>
-            <option>C</option>
-            <option>C#</option>
-            <option>C++</option>
-            <option>Rust</option>
-            <option>JavaScript</option>
-            <option>Python</option>
-          </select>
-        </li>
-        <li class="lg:w-1/6">
-          <select
             class="select  select-secondary w-full max-w-xs bg-creamWhite focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent">
             <option disabled selected class="">出版社</option>
             <option>Java</option>
@@ -130,354 +115,127 @@
     </div>
   </section>
 
-
-  <!-- todo 要修一下 -->
-  <!-- 本週排行榜 -->
-  <section class="bg-creamWhite py-12 overflow-x-hidden">
-    <div class="container ">
-      <ul class="pb-10">
-        <h1 class="text-xl">/ 本週 TOP 排行榜 /</h1>
-        <li>
-          <div class="swiper jsMySwiper w-full h-full overflow-visible ">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="w-[80px] h-[220px] overflow-hidden flex items-end">
-                  <p class="text-9xl "><i class="fa-solid fa-1"></i></p>
-                </div>
-                <div class="card w-[220px] h-[220px] rounded-sm  hover:scale-125  transition-all">
-                  <img class="" src="../imgs/temp/book1.webp" alt="book1" />
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="w-[100px] h-[220px] overflow-hidden flex items-end">
-                  <p class="text-9xl"><i class="fa-solid fa-2"></i></p>
-                </div>
-                <div class="card w-[220px] h-[220px] rounded-sm hover:scale-125  transition-all">
-                  <img class="" src="../imgs/temp/book2.webp" alt="book2" />
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="w-[100px] h-[220px] overflow-hidden flex items-end">
-                  <p class="text-9xl"><i class="fa-solid fa-3"></i></p>
-                </div>
-                <div class="card w-[220px] h-[220px] rounded-sm  hover:scale-125  transition-all">
-                  <img src="../imgs/temp/book3.webp" alt="book3" />
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="w-[100px] h-[220px] overflow-hidden flex items-end">
-                  <p class="text-9xl"><i class="fa-solid fa-4"></i></p>
-                </div>
-                <div class="card w-[220px] h-[220px] rounded-sm  hover:scale-125 transition-all">
-                  <img src="../imgs/temp/book4.webp" alt="book4" />
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="w-[100px] h-[220px] overflow-hidden flex items-end">
-                  <p class="text-9xl"><i class="fa-solid fa-5"></i></p>
-                </div>
-                <div class="card w-[280px] h-[220px] rounded-sm  hover:scale-125 transition-all">
-                  <img src="../imgs/temp/book5.webp" alt="book5" />
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="w-[80px] h-[220px] overflow-hidden flex items-end">
-                  <p class="text-9xl "><i class="fa-solid fa-6"></i></p>
-                </div>
-                <div class="card w-[220px] h-[220px] rounded-sm  hover:scale-125  transition-all">
-                  <img class="" src="../imgs/temp/book1.webp" alt="book1" />
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="w-[100px] h-[220px] overflow-hidden flex items-end">
-                  <p class="text-9xl"><i class="fa-solid fa-7"></i></p>
-                </div>
-                <div class="card w-[220px] h-[220px] rounded-sm hover:scale-125  transition-all">
-                  <img class="" src="../imgs/temp/book2.webp" alt="book2" />
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="w-[100px] h-[220px] overflow-hidden flex items-end">
-                  <p class="text-9xl"><i class="fa-solid fa-8"></i></p>
-                </div>
-                <div class="card w-[220px] h-[220px] rounded-sm  hover:scale-125  transition-all">
-                  <img src="../imgs/temp/book3.webp" alt="book3" />
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="w-[100px] h-[220px] overflow-hidden flex items-end">
-                  <p class="text-9xl"><i class="fa-solid fa-9"></i></p>
-                </div>
-                <div class="card w-[220px] h-[220px] rounded-sm  hover:scale-125 transition-all">
-                  <img src="../imgs/temp/book4.webp" alt="book4" />
-                </div>
-              </div>
-            </div>
-            <div class="swiper-button-next w-10  text-white hover:bg-secondary1"></div>
-            <div class="swiper-button-prev w-10  text-white hover:bg-secondary1"></div>
-            <div class="swiper-pagination"></div>
-          </div>
-
-
-        </li>
-      </ul>
-      <ul class="pb-10">
-        <h1 class="text-xl">/ 本月 TOP 排行榜 /</h1>
-        <li>
-          <div class="swiper jsMySwiper w-full h-full overflow-visible ">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="w-[80px] h-[220px] overflow-hidden flex items-end">
-                  <p class="text-9xl "><i class="fa-solid fa-1"></i></p>
-                </div>
-                <div class="card w-[220px] h-[220px] rounded-sm  hover:scale-125  transition-all">
-                  <img class="" src="../imgs/temp/book1.webp" alt="book1" />
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="w-[100px] h-[220px] overflow-hidden flex items-end">
-                  <p class="text-9xl"><i class="fa-solid fa-2"></i></p>
-                </div>
-                <div class="card w-[220px] h-[220px] rounded-sm hover:scale-125  transition-all">
-                  <img class="" src="../imgs/temp/book2.webp" alt="book2" />
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="w-[100px] h-[220px] overflow-hidden flex items-end">
-                  <p class="text-9xl"><i class="fa-solid fa-3"></i></p>
-                </div>
-                <div class="card w-[220px] h-[220px] rounded-sm  hover:scale-125  transition-all">
-                  <img src="../imgs/temp/book3.webp" alt="book3" />
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="w-[100px] h-[220px] overflow-hidden flex items-end">
-                  <p class="text-9xl"><i class="fa-solid fa-4"></i></p>
-                </div>
-                <div class="card w-[220px] h-[220px] rounded-sm  hover:scale-125 transition-all">
-                  <img src="../imgs/temp/book4.webp" alt="book4" />
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="w-[100px] h-[220px] overflow-hidden flex items-end">
-                  <p class="text-9xl"><i class="fa-solid fa-5"></i></p>
-                </div>
-                <div class="card w-[280px] h-[220px] rounded-sm  hover:scale-125 transition-all">
-                  <img src="../imgs/temp/book5.webp" alt="book5" />
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="w-[80px] h-[220px] overflow-hidden flex items-end">
-                  <p class="text-9xl "><i class="fa-solid fa-6"></i></p>
-                </div>
-                <div class="card w-[220px] h-[220px] rounded-sm  hover:scale-125  transition-all">
-                  <img class="" src="../imgs/temp/book1.webp" alt="book1" />
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="w-[100px] h-[220px] overflow-hidden flex items-end">
-                  <p class="text-9xl"><i class="fa-solid fa-7"></i></p>
-                </div>
-                <div class="card w-[220px] h-[220px] rounded-sm hover:scale-1250  transition-all">
-                  <img class="" src="../imgs/temp/book2.webp" alt="book2" />
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="w-[100px] h-[220px] overflow-hidden flex items-end">
-                  <p class="text-9xl"><i class="fa-solid fa-8"></i></p>
-                </div>
-                <div class="card w-[220px] h-[220px] rounded-sm  hover:scale-125  transition-all">
-                  <img src="../imgs/temp/book3.webp" alt="book3" />
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="w-[100px] h-[220px] overflow-hidden flex items-end">
-                  <p class="text-9xl"><i class="fa-solid fa-9"></i></p>
-                </div>
-                <div class="card w-[220px] h-[220px] rounded-sm  hover:scale-125 transition-all">
-                  <img src="./imgs/temp/book4.webp" alt="book4" />
-                </div>
-              </div>
-            </div>
-            <div class="swiper-button-next w-10  text-white hover:bg-secondary1"></div>
-            <div class="swiper-button-prev w-10  text-white hover:bg-secondary1"></div>
-            <div class="swiper-pagination"></div>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </section>
-
-
-  <!-- 最新出版書籍 -->
   <section class="bg-creamWhite2 py-12 section5">
-    <!-- <p class="text-center text-2xl ">最新出版書籍</p> -->
-    <div class="text-center">
-      <div
-        class="relative before:absolute before:bg-primary2 before:bottom-0 before:left-5/12 before:h-3/5 before:w-36 before:origin-bottom before:scale-y-[0.35] hover:before:scale-y-100 before:transition-transform before:ease-in-out before:duration-500">
-        <span class="relative text-center text-2xl ">最新出版書籍</span>
-      </div>
-    </div>
-
-    <!-- <div class="max-w-md mx-auto rounded-xl shadow-md  overflow-hidden">
-        <div class="card md:flex">
-          <div class="md:flex-shrink-0 shadow-xl">
-            <img class="h-48 w-full object-cover md:h-full " src="https://placeimg.com/400/225/arch"
-              alt="Man looking at item at a store">
-          </div>
-          <div class="card-body">
-            <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Case study</div>
-            <h2 class="card-title">進擊的台劇</h2>
-            <p>從《紅衣小女孩》到《茶金》，<br>他們打造的台劇，很酷！</p>
-            <div class="card-actions justify-center pt-3">
-              <button class="btn bg-primary border-none rounded-sm text-white hover:bg-secondary"><span
-                  class="material-icons mr-2">auto_stories</span>翻來看看</button>
-              <button
-                class="btn btn-outline border-primary text-primary rounded-sm hover:bg-secondary hover:border-none hover:text-white"><span
-                  class="material-icons mr-2">read_more</span>了解更多</button>
-            </div>
-          </div>
-        </div>
-      </div> -->
-    <ul class="flex mt-5 flex-wrap justify-center items-end">
-      <li class="mx-6 mt-5">
-        <img class="mx-auto" src="./imgs/title_line.png" alt="">
-        <div class="max-w-md mx-auto overflow-hidden">
-          <div class="card md:flex  ">
-            <!-- <figure class="your-element" data-tilt data-tilt-glare data-tilt-max-glare="0.8"><img
-                class="w-[246px] h-[359px]"
-                src="https://kbimages1-a.akamaihd.net/7523f0c6-eafe-40ac-815a-9a922dbdb56e/353/569/90/False/4HfLmC0kZj2YgmeOtbKfdQ.jpg"
-                alt="Shoes" /></figure> -->
-            <div data-tilt data-tilt-glare data-tilt-max-glare="0.8"
-              class=" your-element md:flex-shrink-0 shadow-xl flex justify-center mx-auto ">
-              <img class="h-[360] w-[248px] object-cover"
-                src="https://kbimages1-a.akamaihd.net/dbf574c6-a41b-4f74-a8af-666d123c4b7c/180/1000/False/ip-7.jpg"
-                alt="Man looking at item at a store">
-            </div>
-            <div class="card-body border-t-2 border-stone-300">
-              <h2 class="card-title">進擊的台劇</h2>
-              <p>故事 X 技術 X IP 放大<br>從《紅衣小女孩》到《茶金》，<br>他們打造的台劇，很酷！</p>
-              <div class="card-actions justify-center pt-3">
-                <button class="btn bg-primary border-none rounded-sm text-white hover:bg-secondary"><span
-                    class="material-icons mr-2">auto_stories</span>翻來看看</button>
-                <button
-                  class="btn btn-outline border-primary text-primary rounded-sm hover:bg-secondary hover:border-none hover:text-white"><span
-                    class="material-icons mr-2">read_more</span>了解更多</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </li>
-      <li class="mx-6 mt-5">
-        <div class="max-w-md mx-auto overflow-hidden">
-          <div class="card md:flex">
-            <div data-tilt data-tilt-glare data-tilt-max-glare="0.8"
-              class=" your-element md:flex-shrink-0 shadow-xl flex justify-center mx-auto ">
-              <img class="h-[360] w-[248px] object-cover"
-                src="https://kbimages1-a.akamaihd.net/55289222-67ac-41c7-b47d-ddaa214696e5/180/1000/False/NMNWDgJPpDKwOAnPB9_Syw.jpg"
-                alt="Man looking at item at a store">
-            </div>
-            <div class="card-body border-t-2 border-stone-300">
-              <h2 class="card-title">未來還沒背書寫</h2>
-              <p>關鍵只有在於要怎麼寫。<br>他們開始時的噪音<br>將成為明日的派對。</p>
-              <div class="card-actions justify-center pt-3">
-                <button class="btn bg-primary border-none rounded-sm text-white hover:bg-secondary"><span
-                    class="material-icons mr-2">auto_stories</span>翻來看看</button>
-                <button
-                  class="btn btn-outline border-primary text-primary rounded-sm hover:bg-secondary hover:border-none hover:text-white"><span
-                    class="material-icons mr-2">read_more</span>了解更多</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </li>
-      <li class="mx-6 mt-5">
-        <div class="max-w-md mx-auto overflow-hidden">
-          <div class="card md:flex">
-            <div data-tilt data-tilt-glare data-tilt-max-glare="0.8"
-              class=" your-element md:flex-shrink-0 shadow-xl flex justify-center mx-auto ">
-              <img class="h-[360] w-[248px] object-cover"
-                src="https://kbimages1-a.akamaihd.net/d11d625d-771d-4a57-91b5-02a81287776a/180/1000/False/ai-93.jpg"
-                alt="Man looking at item at a store">
-            </div>
-            <div class="card-body border-t-2 border-stone-300">
-              <h2 class="card-title">人工智慧 最後的秘密</h2>
-              <p>權力、政治、人類的代價<br>科技產業和國家機器<br>如何聯手打造 AI神話？</p>
-              <div class="card-actions justify-center pt-3">
-                <button class="btn bg-primary border-none rounded-sm text-white hover:bg-secondary"><span
-                    class="material-icons mr-2">auto_stories</span>翻來看看</button>
-                <button
-                  class="btn btn-outline border-primary text-primary rounded-sm hover:bg-secondary hover:border-none hover:text-white"><span
-                    class="material-icons mr-2">read_more</span>了解更多</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </li>
-    </ul>
-  </section>
-
-  <!-- <section class="bg-creamWhite py-8">
     <div class="container">
-      <div class="flex flex-wrap items-end">
-        <p class="text-4xl font-bold pr-20 ">今天我想看一本...</p>
+      <p class="text-xl pb-6">/ TOP 排行榜 /</p>
+      <ul class="js-newPublish flex flex-wrap gap-4 xl:gap gap-y-10 justify-center items-end">
 
-      </div>
-      <br>
-      <ul class="flex gap-2 justify-end">
-        <li class=" lg:w-2/6">
-          <div class="form-control text-white mr-7">
-            <input type="text" placeholder="搜尋"
-              class="badge badge-outline border-primary text-brown input-md w-full max-w-xs focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent" />
+        <li class="w-full md:w-1/3 lg:w-1/5 xl:w-1/6">
+          <div class="max-w-md mx-auto overflow-hidden">
+            <div class="card md:flex ">
+              <div data-tilt data-tilt-glare data-tilt-max-glare="0.8"
+                class=" your-element md:flex-shrink-0 shadow-xl flex justify-center mx-auto ">
+                <a href="./frontendView/products.html">
+                  <img class="w-[200px] object-cover"
+                    src="https://kbimages1-a.akamaihd.net/dbf574c6-a41b-4f74-a8af-666d123c4b7c/180/1000/False/ip-7.jpg"
+                    alt="Man looking at item at a store">
+                </a>
+              </div>
+              <div class="pt-8 flex items-center justify-center border-t-2 border-stone-300">
+                <p class="text-2xl card-title ">進擊的台劇</p>
+              </div>
+            </div>
           </div>
         </li>
-        <li class="lg:w-1/6">
-          <select
-            class="select select-secondary w-full max-w-xs bg-creamWhite focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent ">
-            <option disabled selected class="">作者</option>
-            <option>Java</option>
-            <option>Go</option>
-            <option>C</option>
-            <option>C#</option>
-            <option>C++</option>
-            <option>Rust</option>
-            <option>JavaScript</option>
-            <option>Python</option>
-          </select>
+
+        <li class=" w-full md:w-1/3  lg:w-1/5 xl:w-1/6">
+
+          <img class="mx-auto" src="./imgs/title_line.png" alt="">
+          <div class="max-w-md mx-auto overflow-hidden">
+            <div class="card md:flex  ">
+              <div data-tilt data-tilt-glare data-tilt-max-glare="0.8"
+                class=" your-element md:flex-shrink-0 shadow-xl flex justify-center mx-auto ">
+                <img class="w-[200px] object-cover"
+                  src="https://kbimages1-a.akamaihd.net/dbf574c6-a41b-4f74-a8af-666d123c4b7c/180/1000/False/ip-7.jpg"
+                  alt="Man looking at item at a store">
+              </div>
+              <div class="pt-8 flex items-center justify-center border-t-2 border-stone-300">
+                <p class="text-2xl card-title ">進擊的台劇</p>
+              </div>
+            </div>
+          </div>
         </li>
-        <li class="lg:w-1/6">
-          <select
-            class="select select-secondary w-full max-w-xs bg-creamWhite focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent ">
-            <option disabled selected class="">類型</option>
-            <option>Java</option>
-            <option>Go</option>
-            <option>C</option>
-            <option>C#</option>
-            <option>C++</option>
-            <option>Rust</option>
-            <option>JavaScript</option>
-            <option>Python</option>
-          </select>
+
+        <li class="w-full md:w-1/3  lg:w-1/5 xl:w-1/6">
+
+          <img class="mx-auto" src="./imgs/title_line.png" alt="">
+          <div class="max-w-md mx-auto overflow-hidden">
+            <div class="card md:flex  ">
+              <div data-tilt data-tilt-glare data-tilt-max-glare="0.8"
+                class=" your-element md:flex-shrink-0 shadow-xl flex justify-center mx-auto ">
+                <img class="w-[200px] object-cover"
+                  src="https://kbimages1-a.akamaihd.net/dbf574c6-a41b-4f74-a8af-666d123c4b7c/180/1000/False/ip-7.jpg"
+                  alt="Man looking at item at a store">
+              </div>
+              <div class="pt-8  flex items-center justify-center border-t-2 border-stone-300">
+                <p class="text-2xl card-title ">進擊的台劇</p>
+              </div>
+            </div>
+          </div>
+
         </li>
-        <li class="lg:w-1/6">
-          <select
-            class="select  select-secondary w-full max-w-xs bg-creamWhite focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent">
-            <option disabled selected class="">出版社</option>
-            <option>Java</option>
-            <option>Go</option>
-            <option>C</option>
-            <option>C#</option>
-            <option>C++</option>
-            <option>Rust</option>
-            <option>JavaScript</option>
-            <option>Python</option>
-          </select>
+
+        <li class="w-full md:w-1/3   lg:w-1/5 xl:w-1/6">
+
+          <img class="mx-auto" src="./imgs/title_line.png" alt="">
+          <div class="max-w-md mx-auto overflow-hidden">
+            <div class="card md:flex  ">
+              <div data-tilt data-tilt-glare data-tilt-max-glare="0.8"
+                class=" your-element md:flex-shrink-0 shadow-xl flex justify-center mx-auto ">
+                <img class="w-[200px] object-cover"
+                  src="https://kbimages1-a.akamaihd.net/dbf574c6-a41b-4f74-a8af-666d123c4b7c/180/1000/False/ip-7.jpg"
+                  alt="Man looking at item at a store">
+              </div>
+              <div class="pt-8  flex items-center justify-center border-t-2 border-stone-300">
+                <p class="text-2xl card-title ">進擊的台劇</p>
+              </div>
+            </div>
+          </div>
+
         </li>
+
+        <li class="w-full md:w-1/3  lg:w-1/5 xl:w-1/6">
+
+          <img class="mx-auto" src="./imgs/title_line.png" alt="">
+          <div class="max-w-md mx-auto overflow-hidden">
+            <div class="card md:flex  ">
+              <div data-tilt data-tilt-glare data-tilt-max-glare="0.8"
+                class=" your-element md:flex-shrink-0 shadow-xl flex justify-center mx-auto ">
+                <img class="w-[200px] object-cover"
+                  src="https://kbimages1-a.akamaihd.net/dbf574c6-a41b-4f74-a8af-666d123c4b7c/180/1000/False/ip-7.jpg"
+                  alt="Man looking at item at a store">
+              </div>
+              <div class="pt-8  flex items-center justify-center border-t-2 border-stone-300">
+                <p class="text-2xl card-title ">進擊的台劇</p>
+              </div>
+            </div>
+          </div>
+
+        </li>
+
+        <li class="w-full md:w-1/3  lg:w-1/5 xl:w-1/6">
+
+          <img class="mx-auto" src="./imgs/title_line.png" alt="">
+          <div class="max-w-md mx-auto overflow-hidden">
+            <div class="card md:flex  ">
+              <div data-tilt data-tilt-glare data-tilt-max-glare="0.8"
+                class=" your-element md:flex-shrink-0 shadow-xl flex justify-center mx-auto ">
+                <img class="w-[200px] object-cover"
+                  src="https://kbimages1-a.akamaihd.net/dbf574c6-a41b-4f74-a8af-666d123c4b7c/180/1000/False/ip-7.jpg"
+                  alt="Man looking at item at a store">
+              </div>
+              <div class="pt-8  flex items-center justify-center border-t-2 border-stone-300">
+                <p class="text-2xl card-title ">進擊的台劇</p>
+              </div>
+            </div>
+          </div>
+
+        </li>
+
       </ul>
     </div>
-  </section> -->
 
-
+  </section>
 
   <!-- footer -->
   <footer class="footer footer-center p-5  text-primary">
@@ -512,21 +270,29 @@
   </footer>
 
 
-  <!-- <span class="material-icons text-primary">face</span> -->
 
 
   <!-- swiper js -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script> -->
 
   <!-- vanilla-tilt -->
-  <script type="text/javascript" src="../vanilla.js"></script>
-  <!-- <script src="./vanilla.js"></script> -->
+
+  <!-- <script src="../js/vanilla.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.3/vanilla-tilt.min.js"></script>
 
   <!-- aos.js -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>AOS.init();</script>
 
-  <script src="../all.js"></script>
+  <!-- axios js -->
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+  <!-- 模組化的概念 -->
+  <!-- <script type="module" src="../js/swiper.js">
+  </script> -->
+
+  <!-- new.js -->
+  <script type="module" src="../js/new.js"></script>
 </body>
 
 </html>
