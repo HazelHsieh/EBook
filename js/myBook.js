@@ -5,6 +5,7 @@ let data;
 
 const userBooks = [];
 
+// 使用者有的書籍
 function usersInit() {
   axios
     .get("http://localhost:3000/users/")
@@ -38,7 +39,7 @@ const stringData = (data) => {
   let str = ""
   data.forEach(function (item, i) {
     str += `<div class="swiper-slide">
-    <a href="../frontendView/products.html?id=${item.id}"
+    <a href="./frontendView/products.html?id=${item.id}"
     class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
     <img class="" src=${item.imgUrl} alt="book1" />
     </a>

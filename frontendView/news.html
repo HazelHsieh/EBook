@@ -39,9 +39,20 @@
       </ul>
     </div>
     <div class="navbar-end flex-none gap-2">
-      <div class="form-control text-white">
-        <input type="text" placeholder="搜尋"
-          class="badge badge-outline border-primary text-brown input-sm w-full max-w-xs focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent" />
+      <div class="form-control">
+        <div class="js-navInputGroup input-group">
+          <label for="js-navInput" class="text-xs text-gray-500"></label>
+          <input type="text" placeholder="以書名搜尋" id="js-navInput"
+            class="js-navInput input input-bordered  focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent" />
+          <!-- <a href=""
+            class="js-navInputBtn btn btn-outline border-primary text-primary rounded-sm hover:bg-primary1 hover:border-none hover:text-white">
+            GO
+          </a> -->
+          <button
+            class="js-navInputBtn btn btn-outline btn-primary btn-sm md:btn-md hover:bg-primary1 hover:border-none hover:text-white">go</button>
+          <!-- <input type="button"
+            class="js-navInputBtn btn btn-outline btn-primary btn-sm md:btn-md hover:bg-primary1 hover:border-none hover:text-white" /> -->
+        </div>
       </div>
       <div class="dropdown dropdown-end ">
         <label tabindex="0" class="btn btn-ghost btn-circle avatar">
@@ -59,70 +70,79 @@
   </nav>
 
   <section class="bg-creamWhite py-8">
-    <div class="container">
-      <div class="flex flex-wrap gap-x-3 md:gap-x-10 items-center">
+    <div class="container flex flex-wrap md:flex-nowrap justify-between items-center">
+      <div class="my-2 gap-x-3 md:gap-x-10 items-center">
         <p class="text-2xl md:text-4xl font-bold ">今天我想看一本...</p>
-        <div class="form-control text-white w-2/6">
-          <input type="text" placeholder="最新排行"
-            class="badge badge-outline border-primary rounded-lg text-brown input-sm md:input-md w-full max-w-xs focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent" />
-        </div>
+
       </div>
       <br>
       <ul class="flex gap-3 justify-end">
-        <li class="lg:w-1/6">
+        <li class="">
+          <div class="form-control text-white ">
+            <label for="js-nameInput" class="text-xs text-gray-500"></label>
+            <input type="text" placeholder="書名" id="js-nameInput"
+              class="badge badge-outline border-primary rounded-lg text-brown input-sm md:input-md w-full max-w-xs focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent" />
+          </div>
+        </li>
+        <li class="">
           <select
-            class="select select-secondary w-full select-sm md:select-md max-w-xs bg-creamWhite focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent ">
-            <option disabled selected class="">類型</option>
-            <option>中文文學</option>
-            <option>心理勵志</option>
-            <option>電腦資訊</option>
-            <option>旅遊</option>
-            <option>居家料理</option>
-            <option>藝術設計</option>
+            class="js-tagType select select-secondary w-full select-sm md:select-md max-w-xs bg-creamWhite focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent ">
+            <option selected value="">類型</option>
+            <option value="中文文學">中文文學</option>
+            <option value="心理勵志">心理勵志</option>
+            <option value="電腦資訊">電腦資訊</option>
+            <option value="旅遊">旅遊</option>
+            <option value="居家料理">居家料理</option>
+            <option value="藝術設計">藝術設計</option>
           </select>
         </li>
-        <li class="lg:w-1/6">
+        <li class="">
           <select
-            class="select  select-secondary w-full select-sm md:select-md max-w-xs bg-creamWhite focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent">
-            <option disabled selected class="">出版社</option>
-            <option>皇冠</option>
-            <option>三采</option>
-            <option>寂寞</option>
-            <option>尖端</option>
-            <option>游擊文化</option>
-            <option>啟動文化</option>
-            <option>九歌</option>
-            <option>天下文化</option>
-            <option>遠流</option>
-            <option>采實文化</option>
-            <option>方言文化</option>
-            <option>清文華泉</option>
-            <option>方智</option>
-            <option>崧燁文化</option>
-            <option>碁峰</option>
-            <option>時報出版</option>
-            <option>博碩</option>
-            <option>境好出版</option>
-            <option>太雅出版社</option>
-            <option>馬可孛羅</option>
-            <option>墨刻</option>
-            <option>閱樂國際文化</option>
-            <option>白象文化</option>
-            <option>出色文化</option>
-            <option>八旗文化</option>
-            <option>台灣廣廈</option>
-            <option>人類智庫</option>
-            <option>積木文化</option>
-            <option>PCuSER電腦人文化</option>
-            <option>悅知文化</option>
-            <option>大是文化</option>
-            <option>原點</option>
-            <option>東立</option>
-            <option>聯經出版公司</option>
-            <option>印刻</option>
-            <option>臉譜</option>
+            class="js-publishType select select-secondary w-full select-sm md:select-md max-w-xs bg-creamWhite focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent">
+            <option selected value="">出版社</option>
+            <option value="皇冠">皇冠</option>
+            <option value="寂寞">寂寞</option>
+            <option value="尖端">尖端</option>
+            <option value="游擊文化">游擊文化</option>
+            <option value="啟動文化">啟動文化</option>
+            <option value="九歌">九歌</option>
+            <option value="天下文化">天下文化</option>
+            <option value="遠流">遠流</option>
+            <option value="采實文化">采實文化</option>
+            <option value="方言文化">方言文化</option>
+            <option value="清文華泉">清文華泉</option>
+            <option value="方智">方智</option>
+            <option value="崧燁文化">崧燁文化</option>
+            <option value="碁峰">碁峰</option>
+            <option value="時報出版">時報出版</option>
+            <option value="博碩">博碩</option>
+            <option value="境好出版">境好出版</option>
+            <option value="太雅出版社">太雅出版社</option>
+            <option value="馬可孛羅">馬可孛羅</option>
+            <option value="閱樂國際文化">閱樂國際文化</option>
+            <option value="白象文化">白象文化</option>
+            <option value="出色文化">出色文化</option>
+            <option value="八旗文化">八旗文化</option>
+            <option value="台灣廣廈">台灣廣廈</option>
+            <option value="人類智庫">人類智庫</option>
+            <option value="積木文化">積木文化</option>
+            <option value="PCuSER電腦人文化">PCuSER電腦人文化</option>
+            <option value="悅知文化">悅知文化</option>
+            <option value="大是文化">大是文化</option>
+            <option value="原點">原點</option>
+            <option value="東立">東立</option>
+            <option value="聯經出版公司">聯經出版公司</option>
+            <option value="印刻">印刻</option>
+            <option value="臉譜">臉譜</option>
           </select>
         </li>
+        <button
+          class="js-typeBtn btn btn-outline btn-primary btn-sm md:btn-md hover:bg-primary1 hover:border-none hover:text-white">搜尋</button>
+      </ul>
+    </div>
+    <div class="container">
+      <p class="js-searchType "></p>
+      <ul class="js-searchBook flex flex-wrap gap-4 xl:gap gap-y-10 justify-center items-end">
       </ul>
     </div>
   </section>

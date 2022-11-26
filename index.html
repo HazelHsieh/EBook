@@ -40,8 +40,18 @@
     </div>
     <div class="navbar-end flex-none gap-2">
       <div class="form-control text-white">
-        <input type="text" placeholder="搜尋"
-          class="badge badge-outline border-primary text-brown input-sm w-full max-w-xs focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent" />
+        <div class="form-control">
+          <div class="js-navInputGroup input-group">
+            <input type="text" placeholder="以書名搜尋"
+              class="js-navInput input input-bordered text-brown  focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent" />
+            <a href="./frontendView/news.html"
+              class="js-navInputBtn btn btn-outline border-primary text-primary rounded-sm hover:bg-primary1 hover:border-none hover:text-white">
+              GO
+            </a>
+          </div>
+        </div>
+        <!-- <input type="text" placeholder="搜尋"
+          class="badge badge-outline border-primary text-brown input-sm w-full max-w-xs focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent" /> -->
       </div>
       <div class="dropdown dropdown-end ">
         <label tabindex="0" class="btn btn-ghost btn-circle avatar">
@@ -602,26 +612,6 @@
       </div>
     </div>
 
-    <!-- <div class="max-w-md mx-auto rounded-xl shadow-md  overflow-hidden">
-        <div class="card md:flex">
-          <div class="md:flex-shrink-0 shadow-xl">
-            <img class="h-48 w-full object-cover md:h-full " src="https://placeimg.com/400/225/arch"
-              alt="Man looking at item at a store">
-          </div>
-          <div class="card-body">
-            <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Case study</div>
-            <h2 class="card-title">進擊的台劇</h2>
-            <p>從《紅衣小女孩》到《茶金》，<br>他們打造的台劇，很酷！</p>
-            <div class="card-actions justify-center pt-3">
-              <button class="btn bg-primary border-none rounded-sm text-white hover:bg-secondary"><span
-                  class="material-icons mr-2">auto_stories</span>翻來看看</button>
-              <button
-                class="btn btn-outline border-primary text-primary rounded-sm hover:bg-secondary hover:border-none hover:text-white"><span
-                  class="material-icons mr-2">read_more</span>了解更多</button>
-            </div>
-          </div>
-        </div>
-      </div> -->
     <ul class="flex mt-5 flex-wrap justify-center items-end">
       <li class="mx-6 mt-5">
         <img class="mx-auto" src="./imgs/title_line.png" alt="">

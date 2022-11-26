@@ -1,5 +1,7 @@
 //初始
 let data;
+
+// 首頁推上來的書本陣列
 const eBook = {
   //最新熱門
   newPublishDate: [],
@@ -16,7 +18,7 @@ const eBook = {
   //藝術設計
   design: []
 }
-
+// 使用者推上來有的書籍
 const userBooks = [];
 
 // 初始書籍資料
@@ -81,6 +83,22 @@ function init() {
 }
 init();
 
+// user search
+const js_NavInputGroup = document.querySelector('.js-navInputGroup');
+const js_NavInput = document.querySelector('.js-navInput');
+const js_NavInputBtn = document.querySelector('.js-navInputBtn');
+
+{/* <input type="text" placeholder="書名"
+              class="js-navInput input input-bordered text-brown  focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent" />
+            <a href="./frontendView/news.html"
+              class="js-navInputBtn btn btn-outline border-primary text-primary rounded-sm hover:bg-primary1 hover:border-none hover:text-white">
+              GO
+            </a> 
+          */}
+
+
+
+// 使用者有的書籍
 function usersInit() {
   axios
     .get("http://localhost:3000/users/")
@@ -97,7 +115,6 @@ function usersInit() {
           stringData(userBooks)
 
           // console.log(userBooks);
-
           js_UserBooks.innerHTML = stringData(userBooks);
 
           //渲染swiper 上面的圖片
@@ -109,7 +126,7 @@ function usersInit() {
 usersInit();
 
 
-// 最新書單組字串
+// TOP 排行的組字串
 const newPublishStringData = (data) => {
   let str = ""
   data.forEach(function (item, i) {
