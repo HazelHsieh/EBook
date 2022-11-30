@@ -24,7 +24,7 @@ const userBooks = [];
 // 初始書籍資料
 function init() {
   axios
-    .get("http://localhost:3000/books/")
+    .get("https://json-server-vercel-gamma.vercel.app/books")
     .then(function (res) {
       data = res.data;
 
@@ -105,7 +105,7 @@ js_NavInput.addEventListener('change', () => {
   }
   //console.log(apiUrlFilter.name);
 
-  axios.get(`http://localhost:3000/books?${apiUrlFilter.name}`).then(res => {
+  axios.get(`https://json-server-vercel-gamma.vercel.app/books?${apiUrlFilter.name}`).then(res => {
 
     // 直接把取到值渲染出來 就可以了
     js_SearchBook.innerHTML = stringInputData(res.data);
@@ -148,13 +148,13 @@ const stringInputData = (data) => {
 // 使用者有的書籍
 function usersInit() {
   axios
-    .get("http://localhost:3000/users/")
+    .get("https://json-server-vercel-gamma.vercel.app/users/")
     .then(function (res) {
       userHistoryOrders = res.data[0].historyOrders;
       // console.log(userHistoryOrders);
       userHistoryOrders.forEach(item => {
         // console.log(item.ISBN);
-        axios.get(`http://localhost:3000/books?ISBN=${item.ISBN}`).then(res => {
+        axios.get(`https://json-server-vercel-gamma.vercel.app/books?ISBN=${item.ISBN}`).then(res => {
           userBooks.push(...res.data)
           // class 綁定
           const js_UserBooks = document.querySelector('.js-userBooks');

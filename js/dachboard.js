@@ -1,7 +1,7 @@
 let data;
 function init() {
   axios
-    .get("http://localhost:3000/books/")
+    .get("https://json-server-vercel-gamma.vercel.app/books")
     .then(function (response) {
       data = response.data;
       console.log(data);

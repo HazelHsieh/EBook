@@ -9,7 +9,7 @@ const eBook = {
 // 最新熱門的畫面渲染
 function init() {
   axios
-    .get("http://localhost:3000/books/")
+    .get("https://json-server-vercel-gamma.vercel.app/books")
     .then(function (res) {
       data = res.data;
       // 新書本的陣列，用時間排序
@@ -48,7 +48,7 @@ const js_NavInputBtn = document.querySelector('.js-navInputBtn');
 // user search input
 function searchStart() {
   // postman get 的網址，對應 index.js 的組字串
-  const newsURL = 'http://localhost:3000/books';
+  const newsURL = 'https://json-server-vercel-gamma.vercel.app/books';
   let params = (new URL(document.location)).searchParams;
   let name_like = params.get('name_like'); // 取得 name_like 值
   // console.log(name_like);
@@ -88,7 +88,7 @@ function TypeData() {
     tag: searchFilter.tag ? `&tag=${searchFilter.tag}` : "",
     name: searchFilter.name ? `&name_like=${searchFilter.name}` : "",
   }
-  axios.get(`http://localhost:3000/books?${apiUrlFilter.publish}${apiUrlFilter.tag}${apiUrlFilter.name}`).then(res => {
+  axios.get(`https://json-server-vercel-gamma.vercel.app/books?${apiUrlFilter.publish}${apiUrlFilter.tag}${apiUrlFilter.name}`).then(res => {
     // 直接把取到值渲染出來 就可以了
     js_SearchBook.innerHTML = stringData(res.data);
     // console.log(searchFilter);

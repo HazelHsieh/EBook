@@ -224,6 +224,7 @@
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>AOS.init();</script>
 
+  <!-- addProduct -->
   <script>
     const formDOM = document.querySelector("form")
     const getFormValue = (e) => {
@@ -246,7 +247,7 @@
         "introduction": editor.getData()
       };
       console.log(obj);
-      const url = "http://localhost:3000/books"
+      const url = "https://json-server-vercel-gamma.vercel.app/books"
       console.log(obj);
       axios.post(url, obj)
     }
@@ -275,7 +276,7 @@
       });
   </script>
 
-  <script src="../all.js"></script>
+  <!-- <script src="../all.js"></script> -->
 </body>
 
 </html>

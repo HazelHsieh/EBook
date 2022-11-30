@@ -8,14 +8,14 @@ const userBooks = [];
 // 使用者有的書籍
 function usersInit() {
   axios
-    .get("http://localhost:3000/users/")
+    .get("https://json-server-vercel-gamma.vercel.app/users/")
     .then(function (res) {
       // 1.取得 data 使用者購買的書籍
       userHistoryOrders = res.data[0].historyOrders;
       // 2.把清單裡的 ISBN 取出並且跑 forEach 
       userHistoryOrders.forEach(item => {
         // 3. 再 axios 一次，取出書籍資料為 使用者購物書籍的 ISBN
-        axios.get(`http://localhost:3000/books?ISBN=${item.ISBN}`).then(res => {
+        axios.get(`https://json-server-vercel-gamma.vercel.app/books?ISBN=${item.ISBN}`).then(res => {
           // 4. 取到的資料丟到上面的 userBooks 陣列裡
           userBooks.push(...res.data)
           // 5. 對應 HTML 的標籤
@@ -56,7 +56,7 @@ js_NavInput.addEventListener('change', () => {
   }
   //console.log(apiUrlFilter.name);
 
-  axios.get(`http://localhost:3000/books?${apiUrlFilter.name}`).then(res => {
+  axios.get(`https://json-server-vercel-gamma.vercel.app/books?${apiUrlFilter.name}`).then(res => {
 
     // 直接把取到值渲染出來 就可以了
     js_SearchBook.innerHTML = stringInputData(res.data);
