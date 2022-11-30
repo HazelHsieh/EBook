@@ -6,8 +6,6 @@ const eBook = {
 }
 
 
-
-
 // 最新熱門的畫面渲染
 function init() {
   axios
@@ -42,6 +40,40 @@ const js_TypeBtn = document.querySelector('.js-typeBtn');
 const js_SearchBook = document.querySelector('.js-searchBook');
 const js_SearchType = document.querySelector('.js-searchType');
 
+// user search
+const js_NavInputGroup = document.querySelector('.js-navInputGroup');
+const js_NavInput = document.querySelector('.js-navInput');
+const js_NavInputBtn = document.querySelector('.js-navInputBtn');
+
+// user search input
+function searchStart() {
+  // postman get 的網址，對應 index.js 的組字串
+  const newsURL = 'http://localhost:3000/books';
+  let params = (new URL(document.location)).searchParams;
+  let name_like = params.get('name_like'); // 取得 name_like 值
+  // console.log(name_like);
+  // console.log(`${newsURL}?name_like=${name_like}`);//http://localhost:3000/books/實戰
+  // 如果沒有值就不打api
+  if (name_like === null) return;
+
+
+  axios
+    // api 要對應模糊搜尋
+    .get(`${newsURL}?name_like=${name_like}`)
+    .then(function (res) {
+
+      data = res.data;
+      //這裡的 data.id 等於資料的id
+      //console.log(data.id);
+      js_SearchBook.innerHTML = stringData(res.data);
+      // console.log(searchFilter);
+      js_SearchType.innerHTML = `<p class="js-searchType text-lg ml-6 py-6 text-brown font-bold">您想看的可能是 ..</p>`
+      //重新渲染VanillaTilt.init 上面的圖片
+      VanillaTilt.init(document.querySelectorAll(".your-element"));
+    })
+}
+searchStart();
+
 
 // 按鈕觸發的值
 const searchFilter = {
@@ -50,17 +82,6 @@ const searchFilter = {
   name: ""
 };
 function TypeData() {
-
-  // 可以不用取兩次，直接用網址字串去搜尋
-  // axios
-  //   .get("http://localhost:3000/books/")
-  //   .then(function (res) {
-  //     let booksData = res.data;
-  //     console.log(booksData);
-  //     booksData.forEach(item => {
-  //     })
-  //   })
-
   // api 串接的值 如果有值就跑 按鈕觸發的值，沒有就跑空值（不然會報錯）
   const apiUrlFilter = {
     publish: searchFilter.publish ? `&publish=${searchFilter.publish}` : "",
@@ -68,15 +89,6 @@ function TypeData() {
     name: searchFilter.name ? `&name_like=${searchFilter.name}` : "",
   }
   axios.get(`http://localhost:3000/books?${apiUrlFilter.publish}${apiUrlFilter.tag}${apiUrlFilter.name}`).then(res => {
-    // 確認可以取道撈出來的資料
-    // console.log(res.data);
-    // console.log(`http://localhost:3000/books?${apiUrlFilter.publish}${apiUrlFilter.tag}${apiUrlFilter.name}`);
-    // 可以不用在製造陣列 推上去，不然會無法重新得到新的值
-    // eBookTypeData.push(...res.data)
-    // const js_UserBooks = document.querySelector('.js-userBooks');
-    // stringData(eBookTypeData)
-
-
     // 直接把取到值渲染出來 就可以了
     js_SearchBook.innerHTML = stringData(res.data);
     // console.log(searchFilter);
@@ -88,10 +100,10 @@ function TypeData() {
 
 // 點擊按鈕取得值 中間篩選的值
 js_TypeBtn.addEventListener('click', function (e) {
-
   searchFilter.publish = js_PublishType.value
   searchFilter.tag = js_TagType.value
   searchFilter.name = js_NameInput.value
+
 
   TypeData()
 
@@ -110,44 +122,9 @@ js_TypeBtn.addEventListener('click', function (e) {
   // js_SearchType.reset();
 
 })
-//////////////////////////
-// NAV 篩選 
-// user search
-const js_NavInputGroup = document.querySelector('.js-navInputGroup');
-const js_NavInput = document.querySelector('.js-navInput');
-const js_NavInputBtn = document.querySelector('.js-navInputBtn');
 
 
-// const searchFilter = {
-//   name: ""
-// };
-js_NavInputBtn.addEventListener('click', function (e) {
-  e = js_NavInput.value
-
-  console.log(e);
-
-  const apiUrlFilter = {
-    name: e ? `&name_like=${e}` : "",
-  }
-  console.log(apiUrlFilter.name);
-
-  axios.get(`http://localhost:3000/books?${apiUrlFilter.name}`).then(res => {
-
-    // 直接把取到值渲染出來 就可以了
-    js_SearchBook.innerHTML = stringData(res.data);
-    // console.log(searchFilter);
-    js_SearchType.innerHTML = `<p class="js-searchType text-lg ml-6 py-6 text-brown font-bold">您想看的可能是 ..</p>`
-    //重新渲染VanillaTilt.init 上面的圖片
-    VanillaTilt.init(document.querySelectorAll(".your-element"));
-  })
-})
-
-// 按鈕觸發的值
-// news.html?search=你搜尋的東西
-{/* <a href="./frontendView/products.html?id=${item.id}" */ }
-
-
-// 組字字串的函示
+// 組字字串的函式
 const stringData = (data) => {
   let str = ""
   data.forEach(function (item, i) {

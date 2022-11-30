@@ -34,12 +34,45 @@ function usersInit() {
 }
 usersInit()
 
+// user search
+const js_NavInputGroup = document.querySelector('.js-navInputGroup');
+const js_NavInput = document.querySelector('.js-navInput');
+const js_NavInputBtn = document.querySelector('.js-navInputBtn');
+
+// input 值 改變 就更改裡面的網址
+js_NavInput.addEventListener('change', () => {
+  //console.log(e.target.value);
+  // console.log(e);
+  // console.log(e.target.value);
+  console.log(js_NavInput.value);
+  // 對應的路由
+  js_NavInputBtn.href = `./news.html?name_like=${js_NavInput.value}`;
+  let name_like = js_NavInput.value
+
+  console.log(name_like);
+
+  const apiUrlFilter = {
+    name: name_like ? `&name_like=${js_NavInput.value}` : "",
+  }
+  //console.log(apiUrlFilter.name);
+
+  axios.get(`http://localhost:3000/books?${apiUrlFilter.name}`).then(res => {
+
+    // 直接把取到值渲染出來 就可以了
+    js_SearchBook.innerHTML = stringInputData(res.data);
+    // console.log(searchFilter);
+    js_SearchType.innerHTML = `< p class="js-searchType text-lg ml-6 py-6 text-brown font-bold" > 您想看的可能是..</ > `
+    //重新渲染VanillaTilt.init 上面的圖片
+    VanillaTilt.init(document.querySelectorAll(".your-element"));
+  })
+})
+
 // 組字字串的函示
 const stringData = (data) => {
   let str = ""
   data.forEach(function (item, i) {
     str += `<div class="swiper-slide">
-    <a href="./frontendView/products.html?id=${item.id}"
+    <a href="../frontendView/products.html?id=${item.id}"
     class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
     <img class="" src=${item.imgUrl} alt="book1" />
     </a>

@@ -14,8 +14,7 @@
           "publish": "皇冠",
           "publishDate": "2022/08/29",
           "tag": [
-            "中文文學",
-            "散文"
+            "中文文學"
           ],
           "ISBN": "97895733392467",
           "language": "繁體中文"
@@ -148,8 +147,7 @@
       "rate": 5,
       "imgUrl": "https://im2.book.com.tw/image/getImage?i=https://www.books.com.tw/img/E05/002/69/E050026983.jpg&v=5acea181k&w=170&h=170",
       "tag": [
-        "中文文學",
-        "文學小說"
+        "中文文學"
       ],
       "ISBN": "9789863428428",
       "language": "繁體中文",
@@ -254,8 +252,7 @@
       "rate": 3,
       "imgUrl": "https://im1.book.com.tw/image/getImage?i=https://www.books.com.tw/img/E05/014/27/E050142748.jpg&v=632d7595k&w=150&h=150",
       "tag": [
-        "心理勵志",
-        "兩性關係"
+        "心理勵志"
       ],
       "ISBN": "9789576588884",
       "language": "繁體中文",
@@ -271,8 +268,7 @@
       "rate": 3,
       "imgUrl": "https://im1.book.com.tw/image/getImage?i=https://www.books.com.tw/img/E05/014/27/E050142778.jpg&v=6331122ek&w=150&h=150",
       "tag": [
-        "心理勵志",
-        "心靈成長"
+        "心理勵志"
       ],
       "ISBN": "9789865257477",
       "language": "繁體中文",
@@ -288,8 +284,7 @@
       "rate": 3,
       "imgUrl": "https://im1.book.com.tw/image/getImage?i=https://www.books.com.tw/img/E05/014/23/E050142326.jpg&v=6324189dk&w=210&h=210",
       "tag": [
-        "心理勵志",
-        "思考邏輯"
+        "心理勵志"
       ],
       "ISBN": "9789865258337",
       "language": "繁體中文",
@@ -305,8 +300,7 @@
       "rate": 3,
       "imgUrl": "https://im2.book.com.tw/image/getImage?i=https://www.books.com.tw/img/E05/014/30/E050143063.jpg&v=6333e179k&w=210&h=210",
       "tag": [
-        "心理勵志",
-        "自我成長"
+        "心理勵志"
       ],
       "ISBN": "9789573297703",
       "language": "繁體中文",
@@ -322,8 +316,7 @@
       "rate": 3,
       "imgUrl": "https://im1.book.com.tw/image/getImage?i=https://www.books.com.tw/img/E05/008/66/E050086600.jpg&v=6008ffd0k&w=210&h=210",
       "tag": [
-        "心理勵志",
-        "大腦科學"
+        "心理勵志"
       ],
       "ISBN": "9789573287322",
       "language": "繁體中文",
@@ -371,8 +364,7 @@
       "rate": 4,
       "imgUrl": "https://im2.book.com.tw/image/getImage?i=https://www.books.com.tw/img/E05/011/00/E050110073.jpg&v=616fd43ek&w=210&h=210",
       "tag": [
-        "心理勵志",
-        "人際關係"
+        "心理勵志"
       ],
       "ISBN": "9789865486891",
       "language": "繁體中文",
@@ -388,8 +380,7 @@
       "rate": 5,
       "imgUrl": "https://im1.book.com.tw/image/getImage?i=https://www.books.com.tw/img/E05/004/53/E050045330.jpg&w=187&h=187&v=5ce3b0b6",
       "tag": [
-        "心理勵志",
-        "自我成長"
+        "心理勵志"
       ],
       "ISBN": "9789861755267",
       "language": "繁體中文",
@@ -450,7 +441,7 @@
       "author": "呂國泰, 鍾國章",
       "publish": "碁峰",
       "publishDate": "2022/09/30",
-      "rate": "3",
+      "rate": 3,
       "imgUrl": "https://im2.book.com.tw/image/getImage?i=https://www.books.com.tw/img/E05/014/34/E050143403.jpg&v=633a79ack&w=170&h=170",
       "tag": [
         "電腦資訊"
@@ -466,11 +457,10 @@
       "author": "李開周",
       "publish": "時報出版",
       "publishDate": "2022/08/26",
-      "rate": "3",
+      "rate": 3,
       "imgUrl": "https://im2.book.com.tw/image/getImage?i=https://www.books.com.tw/img/E05/014/23/E050142377.jpg&v=63293a0dk&w=170&h=170",
       "tag": [
-        "電腦資訊",
-        "程式設計"
+        "電腦資訊"
       ],
       "ISBN": "9786263357785",
       "language": "繁體中文",
@@ -483,7 +473,7 @@
       "author": "廖炳閎",
       "publish": "博碩",
       "publishDate": "2022/07/02",
-      "rate": "",
+      "rate": 2,
       "imgUrl": "https://im2.book.com.tw/image/getImage?i=https://www.books.com.tw/img/E05/014/22/E050142201.jpg&v=6321894ck&w=170&h=170",
       "tag": [
         "電腦資訊"
@@ -499,7 +489,7 @@
       "author": "蒼時弦也",
       "publish": "博碩",
       "publishDate": "2022/05/12",
-      "rate": "3",
+      "rate": 3,
       "imgUrl": "https://im2.book.com.tw/image/getImage?i=https://www.books.com.tw/img/E05/013/78/E050137829.jpg&v=62d61944k&w=170&h=170",
       "tag": [
         "電腦資訊"
@@ -515,7 +505,7 @@
       "author": "黃冠霖",
       "publish": "博碩",
       "publishDate": "2020/11/12",
-      "rate": "4",
+      "rate": 4,
       "imgUrl": "https://im2.book.com.tw/image/getImage?i=https://www.books.com.tw/img/E05/008/94/E050089495.jpg&v=604f2865k&w=210&h=210",
       "tag": [
         "電腦資訊"
@@ -531,7 +521,7 @@
       "author": "陳柏融",
       "publish": "博碩",
       "publishDate": "2020/09/11",
-      "rate": "4",
+      "rate": 4,
       "imgUrl": "https://im1.book.com.tw/image/getImage?i=https://www.books.com.tw/img/E05/008/01/E050080162.jpg&v=5fbf21eek&w=210&h=210",
       "tag": [
         "電腦資訊"
@@ -547,7 +537,7 @@
       "author": "柏井壽",
       "publish": "境好出版",
       "publishDate": "2022/10/13",
-      "rate": "3",
+      "rate": 4,
       "imgUrl": "https://im1.book.com.tw/image/getImage?i=https://www.books.com.tw/img/E05/014/42/E050144242.jpg&w=374&h=374&v=63477559",
       "tag": [
         "旅遊"
@@ -563,7 +553,7 @@
       "author": "Kayo",
       "publish": "太雅出版社",
       "publishDate": "2022/10/14",
-      "rate": "4",
+      "rate": 4,
       "imgUrl": "https://im1.book.com.tw/image/getImage?i=https://www.books.com.tw/img/E05/014/40/E050144072.jpg&v=633e9b2dk&w=170&h=170",
       "tag": [
         "旅遊"
@@ -579,7 +569,7 @@
       "author": "亞蘭．布斯",
       "publish": "馬可孛羅",
       "publishDate": "2022/10/06",
-      "rate": "4",
+      "rate": 5,
       "imgUrl": "https://im2.book.com.tw/image/getImage?i=https://www.books.com.tw/img/E05/014/49/E050144963.jpg&v=6352020ck&w=170&h=170",
       "tag": [
         "旅遊"
@@ -595,7 +585,7 @@
       "author": "陳洛蓁",
       "publish": "墨刻",
       "publishDate": "2022/09/22",
-      "rate": "5",
+      "rate": 4,
       "imgUrl": "https://im2.book.com.tw/image/getImage?i=https://www.books.com.tw/img/E05/014/41/E050144199.jpg&v=63453bd0k&w=170&h=170",
       "tag": [
         "旅遊"
@@ -611,7 +601,7 @@
       "author": "楊寧雅",
       "publish": "閱樂國際文化",
       "publishDate": "2022/09/01",
-      "rate": "5",
+      "rate": 5,
       "imgUrl": "https://im1.book.com.tw/image/getImage?i=https://www.books.com.tw/img/E05/014/18/E050141808.jpg&v=631955c5k&w=170&h=170",
       "tag": [
         "旅遊"
@@ -627,7 +617,7 @@
       "author": "童榮地",
       "publish": "白象文化",
       "publishDate": "2022/08/16",
-      "rate": "4",
+      "rate": 4,
       "imgUrl": "https://im2.book.com.tw/image/getImage?i=https://www.books.com.tw/img/E05/014/00/E050140097.jpg&v=62fb5c91k&w=170&h=170",
       "tag": [
         "旅遊"
@@ -643,7 +633,7 @@
       "author": "黃作炎",
       "publish": "出色文化",
       "publishDate": "2022/08/01",
-      "rate": "2",
+      "rate": 2,
       "imgUrl": "https://im1.book.com.tw/image/getImage?i=https://www.books.com.tw/img/E05/013/83/E050138312.jpg&v=62de30afk&w=170&h=170",
       "tag": [
         "旅遊"
@@ -659,7 +649,7 @@
       "author": "法蘭西斯．塔朋",
       "publish": "八旗文化",
       "publishDate": "2022/07/21",
-      "rate": "4",
+      "rate": 4,
       "imgUrl": "https://im2.book.com.tw/image/getImage?i=https://www.books.com.tw/img/E05/013/78/E050137857.jpg&v=62d678e5k&w=210&h=210",
       "tag": [
         "旅遊"
@@ -675,7 +665,7 @@
       "author": "李芸德",
       "publish": "太雅出版社",
       "publishDate": "2022/07/10",
-      "rate": "4",
+      "rate": 4,
       "imgUrl": "https://im1.book.com.tw/image/getImage?i=https://www.books.com.tw/img/E05/014/15/E050141514.jpg&v=6315a35ck&w=170&h=170",
       "tag": [
         "旅遊"
@@ -691,7 +681,7 @@
       "author": "彭浩",
       "publish": "台灣廣廈",
       "publishDate": "2022/11/10",
-      "rate": "5",
+      "rate": 5,
       "imgUrl": "https://im1.book.com.tw/image/getImage?i=https://www.books.com.tw/img/E05/014/72/E050147234.jpg&v=636db3abk&w=170&h=170",
       "tag": [
         "居家料理"
@@ -707,7 +697,7 @@
       "author": "黎國雄",
       "publish": "人類智庫",
       "publishDate": "2022/08/31",
-      "rate": "4",
+      "rate": 4,
       "imgUrl": "https://im1.book.com.tw/image/getImage?i=https://www.books.com.tw/img/E05/014/55/E050145502.jpg&v=6359eddek&w=150&h=150",
       "tag": [
         "居家料理"
@@ -723,7 +713,7 @@
       "author": "王景茹",
       "publish": "人類智庫",
       "publishDate": "2022/08/31",
-      "rate": "4",
+      "rate": 4,
       "imgUrl": "https://im1.book.com.tw/image/getImage?i=https://www.books.com.tw/img/E05/014/46/E050144642.jpg&v=634e26ddk&w=150&h=150",
       "tag": [
         "居家料理"
@@ -739,7 +729,7 @@
       "author": "長島博",
       "publish": "墨刻",
       "publishDate": "2022/10/18",
-      "rate": "3",
+      "rate": 3,
       "imgUrl": "https://im2.book.com.tw/image/getImage?i=https://www.books.com.tw/img/E05/014/54/E050145409.jpg&v=63589831k&w=170&h=170",
       "tag": [
         "居家料理"
@@ -755,7 +745,7 @@
       "author": "小寺宮",
       "publish": "積木文化",
       "publishDate": "2022/10/15",
-      "rate": "3",
+      "rate": 3,
       "imgUrl": "https://im1.book.com.tw/image/getImage?i=https://www.books.com.tw/img/E05/014/42/E050144200.jpg&v=63453bd0k&w=170&h=170",
       "tag": [
         "居家料理"
@@ -771,7 +761,7 @@
       "author": "卡卡",
       "publish": "PCuSER電腦人文化",
       "publishDate": "2022/10/04",
-      "rate": "4",
+      "rate": 4,
       "imgUrl": "https://im1.book.com.tw/image/getImage?i=https://www.books.com.tw/img/E05/014/72/E050147226.jpg&v=636db024k&w=170&h=170",
       "tag": [
         "居家料理"
@@ -787,7 +777,7 @@
       "author": "花田恵理子",
       "publish": "采實文化",
       "publishDate": "2021/06/05",
-      "rate": "3",
+      "rate": 3,
       "imgUrl": "https://im2.book.com.tw/image/getImage?i=https://www.books.com.tw/img/E05/009/41/E050094155.jpg&v=60ab61efk&w=210&h=210",
       "tag": [
         "居家料理"
@@ -803,7 +793,7 @@
       "author": "齋藤由郁里",
       "publish": "皇冠",
       "publishDate": "2021/03/29",
-      "rate": "4",
+      "rate": 4,
       "imgUrl": "https://im1.book.com.tw/image/getImage?i=https://www.books.com.tw/img/E05/009/01/E050090174.jpg&v=605d4d7ek&w=210&h=210",
       "tag": [
         "居家料理"
@@ -819,7 +809,7 @@
       "author": "宜手作",
       "publish": "積木文化",
       "publishDate": "2021/05/07",
-      "rate": "3",
+      "rate": 3,
       "imgUrl": "https://im1.book.com.tw/image/getImage?i=https://www.books.com.tw/img/E05/009/21/E050092158.jpg&v=608f6e39k&w=210&h=210",
       "tag": [
         "居家料理"
@@ -835,7 +825,7 @@
       "author": "MICANO",
       "publish": "遠流",
       "publishDate": "2022/11/01",
-      "rate": "3",
+      "rate": 3,
       "imgUrl": "https://im2.book.com.tw/image/getImage?i=https://www.books.com.tw/img/E05/014/58/E050145817.jpg&v=635b6d11k&w=150&h=150",
       "tag": [
         "藝術設計"
@@ -851,7 +841,7 @@
       "author": "張顥璇（凱西）",
       "publish": "悅知文化",
       "publishDate": "2022/09/26",
-      "rate": "4",
+      "rate": 4,
       "imgUrl": "https://im1.book.com.tw/image/getImage?i=https://www.books.com.tw/img/E05/014/15/E050141520.jpg&v=6316c0d4k&w=150&h=150",
       "tag": [
         "藝術設計"
@@ -867,7 +857,7 @@
       "author": "卡洛琳．施拉姆",
       "publish": "大是文化",
       "publishDate": "2022/09/28",
-      "rate": "5",
+      "rate": 5,
       "imgUrl": "https://im2.book.com.tw/image/getImage?i=https://www.books.com.tw/img/E05/014/28/E050142813.jpg&v=63314d3dk&w=150&h=150",
       "tag": [
         "藝術設計"
@@ -883,7 +873,7 @@
       "author": "陳格秀",
       "publish": "出色文化",
       "publishDate": "2022/11/03",
-      "rate": "3",
+      "rate": 3,
       "imgUrl": "https://im1.book.com.tw/image/getImage?i=https://www.books.com.tw/img/E05/014/55/E050145572.jpg&v=635b3c8dk&w=170&h=170",
       "tag": [
         "藝術設計"
@@ -899,7 +889,7 @@
       "author": "艾莉絲•普洛特",
       "publish": "原點",
       "publishDate": "2022/10/17",
-      "rate": "5",
+      "rate": 5,
       "imgUrl": "https://im1.book.com.tw/image/getImage?i=https://www.books.com.tw/img/E05/014/54/E050145468.jpg&v=6359e621k&w=170&h=170",
       "tag": [
         "藝術設計"
@@ -915,7 +905,7 @@
       "author": "周陟",
       "publish": "崧燁文化",
       "publishDate": "2022/10/16",
-      "rate": "4",
+      "rate": 4,
       "imgUrl": "https://im2.book.com.tw/image/getImage?i=https://www.books.com.tw/img/E05/014/34/E050143463.jpg&v=633a902ek&w=170&h=170",
       "tag": [
         "藝術設計"
@@ -931,7 +921,7 @@
       "author": "林秉豐",
       "publish": "白象文化",
       "publishDate": "2022/10/02",
-      "rate": "4",
+      "rate": 4,
       "imgUrl": "https://im1.book.com.tw/image/getImage?i=https://www.books.com.tw/img/E05/014/40/E050144074.jpg&v=633f9a68k&w=170&h=170",
       "tag": [
         "藝術設計"
@@ -947,7 +937,7 @@
       "author": "室井康雄",
       "publish": "東立",
       "publishDate": "2022/10/27",
-      "rate": "3",
+      "rate": 3,
       "imgUrl": "https://im1.book.com.tw/image/getImage?i=https://www.books.com.tw/img/E05/014/50/E050145032.jpg&v=635231e0k&w=170&h=170",
       "tag": [
         "藝術設計"
@@ -963,7 +953,7 @@
       "author": "珮姬．迪恩",
       "publish": "積木文化",
       "publishDate": "2018/06/14",
-      "rate": "3",
+      "rate": 3,
       "imgUrl": "https://im1.book.com.tw/image/getImage?i=https://www.books.com.tw/img/E05/002/99/E050029916.jpg&v=5b29c8d1k&w=210&h=210",
       "tag": [
         "藝術設計"
@@ -979,7 +969,7 @@
       "author": "曾瀚賢",
       "publish": "聯經出版公司",
       "publishDate": "2022/07/14",
-      "rate": "5",
+      "rate": 5,
       "imgUrl": "https://im1.book.com.tw/image/getImage?i=https://www.books.com.tw/img/E05/013/64/E050136488.jpg&w=187&h=187&v=62c3f68a",
       "tag": [
         "藝術設計"
@@ -995,7 +985,7 @@
       "author": " 張鐵志",
       "publish": "印刻",
       "publishDate": "2022/06/02",
-      "rate": "5",
+      "rate": 5,
       "imgUrl": "https://im1.book.com.tw/image/getImage?i=https://www.books.com.tw/img/001/092/57/0010925738.jpg&w=187&h=187&v=62876dbf",
       "tag": [
         "藝術設計"
@@ -1011,7 +1001,7 @@
       "author": "凱特•克勞馥",
       "publish": "臉譜",
       "publishDate": "2022/05/03",
-      "rate": "3",
+      "rate": 3,
       "imgUrl": "https://im1.book.com.tw/image/getImage?i=https://www.books.com.tw/img/E05/013/19/E050131913.jpg&w=187&h=187&v=627ca044",
       "tag": [
         "電腦資訊"

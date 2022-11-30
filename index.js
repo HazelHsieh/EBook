@@ -88,13 +88,60 @@ const js_NavInputGroup = document.querySelector('.js-navInputGroup');
 const js_NavInput = document.querySelector('.js-navInput');
 const js_NavInputBtn = document.querySelector('.js-navInputBtn');
 
-{/* <input type="text" placeholder="書名"
-              class="js-navInput input input-bordered text-brown  focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent" />
-            <a href="./frontendView/news.html"
-              class="js-navInputBtn btn btn-outline border-primary text-primary rounded-sm hover:bg-primary1 hover:border-none hover:text-white">
-              GO
-            </a> 
-          */}
+// input 值 改變 就更改裡面的網址
+js_NavInput.addEventListener('change', () => {
+  //console.log(e.target.value);
+  // console.log(e);
+  // console.log(e.target.value);
+  console.log(js_NavInput.value);
+  // 對應的路由
+  js_NavInputBtn.href = `./frontendView/news.html?name_like=${js_NavInput.value}`;
+  let name_like = js_NavInput.value
+
+  console.log(name_like);
+
+  const apiUrlFilter = {
+    name: name_like ? `&name_like=${js_NavInput.value}` : "",
+  }
+  //console.log(apiUrlFilter.name);
+
+  axios.get(`http://localhost:3000/books?${apiUrlFilter.name}`).then(res => {
+
+    // 直接把取到值渲染出來 就可以了
+    js_SearchBook.innerHTML = stringInputData(res.data);
+    // console.log(searchFilter);
+    js_SearchType.innerHTML = `< p class="js-searchType text-lg ml-6 py-6 text-brown font-bold" > 您想看的可能是..</ > `
+    //重新渲染VanillaTilt.init 上面的圖片
+    VanillaTilt.init(document.querySelectorAll(".your-element"));
+  })
+})
+
+// 組字字串的函示
+const stringInputData = (data) => {
+  let str = ""
+  data.forEach(function (item, i) {
+    str += `<li class="w-full md:w-1/3 lg:w-1/5 xl:w-1/6">
+    <div class="max-w-md mx-auto overflow-hidden">
+      <div class="card md:flex ">
+        <div data-tilt data-tilt-glare data-tilt-max-glare="0.8" class="your-element md:flex-shrink-0 shadow-xl flex justify-center mx-auto">
+          <a href="../frontendView/products.html?id=${item.id}">
+            <img class=" w-[300px] object-cover" src="${item.imgUrl}"
+              alt="Man looking at item at a store">
+              </a>
+        </div>
+        <div class="h-[80px] mt-2 pt-6 flex items-center justify-center border-t-0 border-stone-300">
+          <p class="text-xl card-title truncate mx-1">${item.name}</p>
+
+        </div>
+      </div>
+    </div>
+  </li>`
+  })
+  // console.log(str);
+  return str;
+}
+
+
 
 
 
