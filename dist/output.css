@@ -9584,6 +9584,11 @@ html {
   color: rgb(99 102 241 / var(--tw-text-opacity));
 }
 
+.hover\:text-primary:hover {
+  --tw-text-opacity: 1;
+  color: rgb(140 161 135 / var(--tw-text-opacity));
+}
+
 .table .hover\:hover:hovertr:hover th,
     .table .hover\:hover:hovertr:hover td,
     .table .hover\:hover:hovertr:nth-child(even):hover th,
