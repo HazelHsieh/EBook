@@ -1,7 +1,9 @@
+import api from '../js/http.js';
+
 let data;
 function init() {
   // postman get 的網址，對應 all.js 的組字串
-  const booksURL = 'https://json-server-vercel-gamma.vercel.app/books';
+  const booksURL = `${api.url}books`;
   let params = (new URL(document.location)).searchParams;
   let id = parseInt(params.get('id')); // 取得 api id number
   //這裡的 id 等於 postman get 的網址的 id

@@ -3,8 +3,8 @@
     {
       "id": 1,
       "name": "hazel",
-      "account": "123@gmail.com",
-      "password": "12345678",
+      "email": "hazel@gmail.com",
+      "password": "$2a$10$OQmx5OnyBKDUFOnfybf3juDgvBq8SU5stGBZ.fQvUcOVyXXxjauza",
       "phone": "0912345678",
       "collects": [
         {
@@ -42,18 +42,72 @@
       ]
     },
     {
-      "id": 2,
-      "name": "coco",
-      "account": "123@gmail.com",
-      "password": "12345678",
-      "phone": "54645645654"
+      "name": "yuyu",
+      "email": "qazwsx@gmail.com",
+      "password": "$2a$10$eqvnDq9pF2h2mPlYSCK8Puwqf52ZIDXrkD0/bUWWCFaPV4XpnaMfW",
+      "id": 5
     },
     {
-      "name": "vic",
-      "account": "123@gmail.com",
-      "password": "12345678",
-      "phone": "0912345678",
-      "id": 3
+      "email": "123@gmail.com",
+      "password": "",
+      "id": 6
+    },
+    {
+      "email": "dei@gmail.com",
+      "password": "$2a$10$XUKVl18KOibFaz0XHlhX0uDbZ4Si8hmusCgU88AC9MFy9HJPA6TmG",
+      "id": 7
+    },
+    {
+      "email": "12443@gmail.com",
+      "password": "$2a$10$W1XDp1JdyE5iJdN0zZ3xee6/IXBu2h2y3cVA.9VDFI4Nv9Go9p/v6",
+      "id": 8
+    },
+    {
+      "email": "122@gmail.com",
+      "password": "$2a$10$3S4bcATu3Z0UE0TM4Bsu8uPEsxbcE4kDD1IHy3H4CKGBp7qVI9Nr2",
+      "name": "qqq",
+      "id": 9
+    },
+    {
+      "email": "bbbb@dw.qwe",
+      "password": "$2a$10$R3frPn7NUUxUTTTfu5Veg.ZWkSN9gq4IP.Zx7V6WTWSix.FMEShlS",
+      "name": "aaaa",
+      "id": 10
+    },
+    {
+      "email": "adasdasd@qwewq.qweqw",
+      "password": "$2a$10$M.9sP9N5FHOvMfcMl41U1.BDdqapBQMr27kno89K07vZSKfj3TKPC",
+      "name": "admin",
+      "id": 11
+    },
+    {
+      "email": "123444@gmail.com",
+      "password": "$2a$10$726crpgygy2Z8hI/BIyKe.PAQPKDwfJYxRjtCP1Eezfsiq12WwBNm",
+      "name": "1234",
+      "id": 12
+    },
+    {
+      "email": "adadad@qwe.qweqw",
+      "password": "$2a$10$2xpzcRm0De1SD4LddxCGouYddBZz8ZprbtQq.4yLA77waT5qEJwUW",
+      "name": "admin",
+      "id": 13
+    },
+    {
+      "email": "123456@gmail.com",
+      "password": "$2a$10$f4roJey0mcOCZsDMgCFb9.JCvVweU8SeNkQmDuT2CNZOa5Vq2LoeO",
+      "id": 14
+    },
+    {
+      "email": "her@gmail.com",
+      "password": "$2a$10$c3xuLJA0WA73icfkvz0JEupewUjG9yeCjeBpjjZB0WxhMdFhY.pYm",
+      "name": "我是他",
+      "id": 15
+    },
+    {
+      "email": "1234567@gmail.com",
+      "password": "$2a$10$svIYGziJe1pw2dYMFODSoutbKVXdQfuYJyfM1t9EvDKzj1S9c82gW",
+      "name": "蛋糕22",
+      "id": 16
     }
   ],
   "books": [
@@ -1011,6 +1065,22 @@
       "recommend": [],
       "id": 58,
       "introduction": "<h3><strong>內容簡介</strong></h3><p><strong>AI ≠ 人工 + 智慧</strong><br><strong>模擬人類微笑的Amazon彎曲箭頭背後，誰受益、誰為此犧牲？</strong><br><strong>為何Google不惜一切代價避免提到或暗示人工智慧？</strong><br><strong>從沙漠到海洋，從岩石到城市，從樹木到超大型企業，從跨洋航線到原子彈，</strong><br><strong>誰在AI後面？誰背叛了AI？</strong><br>&nbsp;</p><p><strong>――――――</strong><br><strong>從神話到魔化，從地球、雲端到太空，破解AI背後的6個祕密，探索人工智慧的另一種可能！</strong><br><br><strong>當代AI研究先驅、微軟研究院資深首席研究員</strong><br><strong>第一手揭露人工智慧豐功偉業背後的陰暗面！</strong><br><br><strong>――――――</strong></p><p><br>▌<strong>各界好評讚譽</strong><br><br><strong>王國禎&nbsp;</strong>∣ 國立交通大學資訊工程學系退休教授、高雄醫學大學基礎科學教育中心教授<br><strong>李忠謀&nbsp;</strong>∣ 國立臺灣師範大學副校長暨資訊工程學系教授<br><strong>李家維&nbsp;</strong>∣ 國立清華大學生命科學系教授、《科學人》雜誌總編輯<br><strong>林守德&nbsp;</strong>∣ 國立臺灣大學資訊工程學系教授<br><strong>洪文玲&nbsp;</strong>∣ 台灣科技與社會研究學會理事長<br><strong>曹筱玥&nbsp;</strong>∣ 國立臺北科技大學互動設計系/所專任教授兼系主任/所長<br><strong>郭榮彥&nbsp;</strong>∣ Lawsnote創辦人、律師<br><strong>黃文浩&nbsp;</strong>∣ 在地實驗創立者<br><strong>劉士達&nbsp;</strong>∣ 國立清華大學科技藝術研究中心科技創新應用組組長<br><strong>謝宗震&nbsp;</strong>∣ 詠鋐智能股份有限公司創辦人暨執行長&nbsp;<br><br>▌<strong>幽靈代價，我們為AI付出了什麼？</strong><br><br>◎人工智慧既非人工的，也不是智慧的，那些看似萬能的智慧是如何「製造」出來的？<br>◎從內華達沙漠到內蒙古巨大的人工湖、從亞馬遜倉庫到太空殖民，直擊人工智慧帝國全景地圖！<br>◎人工智慧充滿隱藏成本，從自然資源和勞力到隱私和自由都是代價，深入了解我們為人工智慧付出了什麼？<br>◎人類為人工智慧制定的倫理架構非常失敗，程式碼和演算法並非致命毒藥，那麼到底哪裡出了錯？<br><br>▌<strong>「AI」，一個兩字的短語，隱含了一則神話和六個幽靈！</strong><br><br>當我們跟Siri聊天、開著特斯拉電動車上路、用Google搜尋、上傳IG自拍、觀看抖音影片，以為自己生活在人工智慧的美好新世界，但事實上許多看似有價值的自動化系統能運作，背後都隱藏著幽靈。運行一個自然語言處理模型產生的二氧化碳排放量，相當於從紐約搭機往返北京125次！精心打造的魔鬼細節，讓我們相信智慧機器在做那些神奇的工作。<br><br>人工智慧不只是演算法、資料與硬體的混合物，它關乎自然界、政治、歷史，有時甚至也和美有關。當人工智慧滲入政治生活、耗盡地球之時，會發生什麼事？人工智慧如何形塑我們對自己及對社會的理解？<br><br>本書作者凱特•克勞馥是當代對人工智慧的影響最深思熟慮的研究者之一，以人文主義者的眼光、藝術家的感知、科學家的嚴謹，揭露人工智慧真實的樣貌。她憑藉十多年的研究，揭示了人工智慧神話背後隱藏了什麼，從打造與支持人工智慧基礎設施所需的能源和礦物、剝削「自動化」服務背後的勞工，到人工智慧從我們身上取得的資料，破除人工智慧的迷思。<br><br>全書以地圖集的概念來看待人工智慧，提供我們重新閱讀世界的可能性。在人工智慧的地景中，我們會造訪礦坑、耗能資料中心裡長長的走廊、顱骨檔案庫、影像資料庫，以及日光燈照亮的物流倉庫，了解每一種分類都有自己的後果。世界上最富有公司的人工智慧系統正榨取各種資源，將人類的思考能力商品化，以服務當代科技的一瞬間。<br><br>沒有單一的黑盒子，沒有單純的祕密，錯綜複雜的權力系統交織，映射了一組複雜的期望、意識形態、欲望和恐懼！<br><br>▌<strong>對本書的讚譽</strong><br><br><strong>李忠謀&nbsp;</strong>│ <strong>國立臺灣師範大學副校長暨資訊工程學系教授</strong><br>這是本非以技術層面談論人工智慧主題的著作。本書分梳各種資訊系統在被設計與運用中所隱含的社會性及政治性的籌劃與代價，包括隱蔽在遠端及雲端概念中但真實存在的巨大環境成本和勞動成本――俾使讀者一窺人工智慧所帶來的正義問題。人工智慧的發展與應用不會有所止步，但修正對人工智慧的迷思並擴大非技術面的探討確實是必要的。<br><br><strong>郭榮彥&nbsp;</strong>│<strong> Lawsnote創辦人、律師</strong><br>石油精煉縮短了世界的距離，同時也改變了地球的溫度；核能可以點亮黑夜，也點亮了廣島。<br>科技發展推進了人類社會的繁榮發展，但幾乎所有的科技同時也伴隨著負面的代價。<br>從工業革命開始，隨著經濟發展的高歌猛進，資產階級向全世界輸出便宜的物資，也輸出了軍隊和東印度公司，殖民者之間的爭奪演變成世界大戰，但我們的科技仍持續在進步，生活品質持續在提升。<br>作者提醒人工智慧的發展並不是沒有代價的，就像所有的科技一樣，有好的一面、同時有不好的一面。<br>重視科技的代價並沒有辦法讓進展回溯，但謙卑的重視這些問題，才能讓科技更健康的發展。<br><br><strong>黃文浩&nbsp;</strong>│ <strong>在地實驗創立者</strong><br>AI科技的發展造成了「人類主體」轉向「資料主體」的倫理陷阱，本書提出種種跡證讓我們不得不從科技創新的樂觀期待中警醒並且思考面對。作者以地圖集的方法向我們「展示了一個對世界的特殊觀點，有受認可的科學——尺度與比例、經度與緯度——以及形式感和一致性」。這無疑是長期從事科技藝術工作如我面對跨領域最具啟發的方式。<br><br><strong>謝宗震&nbsp;</strong>│ <strong>詠鋐智能股份有限公司創辦人暨執行長</strong><br>克勞馥憑藉十多年的研究，揭示了人工智慧系統是如何根植於社會、文化、政治與經濟世界，她從人工智慧與正義的觀點大膽呼籲更加公正與永續的未來。無論你是人工智慧從業者，還是關心人工智慧進入生活的一般讀者，這都是一本鞭辟入裡、發人省思的精采之作。<br><br><strong>麥克・安南尼（Mike Ananny）&nbsp;</strong>│ <strong>南加州大學（University of Southern California）</strong><br>克勞馥說明人工智慧是一項跨越政治、勞力、土地和資料的技術成就和文化承諾，繪製出獨特的地圖，讓我們看見並挑戰人工智慧的力量，供我們採取行動。<br><br><strong>露哈・班傑明（Ruha Benjamin）&nbsp;</strong>│ <strong>《追逐科技》（Race After Technology）作者</strong><br>透過出色地追溯人工智慧的歷史、神話、倫理和政治，本書提醒我們，我們所講述的人工智慧故事，就像構成這些系統的數學模型一樣重要。<br><br><strong>傑佛瑞・鮑克（Geoffrey C. Bowker）&nbsp;</strong>│ <strong>加州大學爾灣分校（University of California, Irvine）</strong><br>這本書具說服力、清晰且深刻，我們這個時代的經典之作。它透過闡明人工智慧的社會、物質和政治面向，轉移我們的注意力，不再只看見新殖民主義光鮮亮麗的東西。<br><br><strong>西蒙妮・布朗（Simone Browne）</strong>│ <strong>《暗物質》（Dark Matters）作者</strong><br>從勞力、乳膠和鋰的採掘到代理和帕蘭泰爾科技公司（Palantir）的政治，本書是對再現人工智慧的權力關係的嚴格質問，並無可避免地映現出其侷限性。這是一本不可或缺的著作。<br><br><strong>全喜卿（Wendy Hui Kyong Chun）&nbsp;</strong>│ <strong>西門菲莎大學（Simon Fraser University），加拿大一百五十週年研究計畫新媒體學者（Canada 150 Chair in New Media）</strong><br>一本必讀之作。從鋰礦場談到資料提取，從勞力剝削談到政府監控，本書深具說服力地揭示智慧是如何「製造」出來的。書中藉由追根究底地探查人工智慧可能造成的環境惡化、資本積累和勞動條件，取代空泛無力的「倫理」呼籲。<br><br><strong>維吉妮亞・迪努姆（Virginia Dignum ）</strong>│<strong> 《自然》期刊（Nature）</strong><br>揭露了人工智慧豐功偉業背後的陰暗面……精心研究，寫作精湛。<br><br><strong>彼得・蓋利森（Peter Galison）&nbsp;</strong>│ <strong>《愛因斯坦的時鐘，龐加萊的地圖》（Einstein’s Clocks, Poincare’s Maps）作者</strong><br>人工智慧似乎就像我們機器中的幽靈一樣縈繞於這個世界。但正如凱特・克勞馥在她生動、令人不安的著作中所表明的，這個演算法、資料、硬體的混合物絕非無關緊要的。本書做出傑出的貢獻：讓人工智慧的幽靈現形。<br><br><strong>蘇・海爾波恩（Sue Halpern）&nbsp;</strong>│ <strong>《紐約書評》（New York Review of Books）</strong><br>正如凱特・克勞馥這本鞭辟入裡的著作一再證明的，人工智慧並不是像天外救星一樣降臨在我們面前，而是透過一些我們大多數人都不知道的去人性化提取作法來完成。<br><br><strong>凱倫・郝（Karen Hao）&nbsp;</strong>│ <strong>《麻省理工科技評論》（MIT Tech Review）資深編輯</strong><br>這是一部傑作，而我一直無法停止思考這本書。<br><br><strong>賽門・英格斯（Simon Ings）&nbsp;</strong>│<strong> 《新科學人》雜誌（New Scientist）「年度選書」</strong><br>揭示了人工智慧的隱藏成本，從自然資源的消耗到我們的隱私、平等和自由更微妙的成本。<br><br><strong>約翰・納頓（John Naughton）&nbsp;</strong>│ <strong>《衛報》（The Guardian）</strong><br>〔一部〕引人入勝的著作……<br><br><strong>阿隆德拉・尼爾森（Alondra Nelson）&nbsp;</strong>│ <strong>美國社會科學研究會（Social Science Research Council）主席</strong><br>具說服力又富啟發性……克勞馥描述了肆無忌憚的技術擴張帶來的可怕風險。方法原創又睿智，本書是一幅關於現狀不可或缺的地圖，它大膽地呼籲讀者描繪一個更加公正而永續的未來。<br><br><strong>阿娜伊絲・蕾塞吉耶（Anaïs Rességuier）&nbsp;</strong>│ <strong>《AI與倫理》期刊（AI and Ethics）</strong><br>本書是一部開創性的作品，將人工智慧帶入了我們關注的範疇……克勞馥的著作對該領域貢獻卓著，因為各國和國際、公司和教育機構的各個層面都在努力減輕這項科技帶來的危害。<br><br><strong>大衛・夏維茲（David A. Shaywitz）&nbsp;</strong>│<strong> 《華爾街日報》（Wall Street Journal）</strong><br>克勞馥強烈主張，雖然人工智慧被呈現為無實體的、客觀的和不可避免的，但它卻是物質的、有偏誤的，且受我們自己的觀點和意識形態左右。<br><br><strong>約翰・史萊特利（John Slattery）&nbsp;</strong>│ <strong>《公益》雜誌（Commonweal）</strong><br>克勞馥……從《星艦迷航記》的世界中借鑑人工智慧，讓它變得豐富、人性化且發自內心。<br><br><strong>麥可・史佩奇歐（Michael Spezio）&nbsp;</strong>│ <strong>《科學》期刊（Science）</strong><br>將人工智慧盡覽無遺，把這項科技架構為帝國、決策和行動的集結，這些帝國、決策和行動共同快速消除了在全球範圍內永續未來的可能性……一部在緊急時刻及時帶來貢獻的著作。<br><br><strong>露西・薩琪曼（Lucy Suchman）&nbsp;</strong>│ <strong>《人機重構》（Human-Machine Reconfigurations）作者</strong><br>無論你是專心致志的研究人員、人工智慧從業者，還是關心資料的力量日益強大的一般讀者，這都是一趟讓人大開眼界的旅程，在人工智慧的標誌下遍歷行星資源、勞動體和權力的關係，為資料的帝國賦予它竭澤而漁式的生命。<br><br><strong>約翰・索恩希爾（John Thornhill）&nbsp;</strong>│ <strong>《金融時報》（Financial Times）創新編輯「2021年度選書」</strong><br>世界上對人工智慧的影響最深思熟慮的研究者之一，提供了一份發人深省且不可或缺的讀物，了解人工智慧如何加速不民主的治理和加劇的不平等。<br><br><strong>佛瑞德・透納（Fred Turner）&nbsp;</strong>│ <strong>《民主外圍》（The Democratic Surround）作者</strong><br>凱特・克勞馥以人文主義者的眼光和藝術家對真正重要事物的感知，來思考人工智慧。如果你認為人工智慧只和大數據及機器學習有關，那麼這本精采之作會提醒你：人工智慧關乎自然界、政治、歷史，有時甚至也和美有關。<br><br><strong>約瑟夫・圖羅（Joseph Turow）&nbsp;</strong>│ <strong>《聲音捕手》（The Voice Catcher）作者</strong><br>精闢考察二十一世紀資料創建和操縱的過程、意涵與倫理。克勞馥探討的範圍相當多元，橫跨礦場、伺服器農場和配送倉庫，還有人工智慧新創公司，生動地展示了我們的系統如何發展為「失靈時危險，運作時有害」。<br><br><strong>史蒂芬妮・伍德（Stephanie Wood）&nbsp;</strong>│ <strong>《雪梨晨鋒報》（The Sydney Morning Herald）</strong><br>一本引人入勝的新作。<br><br><strong>《紐約客》（New Yorker）</strong><br>這項研究認為那〔人工智慧〕既非人工的，也不是特別智慧……關於訓練機器學習系統所仰賴的資料的迷人歷史。<br>&nbsp;</p><p>&nbsp;</p><h3><strong>作者介紹</strong></h3><p><strong>作者簡介</strong><br><br><strong>凱特•克勞馥Kate Crawford</strong><br>微軟研究院（Microsoft Research）資深首席研究員、巴黎高等師範學院（École Normale Supérieure）「人工智慧與正義」課程首任主席、墨爾本大學明古尼雅特聘訪問學者（Miengunyah Distinguished Visiting Fellowship）。紐約大學AI Now研究院（AI Now Institute）共同創辦人，領導機器學習基金會（Foundations of Machine Learning）國際工作小組。<br><br><strong>譯者簡介</strong><br><br><strong>呂奕欣</strong><br>師大翻譯所筆譯組畢業，曾任職於出版公司與金融業，現專事翻譯。<br><br>&nbsp;</p><p>&nbsp;</p><h3><strong>目錄</strong></h3><p><strong>【序言】</strong><br>世界上最聰明的馬<br>什麼是人工智慧？既非人工的，也不是智慧的<br>把人工智慧視為一部地圖集<br>運算地形學<br>採掘、權力與政治<br><br><strong>【第一章 &nbsp; 地球】</strong><br>為人工智慧採礦</p>"
+    },
+    {
+      "name": "這本書獻給你：就算內心小劇場爆發也沒關係",
+      "author": "WORRY LINES",
+      "publish": "WORRY LINES",
+      "publishDate": "2022/12/01",
+      "rate": "2",
+      "imgUrl": "https://im2.book.com.tw/image/getImage?i=https://www.books.com.tw/img/E05/014/72/E050147293.jpg&v=637326a8k&w=180&h=180",
+      "tag": [
+        "心理勵志"
+      ],
+      "ISBN": "9789865065720",
+      "language": "",
+      "recommend": [],
+      "introduction": "<h3><strong>內容簡介</strong></h3><p><strong>☆IG粉絲逾80萬、超人氣創作者Worry Lines 首度出書！</strong></p><p><strong>☆已售出多國版權，累計銷量破50,000冊！</strong></p><p><strong>☆亞馬遜4.8星好評、Goodreads 4.5星好評！</strong><br><br>&nbsp;</p><p><strong>　　「憂憂」降落！「希望」失蹤？</strong></p><p><strong>　　莫．急．莫．慌，先來幾個深呼吸────</strong></p><p><strong>　　再和微厭世沒脖子（?）的線條人</strong></p><p><strong>　　一起踏上找回希望（以及與憂憂和平共處）的療癒之旅吧！</strong></p><p>　　這本書，獻給有以下情況的你：</p><p>　　○ 當機會降臨，希望還沒出現，憂慮先出來大潑冷水。</p><p>　　○ 好事發生時，還來不及開心，「自我懷疑模式」已啟動。</p><p>　　○ 開始行動前，腦中不停出現「搞砸事情的100種可能」。</p><p>　　○ 面對任何事，經常和心中不請自來的情緒小怪獸吵架。</p><p><strong>　　請放心，你不是一個人，</strong></p><p><strong>　　擁有80萬粉絲的超人氣插畫家 WORRY LINES 懂你！</strong></p><p>　　當WORRY LINES簽下此生第一本書的出版合約，</p><p>　　容易緊張焦慮的他，決定不讓愛操心的「憂憂」插手破壞計畫，</p><p>　　沒想到就在他和「希望」開心地討論作品時，</p><p>　　憂憂（不意外地）從天而降，直接把希望撞飛，</p><p>　　更讓人不安的是，他居然自告奮勇要一起去找希望，</p><p>　　還要在路上幫忙編輯這本書？！</p><p>　　一路上，憂憂會提出什麼意見？</p><p>　　這一次，他能不能冷靜當個好夥伴？</p><p>　　他們又會在哪裡找到希望呢？讓我們接著看下去吧。</p><p>　　透過正視自己的情緒，把內在感受化為靈感，</p><p>　　WORRY LINES創作了這本關於情緒與愛，</p><p>　　詼諧幽默、富有同理心、引人共鳴的療癒之書，</p><p>　　陪伴你度過每一天，為你帶來安慰與力量，讓你感覺好一點：）<br>&nbsp;</p><p><strong>　　若有一天，當你發現希望不見了，請記得……</strong></p><p><strong>　　希望或許就在前面不遠的地方。</strong></p><p>&nbsp;</p><h3><strong>作者介紹</strong></h3><p><strong>作者簡介</strong></p><p><strong>WORRY LINES&nbsp;</strong></p><p>　　在Instagram上擁有超過800,000粉絲的超人氣插畫家，透過分享暖心療癒、溫柔甜美、幽默有趣、看似簡單卻超有共鳴的圖文，鼓舞了全球數十萬人的心。</p>",
+      "id": 59
     }
   ],
   "recommends": [

@@ -172,10 +172,11 @@
             </div>
           </div>
         </div> -->
-        <div class="container flex items-center justify-center">
+        <!-- c3 -->
+        <!-- <div class="container flex items-center justify-center">
           <div id="chart" class="w-2/5"></div>
-        </div>
-        <!-- <div id="chart-container"></div> -->
+        </div> -->
+        <div id="chart-container"></div>
       </section>
       <section>
 
@@ -206,7 +207,14 @@
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>AOS.init();</script>
 
-  <script src="../js/dachboard.js"></script>
+  <!-- api -->
+  <script type="module">
+    import api from '../js/http.js';
+    //console.log(api.url);
+  </script>
+
+
+  <script type="module" src="../js/dachboard.js"></script>
 </body>
 
 </html>

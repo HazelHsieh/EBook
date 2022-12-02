@@ -1,4 +1,5 @@
-// import { Swiper } from "./swiper.js";
+//import Swiper from "../js/swiper.js";
+import api from '../js/http.js';
 
 //初始
 let data;
@@ -8,14 +9,14 @@ const userBooks = [];
 // 使用者有的書籍
 function usersInit() {
   axios
-    .get("https://json-server-vercel-gamma.vercel.app/users/")
+    .get(`${api.url}users/`)
     .then(function (res) {
       // 1.取得 data 使用者購買的書籍
-      userHistoryOrders = res.data[0].historyOrders;
+      let userHistoryOrders = res.data[0].historyOrders;
       // 2.把清單裡的 ISBN 取出並且跑 forEach 
       userHistoryOrders.forEach(item => {
         // 3. 再 axios 一次，取出書籍資料為 使用者購物書籍的 ISBN
-        axios.get(`https://json-server-vercel-gamma.vercel.app/books?ISBN=${item.ISBN}`).then(res => {
+        axios.get(`${api.url}books?ISBN=${item.ISBN}`).then(res => {
           // 4. 取到的資料丟到上面的 userBooks 陣列裡
           userBooks.push(...res.data)
           // 5. 對應 HTML 的標籤
@@ -35,7 +36,7 @@ function usersInit() {
 usersInit()
 
 // user search
-const js_NavInputGroup = document.querySelector('.js-navInputGroup');
+//const js_NavInputGroup = document.querySelector('.js-navInputGroup');
 const js_NavInput = document.querySelector('.js-navInput');
 const js_NavInputBtn = document.querySelector('.js-navInputBtn');
 
@@ -56,7 +57,7 @@ js_NavInput.addEventListener('change', () => {
   }
   //console.log(apiUrlFilter.name);
 
-  axios.get(`https://json-server-vercel-gamma.vercel.app/books?${apiUrlFilter.name}`).then(res => {
+  axios.get(`${api.url}books?${apiUrlFilter.name}`).then(res => {
 
     // 直接把取到值渲染出來 就可以了
     js_SearchBook.innerHTML = stringInputData(res.data);

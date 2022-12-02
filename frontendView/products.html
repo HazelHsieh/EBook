@@ -453,7 +453,7 @@
 
 
   <!-- vanilla-tilt -->
-  <script type="text/javascript" src="../vanilla.js"></script>
+  <!-- <script type="text/javascript" src="../vanilla.js"></script> -->
   <!-- <script src="./vanilla.js"></script> -->
 
   <!-- aos.js -->
@@ -463,8 +463,14 @@
   <!-- axios js -->
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
+  <!-- api -->
+  <script type="module">
+    import api from '../js/http.js';
+    //console.log(api.url);
+  </script>
+
   <!-- products.js -->
-  <script src="../js/products.js"></script>
+  <script type="module" src="../js/products.js"></script>
 
 </body>
 
