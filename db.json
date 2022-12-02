@@ -45,7 +45,12 @@
       "name": "yuyu",
       "email": "qazwsx@gmail.com",
       "password": "$2a$10$eqvnDq9pF2h2mPlYSCK8Puwqf52ZIDXrkD0/bUWWCFaPV4XpnaMfW",
-      "id": 5
+      "id": 5,
+      "collects": [
+        {
+          "ISBN": "97895733392467"
+        }
+      ]
     },
     {
       "email": "123@gmail.com",

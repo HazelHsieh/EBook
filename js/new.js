@@ -101,27 +101,23 @@ function TypeData() {
 
 // 點擊按鈕取得值 中間篩選的值
 js_TypeBtn.addEventListener('click', function (e) {
+  if (
+    js_PublishType.value == "" &&
+    js_TagType.value == "" &&
+    js_NameInput.value == ""
+  ) {
+    Swal.fire({
+      confirmButtonColor: '#8CA187',
+      icon: 'question',
+      title: 'ʅ（´◔౪◔）ʃ',
+      text: "你想找什麼書呢？",
+    });
+  }
+
   searchFilter.publish = js_PublishType.value
   searchFilter.tag = js_TagType.value
   searchFilter.name = js_NameInput.value
-
-
   TypeData()
-
-  // if (
-  //   js_PublishType.value == "" ||
-  //   js_TagType.value == "" ||
-  //   js_NameInput.value == ""
-  // ) {
-  //   return alert("你想找什麼書呢？");
-  // } else {
-  //   searchFilter.publish = js_PublishType.value
-  //   searchFilter.tag = js_TagType.value
-  //   searchFilter.name = js_NameInput.value
-  // }
-  // TypeData()
-  // js_SearchType.reset();
-
 })
 
 

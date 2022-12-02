@@ -62,7 +62,7 @@ const callSingIn = async (event) => {
         icon: 'success',
         title: '⁽⁽٩(๑˃̶͈̀ ᗨ ˂̶͈́)۶⁾⁾',
         text: "登入成功",
-        footer: '<a href="../backendView/dashboard.html">點我進去後台</a>'
+        footer: '<a href="../frontendView/myBooks.html">點我進去後台</a>'
       });
     } catch (error) {
       console.log(error.response);
