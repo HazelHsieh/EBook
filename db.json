@@ -3,14 +3,14 @@
     {
       "id": 1,
       "name": "hazel",
-      "email": "hazel@gmail.com",
+      "email": "admin@gmail.com",
       "password": "$2a$10$OQmx5OnyBKDUFOnfybf3juDgvBq8SU5stGBZ.fQvUcOVyXXxjauza",
       "phone": "0912345678",
       "collects": [
         {
           "id": 1,
           "name": "生活是無以名狀的碎片",
-          "auther": "不朽",
+          "author": "不朽",
           "publish": "皇冠",
           "publishDate": "2022/08/29",
           "tag": [
@@ -39,87 +39,34 @@
         {
           "ISBN": "9789574449545"
         }
-      ]
+      ],
+      "avatarUrl": "data:image/jpeg;base64,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",
+      "role": "admin"
     },
     {
+      "email": "user@gmail.com",
+      "password": "$2a$10$SRyA0pUKN6vpgc6GBvR8vOGHMRBD5vwYHzLfjjqk5mw5wLzhstGXu",
       "name": "yuyu",
-      "email": "qazwsx@gmail.com",
-      "password": "$2a$10$eqvnDq9pF2h2mPlYSCK8Puwqf52ZIDXrkD0/bUWWCFaPV4XpnaMfW",
-      "id": 5,
+      "id": 2,
       "collects": [
         {
           "ISBN": "97895733392467"
         }
-      ]
-    },
-    {
-      "email": "123@gmail.com",
-      "password": "",
-      "id": 6
-    },
-    {
-      "email": "dei@gmail.com",
-      "password": "$2a$10$XUKVl18KOibFaz0XHlhX0uDbZ4Si8hmusCgU88AC9MFy9HJPA6TmG",
-      "id": 7
-    },
-    {
-      "email": "12443@gmail.com",
-      "password": "$2a$10$W1XDp1JdyE5iJdN0zZ3xee6/IXBu2h2y3cVA.9VDFI4Nv9Go9p/v6",
-      "id": 8
-    },
-    {
-      "email": "122@gmail.com",
-      "password": "$2a$10$3S4bcATu3Z0UE0TM4Bsu8uPEsxbcE4kDD1IHy3H4CKGBp7qVI9Nr2",
-      "name": "qqq",
-      "id": 9
-    },
-    {
-      "email": "bbbb@dw.qwe",
-      "password": "$2a$10$R3frPn7NUUxUTTTfu5Veg.ZWkSN9gq4IP.Zx7V6WTWSix.FMEShlS",
-      "name": "aaaa",
-      "id": 10
-    },
-    {
-      "email": "adasdasd@qwewq.qweqw",
-      "password": "$2a$10$M.9sP9N5FHOvMfcMl41U1.BDdqapBQMr27kno89K07vZSKfj3TKPC",
-      "name": "admin",
-      "id": 11
-    },
-    {
-      "email": "123444@gmail.com",
-      "password": "$2a$10$726crpgygy2Z8hI/BIyKe.PAQPKDwfJYxRjtCP1Eezfsiq12WwBNm",
-      "name": "1234",
-      "id": 12
-    },
-    {
-      "email": "adadad@qwe.qweqw",
-      "password": "$2a$10$2xpzcRm0De1SD4LddxCGouYddBZz8ZprbtQq.4yLA77waT5qEJwUW",
-      "name": "admin",
-      "id": 13
-    },
-    {
-      "email": "123456@gmail.com",
-      "password": "$2a$10$f4roJey0mcOCZsDMgCFb9.JCvVweU8SeNkQmDuT2CNZOa5Vq2LoeO",
-      "id": 14
-    },
-    {
-      "email": "her@gmail.com",
-      "password": "$2a$10$c3xuLJA0WA73icfkvz0JEupewUjG9yeCjeBpjjZB0WxhMdFhY.pYm",
-      "name": "我是他",
-      "id": 15
-    },
-    {
-      "email": "1234567@gmail.com",
-      "password": "$2a$10$svIYGziJe1pw2dYMFODSoutbKVXdQfuYJyfM1t9EvDKzj1S9c82gW",
-      "name": "蛋糕22",
-      "id": 16
+      ],
+      "role": "user",
+      "historyOrders": [
+        {
+          "ISBN": "9789865962258"
+        }
+      ],
+      "avatarUrl": "data:image/jpeg;base64,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"
     }
   ],
   "books": [
     {
       "id": 1,
       "name": "生活是無以名狀的碎片",
-      "auther": "不朽",
+      "author": "不朽",
       "publish": "皇冠",
       "publishDate": "2022/08/29",
       "rate": 5,
@@ -143,8 +90,8 @@
     },
     {
       "id": 2,
-      "name": "大概是時間在煮我吧 ",
-      "auther": "張西",
+      "name": "大概是時間在煮我吧",
+      "author": "張西",
       "publish": "三采",
       "publishDate": "2022/02/25",
       "rate": 5,
@@ -168,7 +115,7 @@
     },
     {
       "name": "不便利的便利店",
-      "auther": "金浩然",
+      "author": "金浩然",
       "publish": "寂寞",
       "publishDate": "2022/09/01",
       "rate": 4,
@@ -184,7 +131,7 @@
     },
     {
       "name": "無人逝去",
-      "auther": "白井智之",
+      "author": "白井智之",
       "publish": "尖端",
       "publishDate": "2022/11/14",
       "rate": 4,
@@ -200,7 +147,7 @@
     },
     {
       "name": "你走慢了我的時間 ",
-      "auther": "張西",
+      "author": "張西",
       "publish": "三采",
       "publishDate": "2017/06/02",
       "rate": 5,
@@ -216,7 +163,7 @@
     },
     {
       "name": "房思琪的初戀樂園",
-      "auther": "林奕含",
+      "author": "林奕含",
       "publish": "游擊文化",
       "publishDate": "2017/02/07",
       "rate": 4,
@@ -232,7 +179,7 @@
     },
     {
       "name": "總在說完晚安後，特別想你",
-      "auther": "知寒",
+      "author": "知寒",
       "publish": "三采",
       "publishDate": "2019/07/31",
       "rate": 4,
@@ -248,7 +195,7 @@
     },
     {
       "name": "藍色釋股頭的顏色",
-      "auther": "潘柏霖",
+      "author": "潘柏霖",
       "publish": "尖端",
       "publishDate": "2019/04/25",
       "rate": 4,
@@ -264,7 +211,7 @@
     },
     {
       "name": "一個人的粗茶淡飯",
-      "auther": "米果",
+      "author": "米果",
       "publish": "啟動文化",
       "publishDate": "2015/01/08",
       "rate": 5,
@@ -289,7 +236,7 @@
     },
     {
       "name": "感覺有點奢侈的事",
-      "auther": "黃麗群",
+      "author": "黃麗群",
       "publish": "九歌",
       "publishDate": "2014/08/01",
       "rate": 3,
@@ -305,7 +252,7 @@
     },
     {
       "name": "親愛的馬克瑪麗 Re: 是不是每個男人都這樣？",
-      "auther": "歐馬克",
+      "author": "歐馬克",
       "publish": "三采",
       "publishDate": "2022/09/30",
       "rate": 3,
@@ -321,7 +268,7 @@
     },
     {
       "name": "冰山對話：從開門到關門、從理解到支持的深度溝通",
-      "auther": "李崇義",
+      "author": "李崇義",
       "publish": "天下文化",
       "publishDate": "2022/09/30",
       "rate": 3,
@@ -337,7 +284,7 @@
     },
     {
       "name": "唐鳳的破框思考力 : 關於工作、學習與行動的方法",
-      "auther": "唐鳳, 楊倩蓉",
+      "author": "唐鳳, 楊倩蓉",
       "publish": "天下文化",
       "publishDate": "2022/09/30",
       "rate": 3,
@@ -352,8 +299,8 @@
       "introduction": "<h3><strong>內容簡介</strong></h3><p><strong>第一手挖掘天才唐鳳的思考軌跡，</strong><br><strong>處處閃現破框的啟發與洞見的入口，</strong><br><strong>開啟你思考的寬度，看世界的深度，</strong><br><strong>成為自己生命的主導者﹗</strong><br><br><strong>「我成年以後就沒有做任何事是把別人比下去，</strong><br><strong>所以那個智商 160，並不是要把別人比下去用的。」</strong><br><strong>～唐鳳</strong></p><p><br>　　傳統的線性思考與工作模式已無法因應新世界的巨變。無論是思考、閱讀、工作模式、看待世界的方式，唐鳳都像一個未來客，從未來回到現在，以公開透明的方式分享給所有人。她建構自己知識體系的方式，讓她在面對日益複雜的世界時，很早就有了自己的定錨方式，不被外界紛亂左右，朝自己想要的方式前進。<br><br>　　為了拿回生活的主動權，她一週兩天不進辦公室工作，學習新知；她訂閱食材，自己做便當；她清除FB的介面，將牆面都換成勵志格言，讓 FB完全無法搜集她的資料與軌跡，不被演算法綁架，也不被廣告操弄她的情緒。<br><br>　　本書從唐鳳如何自學、建構自己的思想體系、一天如何展開，窺見唐鳳在日理萬機的大小工作事務中，既能有效率的完成工作，又能兼顧生活品質與自我學習的需求。唐鳳跳脫傳統學習路徑的與聰明的時間管理，不僅是她保有清晰思慮的方法，也是不被工作綁架，成為自己生命主導者的關鍵。<br><br>　　跟著唐鳳思考的路徑，開啟你的破框思考力<br><br>　　．天才不是強調自己的品味和與眾不同，具有排他性，而是讓自己的創作成為他人的素材。<br><br>　　．你容忍跟你本來立場不同東西的能力愈大，你就愈有能力理解複雜的論點。<br><br>　　．不要「物化」學習者，學習當「無用之人」，人不是物，不應該把自己當做一個工具去學習技能。<br><br>　　．與其被時間追著跑，不如主動掌控自己的工作與生活節奏，生活才有餘裕，才會更快樂。<br><br>　　．新事物並不一定難以理解，而是你沒有一段時間跟它相處，只要給自己一段時間跟它好好相處，學任何東西都很容易。<br><br>　　．再聰明的人都有力有未逮的時候，急著把問題完美解決的結果，就是其他人學不到東西。<br><br>　　．教育應該是接納，不是比輸贏。<br><br>&nbsp;</p><p>&nbsp;</p><h3><strong>作者介紹</strong></h3><p><strong>作者簡介</strong><br><br><strong>楊倩蓉</strong><br><br>　　政大傳播學院碩士畢業，擁有二十年新聞深度報導經驗，曾先後擔任《遠見》雜誌副總編輯、《商業周刊》主筆、《Cheers》雜誌資深主編、《30》雜誌主編、作家。主要著作有《吳敏求傳：從零到卓越的識與謀》、《開創：政治大學對管理教育的貢獻》、《疫無反顧：亞東醫院作對的事》（合著）等書。<br>&nbsp;</p><p>&nbsp;</p><h3><strong>目錄</strong></h3><p><strong>Part 1 我這樣思考――共好、共創、共享</strong><br>Chapter 1 建構多元的知識系統：我自學，但我很少在家<br>自學路上，讓自己不孤單最重要<br>從線性教育的枷鎖中走出來<br>知識必須透過討論，才能產生價值<br>Chapter2 比世界更大的世界：閱讀開啟深度思考<br>科幻小說是一種思考未來的訓練<br>姜峯楠的科幻小說，融合科幻與哲學思考<br>AI 不是一開始就聰明，它需要一段熟成過程<br>不同經典可以提供不同價值觀，避免陷入單一價值窠臼中<br>Chapter3 以共好取代競爭：與他人共同成就彼此<br>分享，價值就不會消失<br>把想法放在平台上，讓價值擴散出去<br><br><strong>Part 2 我這樣工作――跨域協同</strong><br>Chapter 4 人生兩次工作大游牧：開放，全世界都是你的<br>共好：帶著探索的好奇心，到世界各地取經<br>網路時代知識無法囤積，別人仍會找到解方分享出去<br>從擁有技術者，到成為給予者<br>共創：體驗遠距工作帶來的職場新文化<br>把每個員工當成創業夥伴對待<br>共感：善用科技工具，建立工作流程，營造共同空間<br>Chapter 5 成為時間的主人：主導自己的人生<br>善用新服務幫你省時<br>自己動手料理既健康，也是一種放鬆<br>成為時間主人的番茄鐘工作法<br>用觸控筆划螢幕，避免過度使用3C 產品<br>清除臉書介面，不被雜訊干擾<br>主動掌握時間結構，才能拿回時間主動權<br>Chapter 6 維持專注力與好情緒的必要：GTD 工作法和精神按摩法<br>精神也需要按摩，才能強化玻璃心<br>面對酸民，只須回應有建設性的話語<br>Chapter 7 睡眠記憶法：善用大腦的運作<br>讓自己每天歸零，才可能裝載新事物<br>睡前正確的閱讀，才能留下記憶<br>從練習不打斷別人說話開始<br>以關鍵字記憶書中概念<br>Chapter 8 領導不是管理：團隊需要的是水平協調者<br>不下命令，讓成員自訂工作目標<br>公開工作內容，協助彼此完成目標<br>領導是，讓成員保有主動解決問題的動力<br>Chapter 9 打破平行時空的開會法：開門造車，你行你來<br>達成「粗略的共識」就可以去執行<br>引導大家進入同一個思想脈絡<br>不用一步到位，足夠好就去執行<br>開放參與，能力才能傳承<br>每次開會都要做逐字稿紀錄<br>讓非專業者擔任會議主席，傾聽不同聲音<br>在不同專業間，找到共同價值<br><br><strong>Part 3 我這樣學習――學習就是自我啟蒙</strong><br>Chapter10 人非機器， 學習讓自己成為「無用之人」<br>學習不該只強調有用，應發自內心興趣<br>不定義人成為某種特定用途，因為人不是機器<br>透過集體共創的智慧，探索新知識<br>知識性事物適合線上學習；操作性事物則適合線下共聚一堂<br>營造一個可以犯錯的空間<br>Chapter11 開啟空間思考： 真正的成功來自共創價值<br>閱讀的定義在改變中<br>網路時代強調一起完成<br>教育應該是接納，不是比輸贏<br><br><strong>Part 4 我這樣看未來――共享現實與虛擬的多元宇宙</strong><br>Chapter12 未來世界並非朝虛擬化邁進， 而是共享現實與虛擬<br>數位世界也有人權與自由<br>保持數位韌性，是民主世界繼續有正當性的重要基礎<br>Chapter13 元宇宙是我們的未來嗎？<br>多元宇宙的核心精神在於「共創涵融」<br>別被數位轉型綁架了<br>Chapter14 未來工作，單槓比斜槓更受歡迎<br>永保源源不絕的好奇心<br>保留二○ % 的時間，參與正職之外的社群<br>工作不是競爭關係，而是夥伴關係<br><br>結語 盡快了解自己的心靈，否則演算法將會幫我們決定<br>後記 唐鳳的快問快答<br><br>&nbsp;</p><p><br>&nbsp;</p>"
     },
     {
-      "name": "勝出99%人的成癮式學習法：同步提升邏輯思維、記憶力和專注力，輕鬆成為「會學習的人」",
-      "auther": "粂原圭太郎",
+      "name": "勝出99%人的成癮式學習法",
+      "author": "粂原圭太郎",
       "publish": "遠流",
       "publishDate": "2022/09/30",
       "rate": 3,
@@ -369,7 +316,7 @@
     },
     {
       "name": "大腦如何精準學習",
-      "auther": "史坦尼斯勒斯．狄漢",
+      "author": "史坦尼斯勒斯．狄漢",
       "publish": "遠流",
       "publishDate": "2020/10/01",
       "rate": 3,
@@ -384,8 +331,8 @@
       "introduction": "<h3><strong>內容簡介</strong></h3><p>　　學習擁有生命力（vital principle），<br>　　而人類的大腦有著巨大的可塑性—去改變它自己，以適應環境。<br><br>　　大腦具有超凡的反彈能力，即使在受到巨大的創傷，如眼盲、失去半個腦或社會孤立後，還是能發展出學習的能力。這個學習的火花並沒有被這些不幸的遭遇所熄滅，語言、閱讀、數學、藝術創造：這些人類所特有的能力，也是其他靈長類所沒有的。<br>&nbsp;<br>　　現代學習科學的旅程包括三個部分：<br><br>　　在第一部分，〈學習是什麼？」〉（What Is Learning?）<br><br>　　我們從學習對人類和動物的意義是什麼開始，討論學習時的法則或機制，因為學習就是逐漸形成外在世界的內在模式，不論它是在矽（silicon）或是神經迴路上。<br><br>　　當我去到一個新的城鎮時，我會在腦海中形成一個心智地圖——這個城市街道巷弄的小模型。同樣的，一個孩子在學騎自行車時，他也是在他腦海中，模擬腳要怎麼踩、手要怎麼握把手才能維持自行車的平衡。電腦的人臉辨識法則也是先得出眼睛、鼻子、嘴巴的各種形狀和它們的組合，把它形成一個模型板（template）。<br><br>　　在第二部分〈我們的大腦如何學習〉（How Our Brain Learns）之中，作者會用心理學和神經科學來回答。我會聚焦在嬰兒身上，因為他們是真正的學習機器，沒有人比得上。最近的實驗資料顯示，嬰兒的確是如這個理論所預測的，他們是正在長大的統計學家。嬰兒一生下來，他們的大腦迴路就已經組織好了，可以投射假設到外面的世界去，但是他們同時也有極大的可塑性，這個從大腦突觸永遠都有改變的可能上可得之。在這個統計的機械中，先天和後天不是對立的，而是相輔相成的。<br>&nbsp;<br>　　在第三部分〈學習的四大支柱〉（The Four Pillars of Learning）中，作者詳列出為什麼大腦是到現在為止最有效率的學習設備。四根支柱就是四個重要的機制，使我們可以學習。第一個是注意力。第二根支柱是主動參與。第三根支柱是錯誤回饋，它正好是主動參與的反面。最後，第四根支柱是固化：透過時間的流逝，我們大腦彙整已經學會的東西，把它轉存到長期記憶中，把神經資源釋放出來以備未來的學習。<br><br>　　這四根支柱有普遍性，嬰兒、孩子、大人在學習時，都用到它們。這是為什麼我們需要把這四個能力操到很熟練—這就是我們可以學習的原因。最後，在總結時，我會討論這些科學的進步該怎麼應用。改變我們學校的教學法、改變家庭、改變職場其實是不必要的，只要遊戲、好奇心、社會化、集中注意力和睡眠就可以增加我們大腦本來已經有的最大才能：學習。<br><br>　　作者相關著作：他發表了很多經過同儕審訂過的期刊文獻，也是好幾本書的作者，包括《數字感》（The Number Sense）這本暢銷書和《大腦與閱讀》（Reading in the Brain，信誼出版）等。<br><br><strong>名人推薦</strong><br><br>　　～洪蘭教授強力推薦並親自翻譯～<br>　　曾志朗&nbsp;&nbsp; 前教育部長<br>　　白明奇&nbsp; 成大醫學院神經學教授兼老年學研究所所長</p><p>&nbsp;</p><h3><strong>作者介紹</strong></h3><p><strong>作者簡介</strong><br><br><strong>Stanislas Dehaene 史坦尼斯勒斯．狄漢</strong><br><br>　　法國科學家史坦尼斯勒斯．狄漢在他成為世界頂尖的語言和數字大腦處理的認知神經科學家之前，原本就是數學家和心理學家。他是法國Saclay認知神經影像中心的主任，也是法國國家學院（College de Fance）實驗認知心理學的教授、法國科學院（French Academy of Science）的院士，他同時也是 Pontifical Academy of Science 的院士。<br><br>　　他發表了很多經過同儕審訂過的期刊文獻，也是好幾本書的作者，包括《數字感》（The Number Sense）這本暢銷書和《大腦與閱讀》（Reading in the Brain，信誼出版）等。<br><br><strong>譯者簡介</strong><br><br><strong>洪蘭</strong><br><br>　　加州大學河濱校區實驗心理學博士，在加州大學爾灣醫學院神經科和耶魯大學哈斯金實驗室接受博士後訓練，曾任教於加州大學河濱分校、中正大學、陽明大學、中央大學，並為中央大學認知神經科學研究所的創所所長。<br><br>　　洪教授已翻譯了五十七本生物科技及心理學方面的好書，包括《棉花糖女孩》、《浮萍男孩》、《養男育女調不同》、《心智拼圖》、《天生愛學樣》、《教養的迷思》、《快思慢想》、《改變是大腦的天性》、《自癒是大腦的本能》等。<br><br>　　洪博士曾獲頒吳大猷科學普及著作獎翻譯類金籤獎、2005年東元科技文教基金會特別貢獻獎、2011年遠見雜誌華人領袖終身成就獎。<br><br>　　有感於教育是國家的根本，而閱讀是教育的根本，前後去過台灣大大小小超過三千所的中小學作推廣閱讀的演講，深受各界推崇。<br><br>　　著有《講理就好》等二十五本書。</p><p>&nbsp;</p><h3><strong>目錄</strong></h3><p>推薦文<br>前言<br>&nbsp;<br><strong>第一部分&nbsp; 學習是什麼？（What Is Learning?）</strong><br>第一章&nbsp;&nbsp;&nbsp; 學習的七個定義<br>第二章&nbsp;&nbsp;&nbsp; 為什麼我們的大腦比目前的機器學得更好<br>&nbsp;<br><strong>第二部分&nbsp; 我們的大腦如何學習（How Our Brain Learns）</strong><br>第三章&nbsp;&nbsp;&nbsp; 嬰兒看不見的知識<br>第四章&nbsp;&nbsp;&nbsp; 大腦的誕生<br>第五章&nbsp;&nbsp;&nbsp; 後天的部分<br>第六章&nbsp;&nbsp;&nbsp; 重複使用你的大腦<br>&nbsp;<br><strong>第三部分&nbsp; 學習的四根支柱（The Four Pillars of Learning）</strong><br>第七章&nbsp;&nbsp;&nbsp; 注意力&nbsp; Attention<br>第八章&nbsp;&nbsp;&nbsp; 積極參與&nbsp; Active Engagement<br>第九章&nbsp;&nbsp;&nbsp; 錯誤的回饋&nbsp; Error Feedback<br>第十章&nbsp;&nbsp;&nbsp; 固化&nbsp; Consolidation<br>&nbsp;<br>結 語&nbsp;&nbsp; 教育與神經科學的重修舊好<br>NOTES<br>&nbsp;</p>"
     },
     {
-      "name": "致，怕給人添麻煩的你：清理內心不必要的羞愧感，擁抱完整的自己",
-      "auther": "伊麗絲‧桑德",
+      "name": "致，怕給人添麻煩的你",
+      "author": "伊麗絲‧桑德",
       "publish": "采實文化",
       "publishDate": "2022/01/24",
       "rate": 4,
@@ -401,7 +348,7 @@
     },
     {
       "name": "加速式．子彈學習法則",
-      "auther": "彼得．霍林斯",
+      "author": "彼得．霍林斯",
       "publish": "方言文化",
       "publishDate": "2020/02/26",
       "rate": 4,
@@ -416,8 +363,8 @@
       "introduction": "<h3><strong>內容簡介</strong></h3><p><strong>★Amazon年度十大暢銷書★</strong><br><strong>★讀者4.5顆星讚譽好評★</strong><br>&nbsp;</p><p>　　<strong>不怕你不會，最怕的是，你學不會！</strong><br><strong>　　職場訣竅 × 斜槓跨界 × 語言學習 × 證照考試</strong><br><strong>　　花更少時間，比別人更多成就</strong><br><strong>　　取決於「快速學習」的能力！</strong><br>&nbsp;</p><p>　<strong>　結合史丹佛、普林斯頓、柏克萊大學等頂尖學府、數位知名心理學家的研究結果！</strong><br><strong>　　經過驗證的實踐方法，有效避開誤區，讓學習速度就像子彈一樣快、狠、準！</strong></p><p><br>　　長期從事心理學研究、同時也是本書作者的彼得．霍林斯在進入職場後，意外發現一名學歷造假、對工作內容一無所知的員工，居然在幾個月內，快速學會工作上所需技能，甚至達到「精通熟練」等級！<br><br>　　他仔細觀察這位同事，不僅桌上貼滿便利貼，記事本上也寫滿筆記，甚至還有一組組「三步驟」指令來幫助自我練習，儘管一開始兩人表現天差地別，但最後卻不分上下──他才意識到，贏在起跑點不代表什麼，能夠「掌握學習技巧」，才是駕馭人生、邁向成功的重要關鍵。<br><br><strong>　　★注意力難集中，如何避免分心、高效工作與學習？</strong><br><br>　　以下這些阻礙我們取得好成績、拖慢升遷速度，讓人力不從心的經驗或許你不陌生：<br><br>　　‧主管交辦的事總是記不住、左耳進右耳出<br>　　‧公司教育訓練與準則，怎麼學都學不會<br>　　‧別人一口流暢外語，自己天天練習卻毫無起色<br>　　‧好不容易學會的技能，過不了多久又忘記<br><br>　　我們的大腦本來就無法長時間專注，如今再加上科技產品的干擾，要想讓注意力集中似乎更加困難；微軟研究顯示，人們的專注時間在2000年時有12秒，直到2015年只剩下8秒，遠比金魚的9秒還不如──這也不難解釋，為什麼許多人花了時間在「學習」和「工作」上，卻往往收不到相對的成效。<br><br>　　為解決多數人的困擾，彼得．霍林斯從諸多實驗中歸納得出，「時間區塊化」是改善「注意力不足」的良方，不僅能讓大腦有足夠時間休息，也有利使資訊停留在記憶中。<br><br><strong>　　★啟動大腦「超頻模式」，學得比別人快又好！</strong><br><br>　　若你已經針對學習「時間型態」進行改變，卻仍然記不得、學不會。問題可能不在於你沒有天分，而是你遵循的學習方法出了問題！<br><br>　　德國心理學家艾賓浩斯的「遺忘曲線」理論認為，記憶會隨著時間的推移不斷衰退，如果不複習，你將很難把所學移往長期記憶。意思是說，人們目前無法改變「遺忘」這件事，只能想盡辦法，勤於練習、固化記憶。<br><br>　　然而，要將記憶深植於腦海，並非簡單的事。若沒有找到適合方法，來啟動大腦「成長模式」，你還是沒辦法順利升級，更別說變成他人眼中的學霸、高手或專家。<br><br>　　「子彈學習法則」強調學習可以像子彈一樣快速且精準。這套法則以「科學觀點」精準剖析十大學習法，反轉常見的學習誤解，幫你達到「加速學習」效果；不僅如此，更從「心理學角度」全方面改善你的心態與習慣，進而助你找到持續學習的動力！<br><br><strong>　　【你可以在這本書中學習到】</strong><br>　　►►打造「心流體驗」的遊戲化學習<br>　　►►找重點最快速的「懶人筆記法」<br>　　►►臨時抱佛腳最好用的「閃卡記憶術」<br>　　►►為一萬小時定律加分的「刻意練習」<br>　　►►活化大腦記憶的「提取練習」<br>　　►►擺脫健忘陰影的「間隔重複學習法」<br><br><strong>本書特色</strong><br><br>　　★Amazon 4.5顆星好評，Kindle年度十大暢銷書<br>　　★《幸運，你可以學會的能力》作者最新力作<br>　　★將大腦調到「成長」模式，輕鬆擁有「學更多」的能力<br>　　★「學習技巧」科學化，快速把握「專業」和「機會」<br><br><strong>專業推薦</strong><br><br>　　筆記女王　Ada<br>　　閱部客創辦人、知識型YouTuber　水丰刀<br>　　TED×Taipei講者、仙女老師　余懷瑾<br>　　女王的教室國文老師　陳怡嘉<br>　　手帳作家、斜槓律師　黃昱毓<br>　　《拆解問題的技術》作者、企業培訓師　趙胤丞<br>　　為你而讀執行長　蘇書平<br>　　（依姓氏筆劃排列）<br><br><br><br>&nbsp;</p><p>&nbsp;</p><h3><strong>作者介紹</strong></h3><p><strong>作者簡介</strong><br><br><strong>彼得．霍林斯（Peter Hollins）</strong><br><br>　　暢銷作家、人類心理學研究者、人類境況研究學者。具有心理學學士及碩士學位，曾與數十位各界人士合作。喜歡與家人健行、喝啤酒及嘗試畫畫，現居美國華盛頓州西雅圖。著有《幸運，你可以學會的能力》。<br><br><strong>譯者簡介</strong><br><br><strong>林昀彤</strong><br><br>　　政治大學英文系畢業，曾任報社與出版社編輯多年，目前為自由譯者。<br>&nbsp;</p><p>&nbsp;</p><h3><strong>目錄</strong></h3><p><strong>前言 活用子彈學習法則，打造更好的自己</strong><br><strong>Chapter1 加速學習的先決條件，如何創造？</strong><br>►學習時間區塊化，注意力更集中<br>►概念先於事實，理解先於記憶<br>►學習卡關？挫折會帶來改變契機<br>►建立筆記系統，培養解決問題的能力<br><br><strong>Chapter2 解密「記憶歷程」，學習如何學習</strong><br>►三階段，將知識轉化成記憶<br>►決定複習頻率，「遺忘曲線」是關鍵<br>►活化大腦記憶的「提取練習」</p>"
     },
     {
-      "name": "被利用的價值：互利人脈關係學，打造最穩固商業友誼",
-      "auther": "劉惠丞",
+      "name": "被利用的價值：互利人脈關係學",
+      "author": "劉惠丞",
       "publish": "清文華泉",
       "publishDate": "2021/11/01",
       "rate": 4,
@@ -433,7 +380,7 @@
     },
     {
       "name": "原子習慣：細微改變帶來巨大成就的實證法則",
-      "auther": "詹姆斯‧克利爾",
+      "author": "詹姆斯‧克利爾",
       "publish": "方智",
       "publishDate": "2019/06/01",
       "rate": 5,
@@ -449,7 +396,7 @@
     },
     {
       "name": "AI時代，設計力的剩餘價值",
-      "auther": "薛志榮",
+      "author": "薛志榮",
       "publish": "崧燁文化",
       "publishDate": "2022/10/16",
       "rate": 5,
@@ -465,7 +412,7 @@
     },
     {
       "name": "實戰UX工作現場｜創造更有價值的產品與服務",
-      "auther": "松薗美帆, 草野孔希",
+      "author": "松薗美帆, 草野孔希",
       "publish": "碁峰",
       "publishDate": "2022/10/31",
       "rate": 5,
@@ -480,8 +427,8 @@
       "introduction": "<h3><strong>內容簡介</strong></h3><p><strong>　　可以隨時翻閱參考的UX研究入門書</strong><br>　　這是一本實踐使用者經驗（UX）研究的入門書。「聽說過『UX研究』這個詞，但不太清楚具體內容⋯⋯」、「我想嘗試一下UX研究，應該從何處開始好呢⋯⋯」除了腦中出現這類想法的人以外，還有一些人的煩惱是：「雖然已經開始進行UX研究了，但說真的，我對實作方法沒有自信⋯⋯」。筆者希望能為這些人提供助力，因此將實務工作中獲得的UX知識與洞察統整成一本書。當讀者準備踏出第一步，或是持續進行UX研究時，都能將這本書當作如同導師的存在，放在身邊隨時翻閱參考。<br><br><strong>　　用科學的方式做設計</strong><br>　　使用者經驗（UX）研究在產品與服務開發上越來越重要，因為它能夠讓決策建立在證據而非開發者的假設之上，並在開發的早期階段反映出產品與服務所能提供使用者的價值，因此，不管是產品經理或是設計師，都越來越重視UX研究。<br><br><strong>　　本書將告訴你如何將UX落實在工作上</strong><br>　　本書涵蓋了使用者經驗研究的基礎知識，已經如何將UX應用於現有工作的方法，以及如何在組織內推廣UX的觀念。另外，透過七個實際的案例分享，幫助你了解如何將UX研究落實於實際的工作。</p><p>&nbsp;</p><h3><strong>作者介紹</strong></h3><p><strong>作者簡介</strong><br><br><strong>松薗美帆</strong><br><br>　　Merpay UX研究員<br><br>　　畢業於國際基督教大學教養學部，主修文化人類學。畢業後進入日本Recruit Jobs公司，從事人才招募方面的數位行銷及專案管理工作。後轉職至Recruit Technologies公司，參與創立UX研究小組。2019年起至Merpay擔任UX研究員一職，致力於規劃新創事業與制定UX研究架構。目前為北陸先端科學技術大學博士前期課程的在職學生。<br><br><strong>草野孔希</strong><br><br>　　Merpay UX研究員<br><br>　　取得日本電氣通信大學碩士學位後，進入通訊事業相關企業的研究院，從事設計方法論的研究或是應用研究洞察的顧問工作。同時於慶應義塾大學以在職學生身份攻讀系統設計與管理博士後期課程。2018年11月起至Merpay擔任UX研究員一職，致力於在服務設計中應用UX研究結果，以及UX研究團隊的管理工作。</p><p>&nbsp;</p><h3><strong>目錄</strong></h3><p><strong>Chapter 1｜掌握UX研究的方法</strong><br>什麼是UX研究？<br>UX研究的重要性與日俱增<br>UX研究的優點<br>UX研究作為一種工作手段<br>UX研究的種類<br>不要拘泥於UX研究的定義<br>專欄分享｜喜歡UX研究的哪些地方？<br><br><strong>Chapter 2｜開始UX研究的方法</strong><br>「開始」本身不是目的<br>首先從小處開始<br>其實早已開始UX研究<br>從什麼地方開始<br>得到一個學習經驗也好，持續向前邁進<br>以打造更好的UX研究為目標<br>UX研究流程中不只有調查活動<br>專欄分享｜在 Merpay 開始UX研究的緣由<br><br><strong>Chapter 3｜UX研究的設計方法</strong><br>UX研究的七個階段<br>設計方法綜述<br>理解狀況<br>確定問題<br>應用結果<br>設計調查步驟<br>整理計畫，準備開始<br>專欄分享｜如何寫出好的研究計畫<br><br><strong>Chapter 4｜UX研究的方法</strong><br>本章介紹的幾種方法<br>使用者訪談<br>可用性測試<br>概念測試<br>問卷調查<br>田野調查<br>日誌研究<br>質性資料的分析方法<br>專欄分享｜不只有質性資料的UX研究<br><br><strong>Chapter 5｜UX研究增加同伴的方法</strong><br>根據階段增加同伴的方法<br>總之先吸引人們參與<br>打造持續參與的關係<br>讓更多人關注UX研究<br>培養UX研究的文化<br>專欄分享｜設計師眼中的UX研究員<br><br><strong>Chapter 6｜將UX研究應用到組織設計</strong><br>什麼是ResearchOps<br>ResearchOps 的實踐案例<br>與外部夥伴協同合作<br>專欄分享UX研究的實用工具<br><br><strong>Chapter 7｜UX研究的實際案例</strong><br>研究專案總覽<br>案例1：「使用上限金額」的設定功能<br>案例2：maruhadaka PJ<br>案例3：轉帳．收款<br>案例4：定額支付<br>案例5：「初始設定」的流程<br>案例6：WeeklyUX研究<br>案例7：遠距UX研究<br>專欄分享UXResearcher 的各種失誤<br><br><strong>Chapter 8｜共享UX研究的實踐知識</strong><br>在組織中共享UX研究的知識經驗<br>向組織外的業界進行交流<br>專欄分享｜我們為了寫這本書做了哪些調查？<br>&nbsp;</p>"
     },
     {
-      "name": "機器學習入門：使用Scikit-Learn與TensorFlow",
-      "auther": "黃建庭",
+      "name": "機器學習入門",
+      "author": "黃建庭",
       "publish": "碁峰",
       "publishDate": "2022/09/30",
       "rate": 5,
@@ -496,7 +443,7 @@
       "introduction": "<h3><strong>內容簡介</strong></h3><p>　　◎從機器學習的基礎知識開始，逐步建構相關的延伸應用。<br>　　◎以經典範例搭配步驟化解說，帶領讀者掌握應用的訣竅！<br><br>　　．使用Kaggle網站的資料集，讀者可以透過本書所提供連結或關鍵字搜尋下載。<br>　　．使用Pandas與Numpy處理與分析資料。<br>　　．以Scikit-Learn實作監督式學習－線性廻歸、邏輯廻歸、決策樹、K-近鄰演算法、支援向量機，以及非監督式學習－K-means分群與階層式分群。<br>　　．使用TensorFlow建立神經網路進行運算，實作前向傳播算法與反向傳播算法的運算過程。<br>　　．介紹卷積神經網路的概念與運算過程，並使用TensorFlow 建立卷積神經網路進行運算。<br>&nbsp;</p><p>&nbsp;</p><h3><strong>目錄</strong></h3><p><strong>chapter 1 開發環境介紹</strong><br>1-1 安裝 Anaconda<br>1-2 使用 conda 啟用虛擬環境與安裝套件<br>1-3 在 Windows 啟用 Jupyter Notebook<br>1-4 Jupyter Notebook 的快速鍵<br>1-5 使用 Google Colab 執行 Python 程式<br><br><strong>chapter 2 Pandas 與 Numpy 簡介</strong><br>2-1 Pandas 的 Series<br>2-2 Pandas 的 DataFrame<br>2-3 NumPy的重要功能<br><br><strong>chapter 3 線性迴歸</strong><br>3-1 線性迴歸的運作原理<br>3-2 使用 sklearn 實作線性迴歸<br>3-3 線性迴歸模型實作範例<br>3-4 習題<br><br><strong>chapter 4 邏輯迴歸</strong><br>4-1 邏輯迴歸的運作原理<br>4-2 使用 sklearn 實作邏輯迴歸<br>4-3 邏輯迴歸模型實作範例<br>4-4 習題<br><br><strong>chapter 5 決策樹</strong><br>5-1 決策樹的運作過程<br>5-2 使用 sklearn 實作決策樹<br>5-3 決策樹模型實作範例<br>5-4 習題<br><br><strong>chapter 6 K-近鄰演算法</strong><br>6-1 K-近鄰演算法的運作過程<br>6-2 使用 sklearn 實作 K-近鄰演算法<br>6-3 K-近鄰演算法模型實作範例<br>6-4 習題<br><br><strong>chapter 7 支援向量機</strong><br>7-1 支援向量機演算法的運作過程<br>7-2 使用 sklearn 實作支援向量機<br>7-3 支援向量機模型實作範例<br>7-4 習題<br><br><strong>chapter 8 K-means 分群</strong><br>8-1 K-means 分群的運作過程<br>8-2 使用 sklearn 實作 K-means 分群<br>8-3 使用 K-means 分群實作範例<br>8-4 習題</p>"
     },
     {
-      "name": "讓響應式(RWD)網頁設計變簡單：Bootstrap開發速成",
+      "name": "讓響應式(RWD)網頁設計變簡單",
       "author": "呂國泰, 鍾國章",
       "publish": "碁峰",
       "publishDate": "2022/09/30",
@@ -528,7 +475,7 @@
       "introduction": "<h3><strong>內容簡介</strong></h3><p><strong>　　破譯武林招式，看懂程式設計！</strong></p><p>　　‧郭靖的小紅馬在Scratch裡能任意變色？</p><p>　　‧韋小寶加盟天地會誓詞是高階程式語言？</p><p>　　‧黃蓉的計算能力比Python還強？</p><p>　　‧用費波那契數列就能進入桃花島？</p><p>　　以武俠小說的場景為媒介，讓武林絕招和程式設計理論緊密結合。只要你摸過電腦、玩過電動遊戲，熟悉鍵盤和滑鼠的操作，就能讀懂本書的程式邏輯。</p><p>　　讀者朋友可以一邊學習編寫程式的基礎知識，一邊跟著範例練習編寫代碼，不但能真正感受到程式設計的樂趣，還能解決生活中很多意想不到的大小問題。</p><p>　　本書從用PowerPoint製作基本動畫講起，再進入麻省理工學院開發的入門級動畫軟體Scratch，最後敲開程式設計的利器Python，循序漸進帶領讀者朋友理解程式世界的奧祕，並享受數位科技帶來的樂趣。</p><p>　　「如果你擁有電腦，卻沒有安裝Python，那叫暴殄天物。」～李開周<br>&nbsp;</p><p><strong>俠義推薦</strong></p><p>　　戴逸群　亡牌教師</p><p>　　（依姓氏筆畫排序）</p><p>&nbsp;</p><h3><strong>作者介紹</strong></h3><p><strong>作者簡介</strong></p><p><strong>李開周</strong></p><p>　　一九八○年生，河南開封人，青年學者，專欄作家。</p><p>　　大學念的是工程學，曾任測量工程師，從事測量、預算和土地規劃等工作。曾在《新京報》、《中國經營報》、《世界新聞報》、《羊城晚報》、《中國烹飪》和《萬科周刊》等媒體開設專欄。</p><p>　　著有《誰說不能從武俠學數學？》、《誰說不能從武俠學化學？》、《誰說不能從武俠學物理？》、《從奈米到光年：有趣的度量衡簡史》、《逛一回鮮活的宋朝民俗》、《擺一桌絕妙的宋朝茶席》、《過一場歡樂的宋朝新年》、《吃一場有趣的宋朝飯局》、《歷史課本聞不到的銅臭味》、《民國房地產戰爭》、《包公哪有那麼黑》等。</p><p>&nbsp;</p><h3><strong>目錄</strong></h3><p>開場白&nbsp; 程式設計讓生活更美好</p><p><strong>第一章&nbsp; 下命令給電腦</strong></p><p>讓小紅馬動起來</p><p>讓小紅馬跑起來</p><p>下命令不等於程式設計</p><p>程式設計語言與江湖黑話</p><p><strong>第二章&nbsp; 幫俠客做計算</strong></p><p>《九陰真經》有多少字？</p><p>郭靖對黃蓉說了多少句？</p><p>替你的電腦裝上Python</p><p>從大鬍子到大蟒蛇</p><p>將Python當成超級計算器</p><p>是黃蓉算錯了，還是Python算錯了？</p><p>遇到浮點數，拿出工具包</p><p>變數：江湖上的未知數</p><p><strong>第三章&nbsp; 控制語句，三招兩式</strong></p><p>直譯器和編輯器</p><p>編譯器和一燈大師</p><p>段譽比劍</p><p>段譽賞花</p><p>郭靖磕頭</p><p>別讓郭靖死在閉環裡</p><p>結構總共三招，只學兩招就夠</p><p><strong>第四章&nbsp; 函數和計算的本質</strong></p><p>戰鬥力計算模型</p><p>函數盒子有機關</p><p>神鵰不吃草，閃電貂不吃糖</p><p>自訂函數</p><p>隨機函數與凌波微步</p><p>讓你飛起來的函式庫</p><p>用費波那契數列進入桃花島</p><p><strong>第五章&nbsp; 寫出人人能用的程式</strong></p><p>袁承志尋寶</p><p>尋寶升級</p><p>溫度轉換器</p><p>什麼是「物件導向」？</p><p>消耗內力的遞迴</p>"
     },
     {
-      "name": "你的地圖會說話？WebGIS與JavaScript的情感交織",
+      "name": "你的地圖會說話？",
       "author": "廖炳閎",
       "publish": "博碩",
       "publishDate": "2022/07/02",
@@ -544,7 +491,7 @@
       "introduction": "<h3><strong>內容簡介</strong></h3><p><strong>　　解鎖地圖與JavaScript相遇的秘密</strong><br><strong>　　全國第一本介紹WebGIS開發與實戰應用的實體書籍！</strong><br><br>　　本書提供範例程式下載，事半功倍一學即上手！<br><br>　　WebGIS啟蒙首選✖五家地圖API✖近百個程式範例✖實用簡易口訣✖學習難度分級✖補充ES6小知識<br><br><strong>　　內容簡介</strong><br>　　本書內容改編自第12屆iT邦幫忙鐵人賽，Modern Web組佳作網路系列文章－《你的地圖會說話？WebGIS與JavaScript的情感交織》。<br><br>　　在人手一台智慧型手機，運用Google地圖查詢餐廳位址的時代，您是否會好奇這些地圖功能是如何透過程式實作的呢？本書會從最基礎開始，帶您進入WebGIS的奇幻旅程。<br><br><strong>　　❖給完全沒有WebGIS及地圖domain knowhow的你</strong><br>　　本書將從最基本的地理資訊系統概念談起，從概念到程式實作一應俱全，完全沒接觸過GIS的讀者依舊能輕鬆上手！<br><br><strong>　　❖給網頁開發的初學者與擔心看不懂書內範例程式的你</strong><br>　　別擔心！本書會詳細介紹JavaScript程式的實作細節，並採用ES6以後的語法，讓您學習地圖開發之餘，還能學習到最新的JavaScript程式語法！<br><br><strong>　　❖給覺得Google Map API收費高，而想轉戰其它地圖API的你</strong><br>　　本書統整五家地圖API，包括：Google Map API、Here Maps API、ArcGIS API、TGOS Map API、Leaflet API，無論您在不同的情境下想使用不同的地圖API (皆含範例程式碼) ，本書是您最好的入門聖經！<br><br><strong>　　❖給已會使用Leaflet API製作簡單的口罩地圖，但還希望更進一步加深功力的你</strong><br>　　常見的口罩地圖實作的是WebGIS的展點功能，本書除了展點外，還有：圖層套疊、定位、環域查詢、群聚、熱區等等……，不勝枚舉的WebGIS實戰應用，等你來挑戰！<br><br><strong>好評推薦</strong><br><br>　　這本書的內容是非常適合初學者自學上手的WebGIS入門教材，從地理圖資的常見格式，再來深入淺出的解說運用網路資源進行資料擷取、設定、展示與分析等。這是一本讓所有想要瞭解如何開發地圖應用程式的任何人，都能一窺WebGIS實用且充滿趣味的技術領域。<br>　　溫在弘<br>　　國立臺灣大學地理環境資源學系教授<br>　　國立臺灣大學理學院空間資訊研究中心主任<br>　　中華民國地圖學會理事長</p><p>&nbsp;</p><h3><strong>作者介紹</strong></h3><p><strong>作者簡介</strong><br><br><strong>廖炳閎 Perry Liao</strong><br><br>　　畢業於台大地理系，現於知名球鞋電商 AREA 02 擔任前端工程師，擁有近四年軟體工程開發經驗。熟悉多家WebGIS地圖服務開發，並擅長結合JQuery、React 等前端框架。<br><br>　　2018年至今，曾參與過十多個WebGIS的系統規劃及程式開發，並於2020年iT邦第12屆鐵人賽以《你的地圖會說話？WebGIS與JavaScript的情感交織》系列文章榮獲佳作。</p><p>&nbsp;</p><h3><strong>目錄</strong></h3><p><strong>PART I 初學者的試煉</strong></p><p><strong>Chapter01 地圖 API 的選擇？</strong></p><p>1.1 與 WebGIS 的邂逅</p><p>1.1.1 GIS 是什麼？</p><p>1.1.2 初始化地圖的四步驟</p><p>1.1.3 常見的地圖屬性設置</p><p>1.2 大眾化的 Google Map API</p><p>1.2.1 申請 Google Map API Key</p><p>1.2.2 初始化地圖（Google Map API）</p><p>1.3 導航豐富的 Here Maps API</p><p>1.3.1 申請 Here Maps API Key</p><p>1.3.2 初始化地圖（Here Maps API）</p><p>1.4 GIS 界老字號 ArcGIS API for JavaScript</p><p>1.4.1 初始化地圖（ArcGIS API for JavaScript）</p><p>1.5 台灣ㄟ雄厚 TGOS Map API</p><p>1.5.1 申請 TGOS Map API Key</p><p>1.5.2 初始化地圖（TGOS Map API）</p><p>1.6 輕量化的世代 Leaflet API</p><p>1.6.1 初始化地圖（Leaflet API）</p><p><strong>PART II GIS 資料格式</strong></p><p><strong>Chapter02 向量資料格式</strong></p><p>2.1 網格與向量</p><p>2.2 點資料圖徵</p><p>2.2.1 點資料圖徵（Google Map API）</p><p>2.2.2 點資料圖徵（Here Maps API）</p><p>2.2.3 點資料圖徵（ArcGIS API for JavaScript）</p><p>2.2.4 點資料圖徵（TGOS Map API）</p><p>2.2.5 點資料圖徵（Leaflet API）</p><p>2.3 線資料圖徵</p><p>2.3.1 線資料圖徵（Google Map API）</p><p>2.3.2 線資料圖徵（Here Maps API）</p><p>2.3.3 線資料圖徵（ArcGIS API for JavaScript）</p><p>2.3.4 線資料圖徵（TGOS Map API）</p><p>2.3.5 線資料圖徵（Leaflet API）</p><p>2.4 面資料圖徵</p><p>2.4.1 面資料圖徵（Google Map API）</p><p>2.4.2 面資料圖徵（Here Maps API）</p><p>2.4.3 面資料圖徵（ArcGIS API for JavaScript）</p><p>2.4.4 面資料圖徵（TGOS Map API）</p><p>2.4.5 面資料圖徵（Leaflet API）</p><p><strong>Chapter03 網格資料格式</strong></p><p>3.1 OGC 規範</p><p>3.2 WMS 圖層套疊</p><p>3.2.1 WMS 圖層套疊（Google Map API）</p><p>3.2.2 WMS 圖層套疊（Here Maps API）</p><p>3.2.3 WMS 圖層套疊（ArcGIS API for JavaScript）</p><p>3.2.4 WMS 圖層套疊（TGOS Map API）</p><p>3.2.5 WMS 圖層套疊（Leaflet API）</p><p>3.3 WMTS 圖層套疊</p><p>3.3.1 WMTS 圖層套疊（Google Map API）</p><p>3.3.2 WMTS 圖層套疊（Here Maps API）</p><p>3.3.3 WMTS 圖層套疊（ArcGIS API for JavaScript）</p><p>3.3.4 WMTS 圖層套疊（TGOS Map API）</p><p>3.3.5 WMTS 圖層套疊（Leaflet API）</p><p><strong>Chapter04 複合型資料</strong></p><p>4.1 複合型資料的優勢</p><p>4.2 KML 圖層套疊</p><p>4.2.1 Google Earth 製作KML</p><p>4.2.2 KmlLayer 與 Geoxml3（Google Map API）</p><p>4.2.3 KML 圖層套疊（Here Maps API）</p><p>4.2.4 KML 圖層套疊（ArcGIS API for JavaScript）</p><p>4.2.5 KML 圖層套疊（TGOS Map API）</p><p>4.2.6 KML 圖層套疊（Leaflet API）</p><p>4.3 GeoJSON 圖層套疊</p><p>4.3.1 JSON 再進化 &gt;&gt; GeoJSON</p><p>4.3.2 GeoJSON 圖層套疊（Google Map API）</p><p>4.3.3 GeoJSON 圖層套疊（Here Maps API）</p><p>4.3.4 GeoJSON 圖層套疊（ArcGIS API for JavaScript）</p><p>4.3.5 GeoJSON 圖層套疊（TGOS Map API）</p><p>4.3.6 GeoJSON 圖層套疊（Leaflet API）</p><p><strong>PART III GIS 查詢功能</strong></p><p><strong>Chapter05 定位查詢</strong></p><p>5.1 瀏覽器定位</p><p>5.1.1 navigator</p><p>5.1.2 地理位置定位（Geolocation Web API）</p><p>5.1.3 定位及標記點</p><p>5.2 坐標定位</p><p>5.2.1 坐標系統</p><p>5.2.2 坐標系統轉換</p><p>5.2.3 坐標定位及滑鼠事件</p><p>5.3 地址定位</p><p>5.3.1 Leaflet 地址定位</p><p>5.3.2 Google Map Geocoding API</p><p>5.3.3 全國門牌地址定位服務</p><p>5.4 行政區定位</p><p>5.4.1 TGOS Map API 行政區定位</p><p>5.4.2 透過 GeoJSON 載入行政區</p><p><strong>Chapter06 展點與環域</strong></p><p>6.1 展點</p><p>6.1.1 上傳 GeoJSON</p><p>6.1.2 上傳 Excel</p><p>6.1.3 呼叫 API 並展點</p><p>6.2 環域</p><p>6.2.1 圓形環域</p><p>6.2.2 面環域</p><p>6.3 繪圖事件</p><p>6.3.1 Leaflet Draw 繪圖工具</p><p>6.3.2 繪圖結合圓形環域</p><p>6.3.3 繪圖結合面環域</p><p>6.3.4 繪圖結合矩形環域</p><p><strong>PART IV 高手雲集的殿堂</strong></p><p><strong>Chapter07 SQL Spatial</strong></p><p>7.1 MSSQL 環境安裝</p><p>7.2 空間資料格式</p><p>7.2.1 WKT(Well-known text)</p><p>7.2.2 WKB(Well-known binary)</p><p>7.2.3 平面與球體</p><p>7.2.4 點線面與資料集合</p><p>7.3 幾何運算</p><p>7.3.1 距離</p><p>7.3.2 長度</p><p>7.3.3 面積</p><p>7.4 空間查詢</p><p>7.4.1 包含（Contain）</p><p>7.4.2 重疊（Within）</p><p>7.4.3 交集（Intersect）</p><p>7.5 常見錯誤</p><p>7.5.1 頭尾不相連</p><p>7.5.2 方向錯誤</p><p><strong>Chapter08 進階視覺化功能</strong></p><p>8.1 群聚</p><p>8.1.1 亂數產生點</p><p>8.1.2 群聚（Leaflet MarkerCluster）</p><p>8.1.3 客製化 Icon</p><p>8.1.4 事件</p><p>8.1.5 群聚蜘蛛網</p><p>8.2 熱區</p><p>8.2.1 熱區（heatmap.js）</p><p>8.2.2 熱區圖設定及滑鼠事件</p><p>8.2.3 熱區地圖（leaflet-heatmap.js）</p><p>8.3 讓 Marker 動起來</p><p>8.3.1 會跳動的Marker（bouncemarker）</p><p>8.3.2 會移動的Marker（MovingMarker）</p>"
     },
     {
-      "name": "自己動手做虛擬機器：解析程式語言的設計與實現",
+      "name": "自己動手做虛擬機器",
       "author": "蒼時弦也",
       "publish": "博碩",
       "publishDate": "2022/05/12",

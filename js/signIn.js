@@ -40,30 +40,43 @@ const callSingIn = async (event) => {
   };
   const signInInfoMessage = document.querySelectorAll('.signIn_inputs');
   signInInfoMessage.forEach(item => {
-    console.log(item);
     signInInfo[item.name] = item.value;
   })
-  // console.log(signInInfo);
   const errors = validate(signInInfo, constraints);
   const signInInfoMessageAll = document.querySelectorAll('.userInfo-message');
-  // console.log(errors);
   if (errors === undefined) {
     signInInfoMessageAll.forEach(item => {
       item.innerHTML = '';
       item.classList.add("hidden");
     })
     try {
-      await axios.post(`${api.url}signin/`, signInInfo);
+      // 資料存取
+      const userInfo = await axios.post(`${api.url}signin/`, signInInfo);
       signInInfoMessage.forEach(item => {
         item.value = '';
       });
-      Swal.fire({
-        confirmButtonColor: '#8CA187',
-        icon: 'success',
-        title: '⁽⁽٩(๑˃̶͈̀ ᗨ ˂̶͈́)۶⁾⁾',
-        text: "登入成功",
-        footer: '<a href="../frontendView/myBooks.html">點我進去後台</a>'
-      });
+
+      //存進去                                      const userInfo要的值
+      localStorage.setItem("eBook", JSON.stringify(userInfo.data));
+
+      // 頁面跳轉 "admin"可以進去後台
+      if (userInfo.data.user.role === "admin") {
+        Swal.fire({
+          confirmButtonColor: '#8CA187',
+          icon: 'success',
+          title: '⁽⁽٩(๑˃̶͈̀ ᗨ ˂̶͈́)۶⁾⁾',
+          text: '登入成功',
+          confirmButtonText: '<a href="../backendView/dashboard.html">GO!</a>'
+        });
+      } else if (userInfo.data.user.role === "user") {
+        Swal.fire({
+          confirmButtonColor: '#8CA187',
+          icon: 'success',
+          title: '⁽⁽٩(๑˃̶͈̀ ᗨ ˂̶͈́)۶⁾⁾',
+          text: '登入成功',
+          confirmButtonText: '<a href="../frontendView/myBooks.html">GO!</a>'
+        });
+      }
     } catch (error) {
       console.log(error.response);
       Swal.fire({
@@ -84,32 +97,10 @@ const callSingIn = async (event) => {
       }
     })
   };
-  // if (signIn_Account.value == '' || signIn_Password.value == '') {
-  //   Swal.fire({
-  //     confirmButtonColor: '#8CA187',
-  //     icon: 'error',
-  //     title: '٩(ŏ﹏ŏ、)۶',
-  //     text: "帳號密碼沒有填到拉"
-  //   });
-  //   return;
-  // }
-  // let obj = {};
-  // obj.email = signIn_Account.value;
-  // obj.password = signIn_Password.value;
-  // console.log(obj);
-  // axios
-  //   .post(`${api.url}signin/`, obj)
-  //   .then(function (res) {
-  //     //把值取出來 
-  //     console.log(res);
-  //     // data = res.data
-  //     // userAccount = data[0].account
-  //     // userPassword = data[0].password
-  //     // console.log(data[0].password);
-  //   }).catch((res) => {
-  //     console.log(res);
-  //   })
 }
+
+
+
 const init = () => {
   signIn_Form.addEventListener("submit", callSingIn);
 }

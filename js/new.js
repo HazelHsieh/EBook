@@ -6,7 +6,6 @@ const eBook = {
   newPublish: [],
 }
 
-
 // 最新熱門的畫面渲染
 function init() {
   axios
@@ -32,6 +31,41 @@ function init() {
 
 }
 init();
+
+const userInfo = JSON.parse(localStorage.getItem('eBook'));
+const js_SignOutBtn = document.querySelector(".js-signoutBtn");
+const js_UserAvatar = document.querySelector('.js-userAvatar');
+// token 不對就跳轉到首頁
+if (!userInfo) {
+  js_SignOutBtn.innerHTML = `<a href="./signIn.html">我的帳號</a>`
+} else {
+  js_UserAvatar.innerHTML = `<div class="js-userAvatar w-10 rounded-full">
+    <img src="${userInfo.user.avatarUrl}" />
+  </div>`
+  signOutEven();
+  searchStart();
+}
+
+
+
+// 把我的帳號改成登出功能 登出時也將localStorage刪除
+function signOutEven() {
+  js_SignOutBtn.innerHTML = `<a href="../index.html"
+  class="btn btn-outline btn-sm mt-2 p-0 border-primary  text-primary rounded-sm hover:bg-primary1 hover:border-none hover:text-white">
+  登出帳號
+  </a>`;
+  js_SignOutBtn.addEventListener('click', () => {
+    localStorage.clear();
+    Swal.fire({
+      position: 'top-end',
+      icon: 'success',
+      title: '88 你登出了~',
+      showConfirmButton: false,
+      timer: 5000
+    })
+  });
+
+}
 
 
 const js_PublishType = document.querySelector('.js-publishType');
@@ -73,7 +107,7 @@ function searchStart() {
       VanillaTilt.init(document.querySelectorAll(".your-element"));
     })
 }
-searchStart();
+
 
 
 // 按鈕觸發的值
@@ -113,11 +147,13 @@ js_TypeBtn.addEventListener('click', function (e) {
       text: "你想找什麼書呢？",
     });
   }
-
   searchFilter.publish = js_PublishType.value
   searchFilter.tag = js_TagType.value
   searchFilter.name = js_NameInput.value
-  TypeData()
+  TypeData();
+  document.querySelector('#js-nameInput').value = "";
+
+
 })
 
 

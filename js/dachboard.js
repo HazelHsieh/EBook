@@ -3,15 +3,53 @@ import api from '../js/http.js';
 
 let eBookData;
 function init() {
+  //拿出來
+  const userInfo = JSON.parse(localStorage.getItem('eBook'));
+  const js_UserAvatar = document.querySelector('.js-userAvatar');
+
+  // token 不對就跳轉到首頁
+  if (userInfo.user.role !== "admin") {
+    setTimeout(() => {
+      window.location.href = `../frontendView/myBooks.html`
+    }, 1000)
+  }
+  if (userInfo) {
+    js_UserAvatar.innerHTML = `<div class="js-userAvatar w-10 rounded-full">
+      <img src="${userInfo.user.avatarUrl}" />
+    </div>`
+  }
   axios
     .get(`${api.url}books`)
     .then(function (response) {
       eBookData = response.data;
-      console.log(eBookData);
+      //console.log(eBookData);
       //renderC3();
       renderECharts();
     });
 }
+init();
+// 把我的帳號改成登出功能 登出時也將localStorage刪除
+function signOutEven() {
+  const js_BackendView = document.querySelector(".js-backendView");
+  const js_SignOutBtn = document.querySelector(".js-signoutBtn");
+  js_BackendView.innerHTML = `<a href="../backendView/dashboard.html">後台管理</a> `
+  js_SignOutBtn.innerHTML = `<a href="../index.html"
+  class="btn btn-outline btn-sm mt-2 p-0 border-primary  text-primary rounded-sm hover:bg-primary1 hover:border-none hover:text-white">
+  登出帳號
+  </a>`;
+  js_SignOutBtn.addEventListener('click', () => {
+    localStorage.clear();
+    Swal.fire({
+      position: 'top-end',
+      icon: 'success',
+      title: '88 你登出了~',
+      showConfirmButton: false,
+      timer: 5000
+    })
+  });
+
+}
+signOutEven();
 
 // C3
 // function renderC3() {
@@ -68,7 +106,6 @@ function init() {
 // //   list.innerHTML = str;
 // // }
 
-init();
 
 function renderECharts() {
   var dom = document.getElementById('chart-container');
@@ -117,7 +154,6 @@ function renderECharts() {
     }
   });
 
-  // console.log(totalObj)
   Object.keys(totalObj).forEach(item => {
     const rateObj = {};
     totalObj[item].forEach(bookItem => {
@@ -130,7 +166,6 @@ function renderECharts() {
     totalObj[item] = rateObj;
   })
 
-  // console.log(totalObj)
 
   Object.keys(totalObj).forEach(item => {
     const eChartObj = {
@@ -144,10 +179,8 @@ function renderECharts() {
         })
       ]
     }
-    //console.log(data)
     data[0].children.push(eChartObj);
   })
-  //console.log(data.length)
   for (let j = 0; j < data.length; ++j) {
     let level1 = data[j].children;
     for (let i = 0; i < level1.length; ++i) {

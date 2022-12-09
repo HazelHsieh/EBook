@@ -41,7 +41,7 @@
     <div class="navbar-end flex-none gap-2">
       <div class="form-control">
         <div class="input-group">
-          <input type="text" placeholder="Search…"
+          <input type="text" placeholder="以書名搜尋"
             class="js-navInput input input-bordered  focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent" />
           <a href="./news.html"
             class="js-navInputBtn btn btn-outline border-primary text-primary rounded-sm hover:bg-primary1 hover:border-none hover:text-white">
@@ -51,14 +51,15 @@
       </div>
       <div class="dropdown dropdown-end ">
         <label tabindex="0" class="btn btn-ghost btn-circle avatar">
-          <div class="w-10 rounded-full">
-            <img src="https://placeimg.com/80/80/people" />
+          <div class="js-userAvatar w-10 rounded-full">
+            <img src="../imgs/avatar.png" />
           </div>
         </label>
         <ul tabindex="0" class="mt-3 p-2 shadow menu menu-compact dropdown-content bg-cream rounded-box w-52">
           <li><a href="./news.html">最新熱門</a></li>
           <li><a href="./myBooks.html">我的書單</a></li>
-          <li><a href="./signIn.html">我的帳號</a></li>
+          <li class="js-backendView hidden"></li>
+          <li class="js-signoutBtn"><a href="./signIn.html">我的帳號</a></li>
         </ul>
       </div>
     </div>
@@ -76,7 +77,7 @@
         此時此刻，我就在這裡。沒有更好也沒有更壞，沒有偶然也沒有幸然。</p>
       <div class="btns">
         <button class="btn bg-primary border-none rounded-sm text-white hover:bg-secondary"><span
-            class="material-icons mr-2">auto_stories</span>繼續閱讀</button>
+            class="material-icons mr-2">auto_stories</span>開始閱讀吧！</button>
       </div>
     </div>
   </div>
@@ -85,24 +86,24 @@
   <section class="bg-creamWhite py-12 overflow-x-hidden">
     <div class="container">
       <div class="flex items-center  pb-2">
-        <div class="container py-2  group flex">
-          <p class="text-xl">Hazel<span class="text-xl pr-2 " data-aos="fade-up" data-aos-duration="1000">，請繼續閱讀 </span>
+        <div class="js-user container py-2  group flex">
+          <p class="text-xl">您<span class="text-xl pr-2 " data-aos="fade-up" data-aos-duration="1000">還沒有書單 </span>
           </p>
         </div>
       </div>
       <div class="swiper jsMySwiper w-100 h-100 overflow-visible pb-10">
         <div class="swiper-wrapper js-userBooks">
           <div class="swiper-slide text-center">
-            <a href="../frontendView/products.html"
+            <!-- <a href="../frontendView/products.html"
               class="card shadow-xl  w-[280px] h-[280px] hover:scale-125 transition-all relative">
               <img class="" src="../imgs/temp/book1.webp" alt="book1" />
               <div class="absolute text-sm  w-[35px] h-[40px] bg-primary2  ml-2 mt-0">
                 <p class="text-center">TOP</p>
                 <p class="text-center"><i class="fa-solid fa-1"></i></p>
               </div>
-            </a>
+            </a> -->
           </div>
-          <div class="swiper-slide">
+          <!-- <div class="swiper-slide">
             <a href="../frontendView/products.html"
               class="card  w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
               <img class="" src="../imgs/temp/book2.webp" alt="book2" />
@@ -149,7 +150,7 @@
               class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
               <img src="../imgs/temp/book5.webp" alt="book5" />
             </a>
-          </div>
+          </div> -->
         </div>
         <div class="swiper-button-next w-10  text-white hover:bg-secondary1"></div>
         <div class="swiper-button-prev w-10  text-white hover:bg-secondary1"></div>
@@ -201,8 +202,13 @@
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>AOS.init();</script>
 
+
   <!-- axios js -->
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+
+  <!-- sweetalert2.js -->
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
   <!-- 模組化的概念 -->
   <script type="module" src="../js/swiper.js">

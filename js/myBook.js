@@ -6,13 +6,49 @@ let data;
 
 const userBooks = [];
 
+const userInfo = JSON.parse(localStorage.getItem('eBook'));
+
+const js_UserAvatar = document.querySelector('.js-userAvatar');
+
+// token 不對就跳轉到首頁
+if (!userInfo) {
+  Swal.fire({
+    confirmButtonColor: '#8CA187',
+    icon: 'info',
+    title: '( ˘•ω•˘ )',
+    text: '註冊個會員吧',
+    confirmButtonText: '<a href="./signIn.html">GO!</a>'
+  });
+} else {
+  js_UserAvatar.innerHTML = `<div class="js-userAvatar w-10 rounded-full">
+    <img src="${userInfo.user.avatarUrl}" />
+  </div>`
+  signOutEven();
+  usersInit()
+}
+
+//console.log(userInfo.user.role);
+if (userInfo.user.role === "admin") {
+  const js_BackendView = document.querySelector(".js-backendView");
+  js_BackendView.classList.remove('hidden');
+  js_BackendView.innerHTML = `<a href="../backendView/dashboard.html">後台管理</a> `
+}
+
+
+
 // 使用者有的書籍
 function usersInit() {
+  const userId = userInfo.user.id - 1;
+  const js_User = document.querySelector('.js-user');
+  js_User.innerHTML = `<p class="text-xl">請繼續閱讀 <span class="text-xl pr-2 " data-aos="fade-up" data-aos-duration="1000"></span>
+  </p>`;
+
   axios
     .get(`${api.url}users/`)
     .then(function (res) {
       // 1.取得 data 使用者購買的書籍
-      let userHistoryOrders = res.data[0].historyOrders;
+      let userHistoryOrders = res.data[userId].historyOrders;
+
       // 2.把清單裡的 ISBN 取出並且跑 forEach 
       userHistoryOrders.forEach(item => {
         // 3. 再 axios 一次，取出書籍資料為 使用者購物書籍的 ISBN
@@ -33,29 +69,41 @@ function usersInit() {
       })
     })
 }
-usersInit()
+
+
+// 把我的帳號改成登出功能 登出時也將localStorage刪除
+function signOutEven() {
+  const js_SignOutBtn = document.querySelector(".js-signoutBtn");
+  js_SignOutBtn.innerHTML = `<a href="../index.html"
+  class="btn btn-outline btn-sm mt-2 p-0 border-primary  text-primary rounded-sm hover:bg-primary1 hover:border-none hover:text-white">
+  登出帳號
+  </a>`;
+  js_SignOutBtn.addEventListener('click', () => {
+    localStorage.clear();
+    Swal.fire({
+      position: 'top-end',
+      icon: 'success',
+      title: '88 你登出了~',
+      showConfirmButton: false,
+      timer: 5000
+    })
+  });
+
+}
+
 
 // user search
-//const js_NavInputGroup = document.querySelector('.js-navInputGroup');
 const js_NavInput = document.querySelector('.js-navInput');
 const js_NavInputBtn = document.querySelector('.js-navInputBtn');
 
 // input 值 改變 就更改裡面的網址
 js_NavInput.addEventListener('change', () => {
-  //console.log(e.target.value);
-  // console.log(e);
-  // console.log(e.target.value);
-  console.log(js_NavInput.value);
   // 對應的路由
   js_NavInputBtn.href = `./news.html?name_like=${js_NavInput.value}`;
   let name_like = js_NavInput.value
-
-  console.log(name_like);
-
   const apiUrlFilter = {
     name: name_like ? `&name_like=${js_NavInput.value}` : "",
   }
-  //console.log(apiUrlFilter.name);
 
   axios.get(`${api.url}books?${apiUrlFilter.name}`).then(res => {
 
@@ -68,6 +116,8 @@ js_NavInput.addEventListener('change', () => {
   })
 })
 
+//
+
 // 組字字串的函示
 const stringData = (data) => {
   let str = ""
@@ -79,7 +129,6 @@ const stringData = (data) => {
     </a>
     </div>`
   })
-  // console.log(str);
   return str;
 }
 

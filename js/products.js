@@ -11,8 +11,8 @@ function init() {
   axios
     .get(`${booksURL}/${id}`)
     .then(function (res) {
-
       data = res.data;
+      console.log(data);
       //這裡的 data.id 等於資料的id
       //console.log(data.id);
       renderBook();
@@ -32,6 +32,7 @@ function readerRating(rate) {
   // console.log(str);
   return str;
 }
+
 
 function renderBook() {
   // 書籍產生的介紹
@@ -57,12 +58,16 @@ function renderBook() {
                       </p>
                       <p class="text-info text-lg  font-bold pl-3"> 98% 適合您</p>
                     </div>
-                    <p class="auther mb-0 mt-2">作者：${data.auther}</p>
+                    <p class="author mb-0 mt-2">作者：${data.author}</p>
                     <p class="publish mb-0 mt-2">出版社：${data.publish}</p>
                     <p class="publishData mb-0 mt-2">出版日期：${data.publishDate}</p>
                     <p class="language mb-0 mt-2">語言：${data.language}</p>
                     <p class="ISBN mb-0 mt-2">ISBN：${data.ISBN}</p>
                     <hr class="w-1/4 md:ml-0 mt-4  border lg:hidden">
+                    <a href=""
+                      class="js-addBookBtn btn btn-outline border-primary mt-4 text-primary rounded-sm hover:bg-secondary hover:border-none hover:text-white">
+                      <span class="material-icons mr-2">library_books</span>加入書單
+                    </a>
                   </div>
                 </div>
                 <!-- ./Card body - inner wrapper -->
@@ -81,5 +86,62 @@ function renderBook() {
   let content = '';
   content = `<section>${data.introduction}</section>`;
   book_Content.innerHTML = content;
+
+  const js_AddBookBtn = document.querySelector(".js-addBookBtn");
+  js_AddBookBtn.addEventListener('click', updateNewBook);
 }
+
+const userInfo = JSON.parse(localStorage.getItem('eBook'));
+const js_SignOutBtn = document.querySelector(".js-signoutBtn");
+const js_UserAvatar = document.querySelector('.js-userAvatar');
+// token 不對就跳轉到首頁
+if (!userInfo) {
+  js_SignOutBtn.innerHTML = `<a href="./signIn.html">我的帳號</a>`
+} else {
+  js_UserAvatar.innerHTML = `<div class="js-userAvatar w-10 rounded-full">
+    <img src="${userInfo.user.avatarUrl}" />
+  </div>`
+  signOutEven();
+}
+
+
+// 加入書本
+function updateNewBook(e) {
+  e.preventDefault();
+
+  // const userId = userInfo.user.id - 1;
+  // axios.patch(`${api.url}user/[userId]`)
+  Swal.fire({
+    position: 'top-end',
+    icon: 'success',
+    title: '加入成功',
+    showConfirmButton: false,
+    timer: 1500
+  })
+
+}
+
+// 把我的帳號改成登出功能 登出時也將localStorage刪除
+function signOutEven() {
+  const js_SignOutBtn = document.querySelector(".js-signoutBtn");
+  js_SignOutBtn.innerHTML = `<a href="../index.html"
+  class="btn btn-outline btn-sm mt-2 p-0 border-primary  text-primary rounded-sm hover:bg-primary1 hover:border-none hover:text-white">
+  登出帳號
+  </a>`;
+  js_SignOutBtn.addEventListener('click', () => {
+    localStorage.clear();
+    Swal.fire({
+      position: 'top-end',
+      icon: 'success',
+      title: '88 你登出了~',
+      showConfirmButton: false,
+      timer: 5000
+    })
+  });
+
+}
+
+
+
+
 

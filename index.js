@@ -22,6 +22,23 @@ const eBook = {
 // 使用者推上來有的書籍
 const userBooks = [];
 
+const userInfo = JSON.parse(localStorage.getItem('eBook'));
+let js_SignOutBtn = document.querySelector(".js-signoutBtn");
+const js_UserAvatar = document.querySelector('.js-userAvatar');
+// console.log(Object.keys(userInfo).length);
+// console.log(userInfo.accessToken !== {}); se
+
+// token 不對 就顯示我的帳號
+if (!userInfo) {
+  js_SignOutBtn.innerHTML = `<a href="./frontendView/signIn.html">我的帳號</a>`;
+} else if (userInfo) {
+  js_UserAvatar.innerHTML = `<div class="js-userAvatar w-10 rounded-full">
+    <img src="${userInfo.user.avatarUrl}" />
+  </div>`
+  usersInit();
+  signOutEven();
+}
+
 // 初始書籍資料
 function init() {
   axios
@@ -84,6 +101,28 @@ function init() {
 }
 init();
 
+// 把我的帳號改成登出功能 登出時也將localStorage刪除
+function signOutEven() {
+  // const js_BackendView = document.querySelector(".js-backendView");
+
+  // js_BackendView.innerHTML = `<a href="../backendView/dashboard.html">後台管理</a> `
+  js_SignOutBtn.innerHTML = `<a href="../index.html"
+  class="btn btn-outline btn-sm mt-2 p-0 border-primary  text-primary rounded-sm hover:bg-primary1 hover:border-none hover:text-white">
+  登出帳號
+  </a>`;
+  js_SignOutBtn.addEventListener('click', () => {
+    localStorage.clear();
+    Swal.fire({
+      position: 'top-end',
+      icon: 'success',
+      title: '88 你登出了~',
+      showConfirmButton: false,
+      timer: 5000
+    })
+  });
+
+}
+
 // user search
 const js_NavInputGroup = document.querySelector('.js-navInputGroup');
 const js_NavInput = document.querySelector('.js-navInput');
@@ -94,7 +133,7 @@ js_NavInput.addEventListener('change', () => {
   //console.log(e.target.value);
   // console.log(e);
   // console.log(e.target.value);
-  console.log(js_NavInput.value);
+  //console.log(js_NavInput.value);
   // 對應的路由
   js_NavInputBtn.href = `./frontendView/news.html?name_like=${js_NavInput.value}`;
   let name_like = js_NavInput.value
@@ -142,26 +181,27 @@ const stringInputData = (data) => {
   return str;
 }
 
-
-
-
-
 // 使用者有的書籍
 function usersInit() {
+  const userId = userInfo.user.id - 1;
+  const js_User = document.querySelector('.js-user');
+
+  js_User.innerHTML = `<p class="text-xl">請繼續閱讀 <span class="text-xl pr-2 " data-aos="fade-up" data-aos-duration="1000"></span>
+  </p>`;
+
   axios
     .get(`${api.url}users/`)
     .then(function (res) {
-      let userHistoryOrders = res.data[0].historyOrders;
-      // console.log(userHistoryOrders);
+      let userHistoryOrders = res.data[userId].historyOrders;
       userHistoryOrders.forEach(item => {
         // console.log(item.ISBN);
         axios.get(`${api.url}books?ISBN=${item.ISBN}`).then(res => {
           userBooks.push(...res.data)
           // class 綁定
+
           const js_UserBooks = document.querySelector('.js-userBooks');
           // console.log(js_UserBooks);
           stringData(userBooks)
-
           // console.log(userBooks);
           js_UserBooks.innerHTML = stringData(userBooks);
 
@@ -171,8 +211,6 @@ function usersInit() {
       })
     })
 }
-usersInit();
-
 
 // TOP 排行的組字串
 const newPublishStringData = (data) => {

@@ -1,4 +1,48 @@
 import api from '../js/http.js';
+{/* <li class="signoutBtn">
+            <a href="../index.html"
+              class="btn btn-outline border-primary text-primary rounded-sm hover:bg-primary1 hover:border-none hover:text-white">
+              登出帳號
+            </a>
+          </li> */}
+
+const userInfo = JSON.parse(localStorage.getItem('eBook'));
+const js_SignOutBtn = document.querySelector(".js-signoutBtn");
+const js_UserAvatar = document.querySelector('.js-userAvatar');
+// token 不對就跳轉到首頁
+if (userInfo.user.role !== "admin") {
+  setTimeout(() => {
+    window.location.href = `../frontendView/myBooks.html`
+  }, 1000)
+}
+if (userInfo) {
+  js_UserAvatar.innerHTML = `<div class="js-userAvatar w-10 rounded-full">
+    <img src="${userInfo.user.avatarUrl}" />
+  </div>`
+}
+
+
+// 把我的帳號改成登出功能 登出時也將localStorage刪除
+function signOutEven() {
+  const js_BackendView = document.querySelector(".js-backendView");
+  js_BackendView.innerHTML = `<a href="../backendView/dashboard.html">後台管理</a> `
+  js_SignOutBtn.innerHTML = `<a href="../index.html"
+  class="btn btn-outline btn-sm mt-2 p-0 border-primary  text-primary rounded-sm hover:bg-primary1 hover:border-none hover:text-white">
+  登出帳號
+  </a>`;
+  js_SignOutBtn.addEventListener('click', () => {
+    localStorage.clear();
+    Swal.fire({
+      position: 'top-end',
+      icon: 'success',
+      title: '88 你登出了~',
+      showConfirmButton: false,
+      timer: 5000
+    })
+  });
+
+}
+signOutEven();
 
 const formDOM = document.querySelector("form")
 const getFormValue = (e) => {

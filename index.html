@@ -55,14 +55,14 @@
       </div>
       <div class="dropdown dropdown-end ">
         <label tabindex="0" class="btn btn-ghost btn-circle avatar">
-          <div class="w-10 rounded-full">
-            <img src="https://placeimg.com/80/80/people" />
+          <div class="js-userAvatar w-10 rounded-full">
+            <img src="./imgs/avatar.png" />
           </div>
         </label>
         <ul tabindex="0" class="mt-3 p-2 shadow menu menu-compact dropdown-content bg-cream rounded-box w-52">
           <li><a href="./frontendView/news.html">最新熱門</a></li>
           <li><a href="./frontendView/myBooks.html">我的書單</a></li>
-          <li><a href="./frontendView/signIn.html">我的帳號</a></li>
+          <li class="js-signoutBtn"><a href="./frontendView/signIn.html">我的帳號</a></li>
         </ul>
       </div>
     </div>
@@ -95,6 +95,8 @@
           class="btn btn-outline border-primary text-primary rounded-sm hover:bg-secondary hover:border-none hover:text-white">
           <span class="material-icons mr-2">read_more</span>了解更多
         </a>
+
+
       </div>
     </div>
   </section>
@@ -528,24 +530,24 @@
   <section class="bg-creamWhite  py-12  overflow-x-hidden">
     <div class="">
       <div class="flex items-center  pb-2">
-        <div class="container py-2  group flex">
-          <p class="text-xl">Hazel<span class="text-xl pr-2 " data-aos="fade-up" data-aos-duration="1000">，請繼續閱讀 </span>
+        <div class="js-user container py-2  group flex">
+          <p class="text-xl">您<span class="text-xl pr-2 " data-aos="fade-up" data-aos-duration="1000">還沒有書單 </span>
           </p>
         </div>
       </div>
       <div class="swiper jsMySwiper w-100 h-100 overflow-visible pb-10">
         <div class="swiper-wrapper js-userBooks">
           <div class="swiper-slide text-center">
-            <a href="./frontendView/products.html"
+            <!-- <a href="./frontendView/products.html"
               class="card shadow-xl  w-[280px] h-[280px] hover:scale-125 transition-all relative">
               <img class="" src="./imgs/temp/book1.webp" alt="book1" />
               <div class="absolute text-sm  w-[35px] h-[40px] bg-primary2  ml-2 mt-0">
                 <p class="text-center">TOP</p>
                 <p class="text-center"><i class="fa-solid fa-1"></i></p>
               </div>
-            </a>
+            </a> -->
           </div>
-          <div class="swiper-slide">
+          <!-- <div class="swiper-slide">
             <a href="./frontendView/products.html"
               class="card  w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
               <img class="" src="./imgs/temp/book2.webp" alt="book2" />
@@ -592,7 +594,7 @@
               class="card w-[280px] h-[280px] rounded-sm  hover:scale-125 transition-all">
               <img src="./imgs/temp/book5.webp" alt="book5" />
             </a>
-          </div>
+          </div> -->
         </div>
         <div class="swiper-button-next w-10  text-white hover:bg-secondary1"></div>
         <div class="swiper-button-prev w-10  text-white hover:bg-secondary1"></div>
@@ -988,6 +990,10 @@
   <!-- vanilla-tilt -->
   <script type="text/javascript" src="./js/vanilla.js"></script>
   <!-- <script src="./vanilla.js"></script> -->
+
+
+  <!-- sweetalert2.js -->
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
   <!-- aos.js -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
