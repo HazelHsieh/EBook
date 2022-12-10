@@ -131,19 +131,23 @@ function updateNewBook(e) {
     showConfirmButton: false,
     timer: 1500
   })
-  console.log(data.ISBN);
+  //console.log(data.ISBN);
   //  userBookAry.forEach(item =>{
 
   //  })
-  console.log(Object.values(userBookAry));
-  //userBookAry.push({ ISBN: data.ISBN })
+  // console.log(Object.values(userBookAry));
+  userBookAry.push({ ISBN: data.ISBN })
   //console.log(userInfo);
 
+  // console.log(Object.values(userBookAry));
+  // console.log(userInfo.user.historyOrders);
   //存進去                                      const userInfo要的值
-  //localStorage.setItem("eBook", JSON.stringify(userInfo.data));
-  console.log(userBookAry);
-  //const userId = userInfo.user.id;
-  //axios.patch(`${api.url}users/${userId}`, { historyOrders: userBookAry })
+  localStorage.setItem("eBook", JSON.stringify(userInfo.user.historyOrders));
+  // console.log(userBookAry);
+
+  // console.log({ historyOrders: userBookAry });
+  const userId = userInfo.user.id;
+  axios.patch(`${api.url}users/${userId}`, { historyOrders: userBookAry })
 }
 
 // 把我的帳號改成登出功能 登出時也將localStorage刪除
