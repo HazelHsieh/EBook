@@ -6,13 +6,14 @@ function init() {
   const booksURL = `${api.url}books`;
   let params = (new URL(document.location)).searchParams;
   let id = parseInt(params.get('id')); // 取得 api id number
+
   //這裡的 id 等於 postman get 的網址的 id
   //console.log(id);
   axios
     .get(`${booksURL}/${id}`)
     .then(function (res) {
       data = res.data;
-      console.log(data);
+      //console.log(data);
       //這裡的 data.id 等於資料的id
       //console.log(data.id);
       renderBook();
@@ -87,11 +88,14 @@ function renderBook() {
   content = `<section>${data.introduction}</section>`;
   book_Content.innerHTML = content;
 
+  //在文字裡的 Btn 增加監聽事件
   const js_AddBookBtn = document.querySelector(".js-addBookBtn");
   js_AddBookBtn.addEventListener('click', updateNewBook);
 }
 
 const userInfo = JSON.parse(localStorage.getItem('eBook'));
+const userBookAry = userInfo.user.historyOrders;
+// console.log(userBook);
 const js_SignOutBtn = document.querySelector(".js-signoutBtn");
 const js_UserAvatar = document.querySelector('.js-userAvatar');
 // token 不對就跳轉到首頁
@@ -107,10 +111,19 @@ if (!userInfo) {
 
 // 加入書本
 function updateNewBook(e) {
+  // js_AddBookBtn 的新增事件
   e.preventDefault();
+  // if (e === data.ISBN) {
+  //   Swal.fire({
+  //     confirmButtonColor: '#8CA187',
+  //     icon: 'info',
+  //     title: '(´ΘωΘ`)',
+  //     text: "開始閱讀吧，你有這本書了"
+  //   });
+  //   return;
+  // } else {
 
-  // const userId = userInfo.user.id - 1;
-  // axios.patch(`${api.url}user/[userId]`)
+  // }
   Swal.fire({
     position: 'top-end',
     icon: 'success',
@@ -118,7 +131,19 @@ function updateNewBook(e) {
     showConfirmButton: false,
     timer: 1500
   })
+  console.log(data.ISBN);
+  //  userBookAry.forEach(item =>{
 
+  //  })
+  console.log(Object.values(userBookAry));
+  //userBookAry.push({ ISBN: data.ISBN })
+  //console.log(userInfo);
+
+  //存進去                                      const userInfo要的值
+  //localStorage.setItem("eBook", JSON.stringify(userInfo.data));
+  console.log(userBookAry);
+  //const userId = userInfo.user.id;
+  //axios.patch(`${api.url}users/${userId}`, { historyOrders: userBookAry })
 }
 
 // 把我的帳號改成登出功能 登出時也將localStorage刪除
