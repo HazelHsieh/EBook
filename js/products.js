@@ -54,7 +54,7 @@ function readerRating(rate) {
   // 不能用 forEach 因為他沒有吃數字轉自串的型別
   // $的樣版字串值
   for (let x = 0; x < rate; x++) {
-    str += `<input type="radio" name="rating-3" class="mask mask-heart bg-red-400" />`
+    str += `<input type="radio" name="rating-3" class="mask mask-heart bg-red" />`
   }
   // console.log(str);
   return str;
@@ -64,9 +64,9 @@ function readerRating(rate) {
 const isCollected = (bookISBN) => {
   const collectResult = userBookAry.filter(item => item.ISBN === bookISBN);
   if (collectResult.length > 0) {
-    return `<i class="CollectIcon  fa fa-heart  text-red-400 mt-10 ml-28 sm:ml-48 md:ml-64 lg:ml-16 xl:ml-24  hover:text-white cursor-pointer"></i>`
+    return `<i class="fa fa-heart  text-red mt-10 ml-28 sm:ml-48 md:ml-64 lg:ml-16 xl:ml-24  hover:text-white cursor-pointer"></i>`
   } else {
-    return `<i class="fa fa-heart text-white mt-10 ml-28 sm:ml-48 md:ml-64 lg:ml-16 xl:ml-24  hover:text-red-400 cursor-pointer"></i>`;
+    return `<i class="fa fa-heart text-white mt-10 ml-28 sm:ml-48 md:ml-64 lg:ml-16 xl:ml-24  hover:text-red cursor-pointer"></i>`;
   }
 }
 

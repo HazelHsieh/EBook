@@ -467,7 +467,7 @@ html {
   --s: 109 12% 44%;
   secondary1: #CDD027;
   secondary2: #A5A824;
-  red: #ef3939;
+  red: #f87171;
   --in: 108 52% 32%;
   link: #589EF0;
   brown: #474B42;
@@ -7359,10 +7359,6 @@ html {
   height: 16rem;
 }
 
-.h-4 {
-  height: 1rem;
-}
-
 .min-h-screen {
   min-height: 100vh;
 }
@@ -7439,16 +7435,12 @@ html {
   width: 25%;
 }
 
-.w-2\/3 {
-  width: 66.666667%;
-}
-
-.w-4 {
-  width: 1rem;
-}
-
 .w-11\/12 {
   width: 91.666667%;
+}
+
+.w-2\/12 {
+  width: 16.666667%;
 }
 
 .max-w-xs {
@@ -8449,6 +8441,11 @@ html {
   background-color: transparent;
 }
 
+.bg-red {
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 113 113 / var(--tw-bg-opacity));
+}
+
 .bg-\[rgb\(255\2c 0\2c 0\)\] {
   --tw-bg-opacity: 1;
   background-color: rgb(255 0 0 / var(--tw-bg-opacity));
@@ -8612,10 +8609,6 @@ html {
   padding: 0.75rem;
 }
 
-.p-16 {
-  padding: 4rem;
-}
-
 .p-1 {
   padding: 0.25rem;
 }
@@ -8670,19 +8663,14 @@ html {
   padding-bottom: 1rem;
 }
 
-.px-16 {
-  padding-left: 4rem;
-  padding-right: 4rem;
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
 }
 
 .py-16 {
   padding-top: 4rem;
   padding-bottom: 4rem;
-}
-
-.px-3 {
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
 }
 
 .pt-3 {
@@ -8973,12 +8961,7 @@ html {
 
 .text-red {
   --tw-text-opacity: 1;
-  color: rgb(239 57 57 / var(--tw-text-opacity));
-}
-
-.text-blue-500 {
-  --tw-text-opacity: 1;
-  color: rgb(59 130 246 / var(--tw-text-opacity));
+  color: rgb(248 113 113 / var(--tw-text-opacity));
 }
 
 .text-primary2 {
@@ -8993,6 +8976,11 @@ html {
 
 .text-\[\#336699\]\/\[\.35\] {
   color: rgb(51 102 153 / .35);
+}
+
+.text-blue-500 {
+  --tw-text-opacity: 1;
+  color: rgb(59 130 246 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -9472,6 +9460,11 @@ html {
   color: rgb(59 130 246 / var(--tw-text-opacity));
 }
 
+.hover\:text-red:hover {
+  --tw-text-opacity: 1;
+  color: rgb(248 113 113 / var(--tw-text-opacity));
+}
+
 .table .hover\:hover:hovertr:hover th,
     .table .hover\:hover:hovertr:hover td,
     .table .hover\:hover:hovertr:nth-child(even):hover th,
@@ -9614,12 +9607,8 @@ html {
     margin-top: 3rem;
   }
 
-  .sm\:w-2\/3 {
-    width: 66.666667%;
-  }
-
-  .sm\:p-16 {
-    padding: 4rem;
+  .sm\:w-12 {
+    width: 3rem;
   }
 
   .sm\:px-16 {
