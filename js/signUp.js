@@ -72,7 +72,8 @@ const callSingUp = async (event) => {
         confirmButtonColor: '#8CA187',
         icon: 'success',
         title: '⁽⁽٩(๑˃̶͈̀ ᗨ ˂̶͈́)۶⁾⁾',
-        text: "註冊成功"
+        text: "註冊成功",
+        confirmButtonText: '<a href="./signIn.html">GO!</a>'
       });
 
     } catch (error) {

@@ -25,6 +25,14 @@
     .userInfo-message {
       color: crimson;
     }
+
+    .swal2-popup.swal2-modal {
+      font-size: 10pt;
+    }
+
+    .swal2-modal .swal2-title {
+      font-size: 1.4em;
+    }
   </style>
 </head>
 
@@ -48,16 +56,26 @@
           <p class="userInfo-message hidden ml-4 mt-2 font-bold text-red" data-message="password"></p>
         </div>
 
-        <div class="flex items-center justify-between mt-6">
-          <div class="flex items-center">
-            <input id="remember" type="checkbox"
+        <div class="flex items-center justify-between mt-6 text-brown">
+          <div class="js-demo flex items-center gap-2">
+            <!-- <input id="remember" type="checkbox"
               class="form-checkbox w-4 h-4 text-blue-500 transition duration-150 ease-in-out">
             <label for="remember" class="block ml-2 text-sm text-gray-500 leading-5">
               Remember
-            </label>
+            </label> -->
+            <p class="">DEMO : </p>
+            <a href=""
+              class="js-admin font-bold text-base text-primary2 hover:text-primary focus:outline-none focus:underline transition ease-in-out duration-150">
+              最高權限 admin
+            </a>
+            <span>、</span>
+            <a href=""
+              class="js-user font-bold text-base text-primary2 hover:text-primary focus:outline-none focus:underline transition ease-in-out duration-150">
+              一般用戶 user
+            </a>
           </div>
           <div class="text-sm leading-5">
-            <a href="../backendView/dashboard.html"
+            <a href=""
               class="font-bold text-blue-400 hover:text-blue-500 focus:outline-none focus:underline transition ease-in-out duration-150">
               Forgot your password?
             </a>

@@ -1,5 +1,34 @@
 import api from '../js/http.js';
 
+// token 不對就跳轉到首頁
+const userInfo = JSON.parse(localStorage.getItem('eBook'));
+const js_UserAvatar = document.querySelector('.js-userAvatar');
+if (!userInfo) {
+  Swal.fire({
+    confirmButtonColor: '#8CA187',
+    icon: 'info',
+    title: '( ˘•ω•˘ )',
+    text: '登入一下吧 ~',
+    confirmButtonText: '<a href="./signIn.html">GO!</a>'
+  });
+  // js_SignOutBtn.innerHTML = `<a href="./signIn.html">我的帳號</a>`
+} else {
+  js_UserAvatar.innerHTML = `<div class="js-userAvatar w-10 rounded-full">
+  <img src="${userInfo.user.avatarUrl}" />
+  </div>`
+  signOutEven();
+}
+
+// localStorage 的金鑰
+const userBookAry = userInfo.user.historyOrders;
+const userCollectAry = userInfo.user.historyOrders;
+// const js_SignOutBtn = document.querySelector(".js-signoutBtn");
+
+// user search
+const js_NavInput = document.querySelector('.js-navInput');
+const js_NavInputBtn = document.querySelector('.js-navInputBtn');
+
+// 撈點到的網址再去渲染書本
 let data;
 function init() {
   // postman get 的網址，對應 all.js 的組字串
@@ -13,9 +42,6 @@ function init() {
     .get(`${booksURL}/${id}`)
     .then(function (res) {
       data = res.data;
-      //console.log(data);
-      //這裡的 data.id 等於資料的id
-      //console.log(data.id);
       renderBook();
     })
 }
@@ -34,7 +60,28 @@ function readerRating(rate) {
   return str;
 }
 
+// 更改喜歡的愛心
+const isCollected = (bookISBN) => {
+  const collectResult = userBookAry.filter(item => item.ISBN === bookISBN);
+  if (collectResult.length > 0) {
+    return `<i class="CollectIcon  fa fa-heart  text-red-400 mt-10 ml-28 sm:ml-48 md:ml-64 lg:ml-16 xl:ml-24  hover:text-white cursor-pointer"></i>`
+  } else {
+    return `<i class="fa fa-heart text-white mt-10 ml-28 sm:ml-48 md:ml-64 lg:ml-16 xl:ml-24  hover:text-red-400 cursor-pointer"></i>`;
+  }
+}
 
+// 更改文字按鈕
+const isExisted = (bookISBN) => {
+  // 篩選出  ${isExisted(data.ISBN)}
+  const result = userBookAry.filter(item => item.ISBN === bookISBN);
+  if (result.length > 0) {
+    return "取消書單"
+  } else {
+    return "加入書單";
+  }
+}
+
+// 渲染書本內頁
 function renderBook() {
   // 書籍產生的介紹
   const book_Introduction = document.querySelector('.bookIntroduction');
@@ -43,8 +90,8 @@ function renderBook() {
           <div class="shadow-lg xl:shadow-none flex flex-wrap xl:w-4/5 mx-auto">
             <div class="imgUrl bg-contain bg-no-repeat bg-center w-full lg:w-1/3 h-64 lg:h-auto relative"
               style="height: 380px; background-image:url('${data.imgUrl}')">
-              <div class="absolute text-xl">
-                <i class="fa fa-heart text-white mt-10 ml-28 sm:ml-48 md:ml-64 lg:ml-16 xl:ml-24  hover:text-red-400 cursor-pointer"></i>
+              <div class="absolute text-xl js-collect">
+              ${isCollected(data.ISBN)}
               </div>
             </div>
 
@@ -67,7 +114,8 @@ function renderBook() {
                     <hr class="w-1/4 md:ml-0 mt-4  border lg:hidden">
                     <a href=""
                       class="js-addBookBtn btn btn-outline border-primary mt-4 text-primary rounded-sm hover:bg-secondary hover:border-none hover:text-white">
-                      <span class="material-icons mr-2">library_books</span>加入書單
+                      <span class="material-icons mr-2">library_books</span>
+                      ${isExisted(data.ISBN)}
                     </a>
                   </div>
                 </div>
@@ -91,64 +139,178 @@ function renderBook() {
   //在文字裡的 Btn 增加監聽事件
   const js_AddBookBtn = document.querySelector(".js-addBookBtn");
   js_AddBookBtn.addEventListener('click', updateNewBook);
-}
+  const js_Collect = document.querySelector(".js-collect");
+  js_Collect.addEventListener('click', upDataCollect);
 
-const userInfo = JSON.parse(localStorage.getItem('eBook'));
-const userBookAry = userInfo.user.historyOrders;
-// console.log(userBook);
-const js_SignOutBtn = document.querySelector(".js-signoutBtn");
-const js_UserAvatar = document.querySelector('.js-userAvatar');
-// token 不對就跳轉到首頁
-if (!userInfo) {
-  js_SignOutBtn.innerHTML = `<a href="./signIn.html">我的帳號</a>`
-} else {
-  js_UserAvatar.innerHTML = `<div class="js-userAvatar w-10 rounded-full">
-    <img src="${userInfo.user.avatarUrl}" />
-  </div>`
-  signOutEven();
 }
-
 
 // 加入書本
 function updateNewBook(e) {
-  // js_AddBookBtn 的新增事件
   e.preventDefault();
-  // if (e === data.ISBN) {
-  //   Swal.fire({
-  //     confirmButtonColor: '#8CA187',
-  //     icon: 'info',
-  //     title: '(´ΘωΘ`)',
-  //     text: "開始閱讀吧，你有這本書了"
-  //   });
-  //   return;
-  // } else {
+  const filterResult = userBookAry.filter(item => item.ISBN === data.ISBN);
+  if (filterResult.length > 0) {
+    userBookAry.forEach((item, index) => {
+      if (item.ISBN === filterResult[0].ISBN) {
+        userBookAry.splice(index, 1)
+      }
+    })
 
-  // }
-  Swal.fire({
-    position: 'top-end',
-    icon: 'success',
-    title: '加入成功',
-    showConfirmButton: false,
-    timer: 1500
-  })
-  //console.log(data.ISBN);
-  //  userBookAry.forEach(item =>{
+    // 把localStorage 更新的值進去原始數值裡
+    userInfo.user.historyOrders = userBookAry;
+    // 把值存回去                              const userInfo要的值
+    localStorage.setItem("eBook", JSON.stringify(userInfo));
+    // axios 新增書本
+    const userId = userInfo.user.id;
+    axios.patch(`${api.url}users/${userId}`, { historyOrders: userBookAry })
 
-  //  })
-  // console.log(Object.values(userBookAry));
-  userBookAry.push({ ISBN: data.ISBN })
-  //console.log(userInfo);
 
-  // console.log(Object.values(userBookAry));
-  // console.log(userInfo.user.historyOrders);
-  //存進去                                      const userInfo要的值
-  localStorage.setItem("eBook", JSON.stringify(userInfo.user.historyOrders));
-  // console.log(userBookAry);
+    // console.log("刪除成功");
+    // Swal.fire({
+    //   position: 'top-end',
+    //   icon: 'success',
+    //   title: '刪除成功',
+    //   showConfirmButton: false,
+    //   timer: 1500
+    // });
+    const Toast = Swal.mixin({
+      toast: true,
+      position: 'top-end',
+      showConfirmButton: false,
+      timer: 3000,
+      timerProgressBar: true,
+      didOpen: (toast) => {
+        toast.addEventListener('mouseenter', Swal.stopTimer)
+        toast.addEventListener('mouseleave', Swal.resumeTimer)
+      }
+    })
 
-  // console.log({ historyOrders: userBookAry });
-  const userId = userInfo.user.id;
-  axios.patch(`${api.url}users/${userId}`, { historyOrders: userBookAry })
+    Toast.fire({
+      icon: 'success',
+      title: '刪除成功'
+    })
+
+  } else {
+    userBookAry.push({ ISBN: data.ISBN });
+
+    // 把localStorage 更新的值進去原始數值裡
+    userInfo.user.historyOrders = userBookAry;
+    // 把值存回去                              const userInfo要的值
+    localStorage.setItem("eBook", JSON.stringify(userInfo));
+    // axios 新增書本
+    const userId = userInfo.user.id;
+    axios.patch(`${api.url}users/${userId}`, { historyOrders: userBookAry })
+
+    console.log("加入書單");
+    // Swal.fire({
+    //   position: 'top-end',
+    //   icon: 'success',
+    //   title: '加入成功',
+    //   showConfirmButton: false,
+    //   timer: 1500
+    // })
+    const Toast = Swal.mixin({
+      toast: true,
+      position: 'top-end',
+      showConfirmButton: false,
+      timer: 3000,
+      timerProgressBar: true,
+      didOpen: (toast) => {
+        toast.addEventListener('mouseenter', Swal.stopTimer)
+        toast.addEventListener('mouseleave', Swal.resumeTimer)
+      }
+    })
+
+    Toast.fire({
+      icon: 'success',
+      title: '加入書單'
+    })
+  }
+
 }
+
+// 加入愛心
+function upDataCollect(e) {
+  e.preventDefault();
+  const CollectFilter = userBookAry.filter(item => item.ISBN === data.ISBN);
+  if (CollectFilter.length > 0) {
+    userCollectAry.forEach((item, index) => {
+      if (item.ISBN === CollectFilter[0].ISBN) {
+        userCollectAry.splice(index, 1)
+      }
+    })
+
+    // 把localStorage 更新的值進去原始數值裡
+    userInfo.user.historyOrders = userCollectAry;
+    // 把值存回去                              const userInfo要的值
+    localStorage.setItem("eBook", JSON.stringify(userInfo));
+    // axios 新增書本
+    const userId = userInfo.user.id;
+    axios.patch(`${api.url}users/${userId}`, { historyOrders: userCollectAry })
+
+
+    console.log("刪除喜歡");
+    // Swal.fire({
+    //   position: 'top-end',
+    //   icon: 'success',
+    //   title: '刪除成功',
+    //   showConfirmButton: false,
+    //   timer: 1500
+    // });
+    const Toast = Swal.mixin({
+      toast: true,
+      position: 'top-end',
+      showConfirmButton: false,
+      timer: 3000,
+      timerProgressBar: true,
+      didOpen: (toast) => {
+        toast.addEventListener('mouseenter', Swal.stopTimer)
+        toast.addEventListener('mouseleave', Swal.resumeTimer)
+      }
+    })
+
+    Toast.fire({
+      icon: 'success',
+      title: '取消喜歡'
+    })
+
+  } else {
+    userCollectAry.push({ ISBN: data.ISBN });
+
+    // 把localStorage 更新的值進去原始數值裡
+    userInfo.user.historyOrders = userCollectAry;
+    // 把值存回去                              const userInfo要的值
+    localStorage.setItem("eBook", JSON.stringify(userInfo));
+    // axios 新增書本
+    const userId = userInfo.user.id;
+    axios.patch(`${api.url}users/${userId}`, { historyOrders: userCollectAry })
+
+    console.log("加入喜歡");
+    // Swal.fire({
+    //   position: 'top-end',
+    //   icon: 'success',
+    //   title: '加入成功',
+    //   showConfirmButton: false,
+    //   timer: 1500
+    // })
+    const Toast = Swal.mixin({
+      toast: true,
+      position: 'top-end',
+      showConfirmButton: false,
+      timer: 3000,
+      timerProgressBar: true,
+      didOpen: (toast) => {
+        toast.addEventListener('mouseenter', Swal.stopTimer)
+        toast.addEventListener('mouseleave', Swal.resumeTimer)
+      }
+    })
+
+    Toast.fire({
+      icon: 'success',
+      title: '喜歡這本書 + 1'
+    })
+  }
+}
+
 
 // 把我的帳號改成登出功能 登出時也將localStorage刪除
 function signOutEven() {
@@ -169,6 +331,28 @@ function signOutEven() {
   });
 
 }
+
+
+
+// input 值 改變 就更改裡面的網址
+js_NavInput.addEventListener('change', () => {
+  // 對應的路由
+  js_NavInputBtn.href = `./news.html?name_like=${js_NavInput.value}`;
+  let name_like = js_NavInput.value
+  const apiUrlFilter = {
+    name: name_like ? `&name_like=${js_NavInput.value}` : "",
+  }
+
+  axios.get(`${api.url}books?${apiUrlFilter.name}`).then(res => {
+
+    // 直接把取到值渲染出來 就可以了
+    js_SearchBook.innerHTML = stringInputData(res.data);
+    // console.log(searchFilter);
+    js_SearchType.innerHTML = `< p class="js-searchType text-lg ml-6 py-6 text-brown font-bold" > 您想看的可能是..</ > `
+    //重新渲染VanillaTilt.init 上面的圖片
+    VanillaTilt.init(document.querySelectorAll(".your-element"));
+  })
+})
 
 
 

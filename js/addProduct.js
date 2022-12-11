@@ -66,7 +66,7 @@ const getFormValue = (e) => {
   };
   console.log(obj);
   const url = `${api.url}books`
-  console.log(obj);
+  // console.log(obj);
   axios.post(url, obj)
 }
 formDOM.addEventListener('submit', getFormValue);
@@ -75,7 +75,6 @@ formDOM.addEventListener('submit', getFormValue);
 function CustomizationPlugin(editor) {
 
 }
-
 ClassicEditor
   .create(document.querySelector('#editor'), {
     extraPlugins: [CustomizationPlugin]
@@ -86,8 +85,26 @@ ClassicEditor
     CKEditorInspector.attach(newEditor, {
       isCollapsed: true
     });
+    const Toast = Swal.mixin({
+      toast: true,
+      position: 'top-end',
+      showConfirmButton: false,
+      timer: 3000,
+      timerProgressBar: true,
+      didOpen: (toast) => {
+        toast.addEventListener('mouseenter', Swal.stopTimer)
+        toast.addEventListener('mouseleave', Swal.resumeTimer)
+      }
+    })
+
+    Toast.fire({
+      icon: 'success',
+      title: '新增成功'
+    })
+
   })
   .catch(error => {
     console.error(error);
   });
+
 

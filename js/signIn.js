@@ -3,7 +3,7 @@ import api from '../js/http.js';
 const signIn_Form = document.querySelector('.signIn-form')
 const signIn_Account = document.querySelector('#signInAccount')
 const signIn_Password = document.querySelector('#signInPassword')
-const signIn_Send = document.querySelector('.signInSend')
+// const signIn_Send = document.querySelector('.signInSend')
 
 
 
@@ -28,6 +28,23 @@ const constraints = {
   },
 
 };
+
+// DEMO
+const js_Admin = document.querySelector('.js-admin');
+js_Admin.addEventListener('click', (e) => {
+  e.preventDefault();
+  signIn_Account.value = 'admin@gmail.com';
+  signIn_Password.value = '12345678';
+})
+
+const js_User = document.querySelector('.js-user');
+js_User.addEventListener('click', (e) => {
+  e.preventDefault();
+  signIn_Account.value = 'user@gmail.com';
+  signIn_Password.value = '12345678';
+})
+
+
 
 // 登入
 const callSingIn = async (event) => {

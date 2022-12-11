@@ -25,8 +25,6 @@ const userBooks = [];
 const userInfo = JSON.parse(localStorage.getItem('eBook'));
 let js_SignOutBtn = document.querySelector(".js-signoutBtn");
 const js_UserAvatar = document.querySelector('.js-userAvatar');
-// console.log(Object.keys(userInfo).length);
-// console.log(userInfo.accessToken !== {}); se
 
 // token 不對 就顯示我的帳號
 if (!userInfo) {

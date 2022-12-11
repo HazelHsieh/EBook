@@ -16,7 +16,7 @@ if (!userInfo) {
     confirmButtonColor: '#8CA187',
     icon: 'info',
     title: '( ˘•ω•˘ )',
-    text: '註冊個會員吧',
+    text: '登入一下吧 ~',
     confirmButtonText: '<a href="./signIn.html">GO!</a>'
   });
 } else {
