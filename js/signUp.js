@@ -47,6 +47,10 @@ const callSingUp = async (event) => {
     name: "",
     email: "",
     password: "",
+    collects: [],
+    role: "user",
+    historyOrders: [],
+    avatarUrl: "",
   };
   const signUpInfoMessage = document.querySelectorAll('.signUp_inputs');
   signUpInfoMessage.forEach(item => {
@@ -75,7 +79,6 @@ const callSingUp = async (event) => {
         text: "註冊成功",
         confirmButtonText: '<a href="./signIn.html">GO!</a>'
       });
-
     } catch (error) {
       //抓錯誤資訊 去對應值
       //console.log(error);

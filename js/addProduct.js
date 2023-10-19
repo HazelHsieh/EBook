@@ -1,10 +1,5 @@
 import api from '../js/http.js';
-{/* <li class="signoutBtn">
-            <a href="../index.html"
-              class="btn btn-outline border-primary text-primary rounded-sm hover:bg-primary1 hover:border-none hover:text-white">
-              登出帳號
-            </a>
-          </li> */}
+
 
 const userInfo = JSON.parse(localStorage.getItem('eBook'));
 const js_SignOutBtn = document.querySelector(".js-signoutBtn");
@@ -44,6 +39,46 @@ function signOutEven() {
 }
 signOutEven();
 
+
+
+
+
+// 文字編輯器
+function CustomizationPlugin(editor) {
+
+}
+ClassicEditor
+  .create(document.querySelector('#editor'), {
+    extraPlugins: [CustomizationPlugin]
+  })
+  .then(newEditor => {
+    window.editor = newEditor;
+    // The following line adds CKEditor 5 inspector.
+    CKEditorInspector.attach(newEditor, {
+      isCollapsed: true
+    });
+    // const Toast = Swal.mixin({
+    //   toast: true,
+    //   position: 'top-end',
+    //   showConfirmButton: false,
+    //   timer: 3000,
+    //   timerProgressBar: true,
+    //   didOpen: (toast) => {
+    //     toast.addEventListener('mouseenter', Swal.stopTimer)
+    //     toast.addEventListener('mouseleave', Swal.resumeTimer)
+    //   }
+    // })
+
+    // Toast.fire({
+    //   icon: 'success',
+    //   title: '新增成功'
+    // })
+
+  })
+  .catch(error => {
+    console.error(error);
+  });
+
 const formDOM = document.querySelector("form")
 const getFormValue = (e) => {
   e.preventDefault();
@@ -66,45 +101,10 @@ const getFormValue = (e) => {
   };
   console.log(obj);
   const url = `${api.url}books`
-  // console.log(obj);
+  console.log(obj);
   axios.post(url, obj)
 }
 formDOM.addEventListener('submit', getFormValue);
 
-// 文字編輯器
-function CustomizationPlugin(editor) {
-
-}
-ClassicEditor
-  .create(document.querySelector('#editor'), {
-    extraPlugins: [CustomizationPlugin]
-  })
-  .then(newEditor => {
-    window.editor = newEditor;
-    // The following line adds CKEditor 5 inspector.
-    CKEditorInspector.attach(newEditor, {
-      isCollapsed: true
-    });
-    const Toast = Swal.mixin({
-      toast: true,
-      position: 'top-end',
-      showConfirmButton: false,
-      timer: 3000,
-      timerProgressBar: true,
-      didOpen: (toast) => {
-        toast.addEventListener('mouseenter', Swal.stopTimer)
-        toast.addEventListener('mouseleave', Swal.resumeTimer)
-      }
-    })
-
-    Toast.fire({
-      icon: 'success',
-      title: '新增成功'
-    })
-
-  })
-  .catch(error => {
-    console.error(error);
-  });
 
 
